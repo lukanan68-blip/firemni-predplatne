@@ -14,39 +14,40 @@
 //    jsou „ty nejlepší" texty. První je nepravda (zamčená je menšina), druhé shazuje
 //    zbytek obsahu. Podíl zamčených článků je interní údaj a nezveřejňuje se.
 // Píše se, PROČ SE PŘEDPLATNÉ VYPLATÍ: co za ty peníze tým dostane a co s tím udělá.
-// Mailing posílá každý segment na svou variantu, LinkedIn a selfpromo na základ.
+// Mailing posílá každý segment na svou variantu, LinkedIn a selfpromo na "firmy"
+// (bez URL parametru ?segment= se vykreslí první klíč objektu, tedy "firmy").
 
 window.SEGMENTY = {
-  zaklad: {
+  firmy: {
     stitek: "Firemní předplatné",
-    h1: "Důležité dění v Brně na jednom místě",
-    perex: "Přehled o dění v Brně pro celý váš tým. Bez reklam, každý pod svým jménem.",
+    h1: "Když informace patří k práci",
+    perex: "Přehled o dění po celé republice pro váš tým na jednom místě.",
     ctaSlovo: "pro náš tým",
-    vychoziPocet: 5,
-    temata: ["doprava", "skolstvi", "investice", "bezpecnost", "verejne"],
+    vychoziPocet: 10,
+    temata: ["investice", "vystavba", "zamestnanost", "doprava"],
     duvody: [
-      { titulek: "Přehled o dění v Brně",
-        text: "Město, městské části i celý kraj. Šest Deníků, jeden přístup." },
+      { titulek: "Zaměstnanecký benefit",
+        text: "Čtení je součástí balíčku benefitů, ne dalším pracovním nástrojem navíc." },
       { titulek: "Pro celý tým",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
-      { titulek: "Bez reklam",
-        text: "Předplacený Deník.cz je bez reklam." },
-      { titulek: "71 Kč na člověka a měsíc",
-        text: "Od šesti lidí 68 Kč. Spočítáte si to sami a rovnou objednáte." }
+      { titulek: "Dáte to do nákladů",
+        text: "65 Kč na člověka a měsíc od deseti přístupů. Jedna faktura na rok." },
+      { titulek: "Kartou i na fakturu",
+        text: "Objednáte online. Zaplatíte kartou, nebo převodem na fakturu." }
     ]
   },
 
   "verejna-sprava": {
     stitek: "Firemní předplatné",
     h1: "Informace, které pomáhají rozhodovat",
-    perex: "Přehled o dění v Brně, v městských částech i v kraji. Pro tiskové oddělení, "
+    perex: "Přehled o dění v celé republice i ve vašem kraji. Pro tiskové oddělení, "
          + "vedení i vedoucí odborů.",
     ctaSlovo: "pro náš úřad",
     vychoziPocet: 3,
     temata: ["doprava", "skolstvi", "investice", "bezpecnost", "verejne"],
     duvody: [
-      { titulek: "Město, městské části i kraj",
-        text: "Brno, všech 29 městských částí a šest Deníků z Jihomoravského kraje." },
+      { titulek: "Celá republika i váš kraj",
+        text: "72 Deníků pokrývá každý okres, od velkých měst po menší obce." },
       { titulek: "Pro celý úřad",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
@@ -59,14 +60,14 @@ window.SEGMENTY = {
 
   "vysoke-skoly": {
     stitek: "Firemní předplatné",
-    h1: "Co se píše o vaší škole i o městě kolem ní",
-    perex: "Přehled o dění v Brně pro tiskové oddělení, komunikaci i vedení fakult.",
+    h1: "Co se píše o vaší škole i o městech, kde působíte",
+    perex: "Přehled o dění v celé republice pro tiskové oddělení, komunikaci i vedení fakult.",
     ctaSlovo: "pro naši fakultu",
     vychoziPocet: 5,
     temata: ["skolstvi", "doprava", "vystavba", "verejne", "bezpecnost"],
     duvody: [
-      { titulek: "Vaše škola i celé Brno",
-        text: "Co se píše o škole, o vysokém školství a o městě, kde stojí vaše budovy." },
+      { titulek: "Vaše škola i celá republika",
+        text: "Co se píše o škole, o vysokém školství i o městech, kde stojí vaše budovy." },
       { titulek: "Pro celý tým komunikace",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
@@ -88,7 +89,7 @@ window.SEGMENTY = {
     duvody: [
       { titulek: "Všech 72 Deníků",
         text: "Zpravodajství z každého okresu v republice, v jednom přístupu." },
-      { titulek: "I Brno, kde sídlíte",
+      { titulek: "I tam, kde sídlíte",
         text: "Doprava, stavby a dění ve městě, kde vaši lidé pracují." },
       { titulek: "Pro celé oddělení",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
@@ -97,31 +98,11 @@ window.SEGMENTY = {
             + "Předplatné na rok." }
     ],
     faqNavic: []
-  },
-
-  firmy: {
-    stitek: "Firemní předplatné",
-    h1: "Když informace patří k práci",
-    perex: "Přehled o dění v Brně pro váš tým na jednom místě.",
-    ctaSlovo: "pro náš tým",
-    vychoziPocet: 10,
-    temata: ["investice", "vystavba", "zamestnanost", "doprava"],
-    duvody: [
-      { titulek: "Investice, výstavba, zaměstnanost",
-        text: "Co se staví, kdo nabírá a co se chystá v okolí vašeho areálu." },
-      { titulek: "Pro celý tým",
-        text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
-      { titulek: "Dáte to do nákladů",
-        text: "65 Kč na člověka a měsíc od deseti přístupů. Jedna faktura na rok." },
-      { titulek: "Kartou i na fakturu",
-        text: "Objednáte online. Zaplatíte kartou, nebo převodem na fakturu." }
-    ]
   }
 };
 
 // Řádek do panelu kalkulačky. Nahrazuje bývalý blok „Co je v předplatném".
-window.VCENE = "V ceně: celý Brněnský deník a dalších 71 Deníků, bez reklam, "
-             + "každý přístup na jméno.";
+window.VCENE = "V ceně: všech 72 Deníků, bez reklam, každý přístup na jméno.";
 
 // FAQ přebrané z predplatne.denik.cz (28 otázek, stav 2. 9. 2026). Pro firemního zákazníka
 // je relevantní jen část, ostatní řeší doručování tištěných novin a věrnostní body.

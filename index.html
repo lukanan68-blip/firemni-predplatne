@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Firemní předplatné Brněnského deníku</title>
-<meta name="description" content="Přehled o dění v Brně pro celý váš tým. Bez reklam, každý pod svým jménem. Od 57 Kč na člověka a měsíc.">
+<title>Firemní předplatné Deníku</title>
+<meta name="description" content="Přehled o dění po celé republice pro celý váš tým. Bez reklam, každý pod svým jménem. Od 57 Kč na osobu a měsíc.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/tokens.css">
 <style>
@@ -115,10 +115,12 @@
     <div class="brow">
       <div class="brow-bar">
         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="url">brnensky.denik.cz</span>
+        <span class="url">denik.cz</span>
       </div>
+      <!-- ⚠ TODO: snímek pořád ukazuje titulku Brněnského deníku (regionální mutace).
+           Až budeme mít celostátní verzi, nahradit screenshotem denik.cz. -->
       <img src="assets/brnensky-denik-hero.png" width="1002" height="770"
-           alt="Titulní strana Brněnského deníku s hlavním článkem o novém parkovacím domě">
+           alt="Titulní strana Deníku s hlavním zpravodajským článkem">
     </div>
   </div>
 </section>
@@ -136,7 +138,7 @@
 <section>
   <div class="wrap">
     <h2 class="sec">Co si přečtete</h2>
-    <p class="lead">Titulky z Brněnského deníku, jak vyšly dnes.</p>
+    <p class="lead">Titulky z celé sítě Deníku, jak vyšly dnes — celostátní i regionální.</p>
     <div class="tem" id="temata"></div>
   </div>
 </section>
@@ -252,7 +254,7 @@
           <a href="mailto:denik@mojepredplatne.cz">denik@mojepredplatne.cz</a>
         </div>
         <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:16px 0 0;padding-top:14px;border-top:1px solid var(--border-default)">
-          <span class="todo">Kontakt na obchodníka pro Brno zatím doplňujeme, uvedené spojení je centrální.</span></p>
+          <span class="todo">Kontakt na obchodníka zatím doplňujeme, uvedené spojení je centrální.</span></p>
       </div>
     </div>
   </div>
@@ -299,13 +301,13 @@
   </div>
 </footer>
 
-<script src="data/brno.js"></script>
+<script src="data/region.js"></script>
 <script src="data/segmenty.js"></script>
 <script>
 (function(){
   var R=window.REGION, C=window.CENIK, T=window.TEMATA, S=window.SEGMENTY, F=window.FAQ;
   var IKONY={doprava:'🚊',skolstvi:'🎓',investice:'📈',vystavba:'🏗',bezpecnost:'🛡',verejne:'🏛',zamestnanost:'👥'};
-  var NAZVY={zaklad:'základ','verejna-sprava':'úřady','vysoke-skoly':'vysoké školy',instituce:'instituce',firmy:'firmy'};
+  var NAZVY={firmy:'firmy','verejna-sprava':'úřady','vysoke-skoly':'vysoké školy',instituce:'instituce'};
   function todo(t){return String(t).replace(/<([^>]+)>/g,'<span class="todo">$1</span>');}
   function cislo(n){return n.toLocaleString('cs-CZ');}
 
@@ -323,20 +325,22 @@
 
   function vykresli(k){
     var s=S[k];
-    document.getElementById('podpis').textContent = (k==='instituce'?R.podpisCelostatni:R.podpis);
+    document.getElementById('podpis').textContent = R.podpis;
     var h1=document.getElementById('h1');
     h1.textContent=s.h1;
     h1.style.fontSize = s.h1.length>44 ? '38px' : '44px';
     document.getElementById('perex').textContent=s.perex;
     document.getElementById('cta').textContent='Spočítat cenu '+s.ctaSlovo;
     var min=C[C.length-1].mesic, max=C[0].mesic;
-    document.getElementById('cenaRozsah').textContent=min+' až '+max+' Kč měsíčně na člověka podle počtu přístupů. Fakturace na rok.';
+    document.getElementById('cenaRozsah').textContent=min+' až '+max+' Kč měsíčně na osobu podle počtu přístupů. Fakturace na rok.';
     document.getElementById('temata').style.gridTemplateColumns=
       'repeat(auto-fit,minmax('+(s.temata.length>4?'180px':'220px')+',1fr))';
     document.getElementById('temata').innerHTML=s.temata.map(function(t){
       var x=T[t];
       return '<div><div class="ic">'+(IKONY[t]||'')+'</div><div class="lab">'+x.nazev+'</div>'
-           + '<div class="tit">'+todo(x.titulek)+'</div></div>';
+           + '<div class="tit">'+todo(x.titulek)+'</div>'
+           + (x.region?'<div style="font:400 12px/1.4 var(--font-sans);color:var(--grey-500);margin-top:6px">'+x.region+'</div>':'')
+           + '</div>';
     }).join('');
     document.getElementById('duvody').innerHTML=s.duvody.map(function(d){
       return '<div class="card"><h3>'+d.titulek+'</h3><p>'+d.text+'</p></div>';
@@ -353,7 +357,7 @@
     .filter(function(v,i,a){return a.indexOf(v)===i;}).join(' · ');
   document.getElementById('vcene').textContent=window.VCENE;
   document.getElementById('k-jmeno').innerHTML=todo(R.kontakt.jmeno);
-  document.getElementById('k-funkce').textContent='Firemní předplatné, Brno a Jihomoravský kraj';
+  document.getElementById('k-funkce').textContent='Firemní předplatné, celá ČR';
 
   document.getElementById('cenik').innerHTML=C.map(function(r,i){
     var roz = r.od===r.do ? r.od : (r.do>=999 ? r.od+' a víc' : r.od+'–'+r.do);
