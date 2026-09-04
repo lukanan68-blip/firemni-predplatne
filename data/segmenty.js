@@ -24,10 +24,11 @@ window.SEGMENTY = {
     perex: "Přehled o dění po celé republice pro váš tým na jednom místě.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
-    temata: ["investice", "vystavba", "zamestnanost", "doprava"],
+    temata: ["investice", "vystavba", "bezpecnost", "doprava"],
     duvody: [
-      { titulek: "Zaměstnanecký benefit",
-        text: "Čtení je součástí balíčku benefitů, ne dalším pracovním nástrojem navíc." },
+      { titulek: "Informace, které pomáhají rozhodovat",
+        text: "Co se staví, kdo nabírá a co se chystá kolem vašich provozů – dřív, "
+            + "než to zjistíte od někoho jiného." },
       { titulek: "Pro celý tým",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Dáte to do nákladů",

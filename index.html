@@ -103,8 +103,8 @@
 <section class="zebra" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap hero" style="padding:48px 24px 52px">
     <div>
-      <div style="font:700 15px/1.35 var(--font-sans);color:var(--inky)">Firemní předplatné</div>
-      <div id="podpis" style="font:700 15px/1.35 var(--font-sans);color:var(--blue-700);margin-bottom:20px"></div>
+      <img src="assets/denik-logo.png" alt="Deník.cz" height="28" style="display:block;margin-bottom:16px">
+      <div style="font:700 15px/1.35 var(--font-sans);color:var(--inky);margin-bottom:20px">Firemní předplatné</div>
       <h1 id="h1" style="font-family:var(--font-sans);font-weight:800;line-height:1.13;letter-spacing:-.015em;color:var(--inky);margin:0;max-width:18ch;text-wrap:pretty"></h1>
       <div style="width:88px;height:3px;background:var(--blue-700);margin:22px 0"></div>
       <p id="perex" style="font:400 19px/1.55 var(--font-sans);color:var(--grey-700);margin:0 0 26px;max-width:46ch;text-wrap:pretty"></p>
@@ -271,8 +271,9 @@
 <footer>
   <div class="cols">
     <div>
-      <div style="font:700 12px/1 var(--font-sans);letter-spacing:.26em;color:#fff">BRNĚNSKÝ</div>
-      <div style="font:800 24px/1.05 var(--font-sans);color:#fff;margin-top:4px">deník.cz</div>
+      <!-- Průhledné PNG, proto jde obarvit na bílo přímo filtrem -- sedí na tmavé patičce. -->
+      <img src="assets/denik-logo.png" alt="Deník.cz" height="26"
+           style="display:block;filter:brightness(0) invert(1)">
       <p style="font:400 14px/1.6 var(--font-sans);color:#9fb0b8;margin:18px 0 0">VLTAVA LABE MEDIA a.s.<br>U Trezorky 921/2, 158 00 Praha 5<br>IČO 01440578 · DIČ CZ01440578</p>
     </div>
     <div>
@@ -325,7 +326,6 @@
 
   function vykresli(k){
     var s=S[k];
-    document.getElementById('podpis').textContent = R.podpis;
     var h1=document.getElementById('h1');
     h1.textContent=s.h1;
     h1.style.fontSize = s.h1.length>44 ? '38px' : '44px';

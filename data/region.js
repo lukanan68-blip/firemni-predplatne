@@ -4,9 +4,6 @@
 // ⚠ Hodnoty v ostrých závorkách <…> zatím nemáme potvrzené. Do produkce nesmí.
 
 window.REGION = {
-  // Jak se produkt jmenuje. Bannery ho podepisují dvouřádkově, stránka to musí dodržet.
-  podpis: "Deníku",
-
   // Ověřeno proti seznamu na denik.cz/o-deniku (2. 9. 2026).
   pocetMutaci: 72,
 
@@ -18,9 +15,7 @@ window.REGION = {
   // z denik.cz/o-deniku („jako jediný má novináře v každém okrese v zemi").
   cislaNadpis: "Redaktor v každém okrese. Jako jediný v Česku.",
   cisla: [
-    // ČR má 76 okresů, Praha mezi ně formálně nepatří a dělí se na 10 obvodů —
-    // proto "76 okresů a Praha". Ověřeno: ČSÚ / cs.wikipedia.org/wiki/Okresy_v_Česku.
-    { hodnota: "76",       popis: "okresů a Praha navrch – celostátní i regionální dění pod jednou střechou", zdroj: "ČSÚ" },
+    { hodnota: "Regiony + celá ČR", popis: "Krajské i celostátní zpravodajství Deník.cz na jednom místě, ať firma sídlí kdekoli.", zdroj: "denik.cz/o-deniku" },
     { hodnota: "72",       popis: "regionálních Deníků po celé republice", zdroj: "denik.cz/o-deniku" },
     // ⚠ interně: číslo je od Petra, není to měření NetMonitoru. Na stránce se uvádí
     //    jako interní data Deníku. Před ostrým spuštěním nechat potvrdit.
@@ -62,7 +57,7 @@ window.CENIK = [
 // z celostátního feedu Deník.cz (vytaženo 4. 9. 2026) ukazuje, že přístup dává obojí najednou.
 // ⚠ Jde o ukázku z jednoho dne, do produkce vybírat titulky živě z feedu.
 window.TEMATA = {
-  doprava:      { nazev: "Doprava",       titulek: "Tramvajový tunel na Kamechy: 3700 kubíků betonu, na konci roku položí koleje", region: "Brněnský deník" },
+  doprava:      { nazev: "Doprava",       titulek: "Češi loni v cizině spáchali skoro 500 tisíc přestupků. Nejčastěji šlo o rychlost", region: "celostátní" },
   skolstvi:     { nazev: "Školství",      titulek: "Skrytou oční vadu může pomoci odhalit školní lavice", region: "Brněnský deník" },
   investice:    { nazev: "Investice",     titulek: "Zbrojovka nemá problém se 49 miliony za Lužánky. Koncese se možná bude rušit", region: "Brněnský deník" },
   vystavba:     { nazev: "Výstavba",      titulek: "Demolice vyhořelé budovy ve Zlíně bude pokračovat. Zachránit nelze ani její část", region: "Zlínský deník" },
