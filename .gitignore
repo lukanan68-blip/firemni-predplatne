@@ -1,0 +1,14 @@
+# Pracovní dokumenty – nepatří do webového repa
+*.docx
+*.pdf
+~$*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Závislosti (kdyby později přibyly)
+node_modules/

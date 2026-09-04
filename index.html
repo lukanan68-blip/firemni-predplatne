@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firemní předplatné Brněnského deníku</title>
+<meta name="description" content="Přehled o dění v Brně pro celý váš tým. Bez reklam, každý pod svým jménem. Od 57 Kč na člověka a měsíc.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/tokens.css">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9edef;font-family:var(--font-sans);color:var(--text-body)}
+  a{color:var(--text-link)} a:hover{color:var(--color-action-hover)}
+  input,textarea,button,select{font-family:inherit}
+  :focus-visible{outline:3px solid var(--accent-500);outline-offset:2px}
+  details>summary{list-style:none} details>summary::-webkit-details-marker{display:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:52px 24px}
+  section{background:var(--surface)}
+  h2.sec{font:800 30px/1.2 var(--font-sans);color:var(--inky);margin:0 0 8px}
+  p.lead{font:400 17px/1.55 var(--font-sans);color:var(--grey-600);margin:0 0 32px;max-width:52ch}
+  /* náhledová lišta, není součástí stránky */
+  .prev{position:sticky;top:0;z-index:60;background:var(--grey-900);color:#cfd8dc;padding:8px 16px;
+    display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px}
+  .prev strong{letter-spacing:.08em;font-size:11px;color:#8fa3ad}
+  .prev button{background:#3a464b;color:#dbe4e7;border:none;border-radius:var(--radius-pill);
+    padding:5px 12px;font:600 13px/1.3 var(--font-sans);cursor:pointer}
+  .prev button[aria-pressed=true]{background:#fff;color:var(--grey-900)}
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center}
+  .zebra{background:var(--surface);background-image:repeating-linear-gradient(115deg,rgba(0,108,185,.045) 0 2px,rgba(0,0,0,0) 2px 26px)}
+  .brow{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 12px 34px rgba(28,30,31,.16);background:var(--surface)}
+  .brow-bar{background:var(--grey-100);padding:9px 12px;display:flex;align-items:center;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--grey-300)}
+  .url{flex:1;background:var(--surface);border-radius:var(--radius-pill);font:400 11px/20px var(--font-sans);
+    color:var(--grey-500);padding:0 10px;margin-left:6px}
+  .brow img{display:block;width:100%;height:auto}
+  .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px 24px}
+  .nums .v{font:800 32px/1 var(--font-sans);color:var(--blue-700)}
+  .nums .p{font:400 14px/1.4 var(--font-sans);color:var(--grey-600);margin-top:6px}
+  .tem{display:grid;gap:28px 24px}
+  .tem .ic{width:46px;height:46px;border-radius:50%;background:var(--blue-700);display:flex;
+    align-items:center;justify-content:center;color:#fff;margin-bottom:14px;font:700 18px/1 var(--font-sans)}
+  .tem .lab{font:800 11px/1 var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--blue-700);margin-bottom:8px}
+  .tem .tit{font:700 16px/1.35 var(--font-sans);color:var(--inky)}
+  .duv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;align-items:stretch}
+  .duv .card{background:var(--surface);border-radius:var(--radius-lg);padding:22px 20px 24px;
+    box-shadow:inset 0 0 0 1px var(--border-subtle);display:flex;flex-direction:column;gap:8px}
+  .duv h3{font:800 17px/1.3 var(--font-sans);color:var(--inky);margin:0}
+  .duv p{font:400 15px/1.55 var(--font-sans);color:var(--grey-600);margin:0}
+  .kalk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;align-items:start}
+  .panel{background:var(--blue-50);border-radius:var(--radius-xl);padding:26px 24px 24px;box-shadow:inset 0 0 0 1px var(--blue-100)}
+  .step{width:48px;height:48px;border-radius:var(--radius-md);border:none;background:var(--surface);
+    box-shadow:var(--ring-action);color:var(--color-action);font:700 22px/1 var(--font-sans);cursor:pointer}
+  #pocet{width:108px;height:48px;text-align:center;border:none;border-radius:var(--radius-md);
+    background:var(--surface);box-shadow:var(--ring-default);font:700 22px/1 var(--font-sans);color:var(--inky)}
+  table{border-collapse:collapse;width:100%;margin-top:14px}
+  th,td{padding:11px 12px;border-bottom:1px solid var(--border-subtle);font:400 15px/1.4 var(--font-sans)}
+  thead th{font:700 14px/1.3 var(--font-sans);color:var(--grey-700);background:var(--surface-subtle);
+    border-bottom:2px solid var(--border-default)}
+  tbody th{text-align:left;color:var(--inky)}
+  td{text-align:right;color:var(--grey-600)}
+  tr.akt th,tr.akt td{background:var(--blue-50);font-weight:700;color:var(--inky)}
+  ol.kroky{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px}
+  ol.kroky .n{width:34px;height:34px;border-radius:50%;background:var(--blue-700);color:#fff;
+    font:800 16px/34px var(--font-sans);text-align:center;margin-bottom:12px}
+  ol.kroky h3{font:800 17px/1.3 var(--font-sans);color:var(--inky);margin:0 0 6px}
+  ol.kroky p{font:400 15px/1.55 var(--font-sans);color:var(--grey-600);margin:0}
+  .obj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
+  form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+  form label{display:block;font:600 14px/1.4 var(--font-sans);color:var(--grey-700);margin-bottom:6px}
+  form input,form textarea{width:100%;padding:0 14px;border:none;border-radius:var(--radius-md);
+    background:var(--surface);box-shadow:var(--ring-default);font:400 16px/1.4 var(--font-sans);color:var(--inky)}
+  form input{height:48px} form textarea{padding:12px 14px;line-height:1.5;resize:vertical}
+  form input[aria-invalid=true]{box-shadow:inset 0 0 0 2px var(--error-500)}
+  .err{font:600 14px/1.4 var(--font-sans);color:var(--error-600);margin:6px 0 0}
+  .full{grid-column:1/-1}
+  .obchod{background:var(--surface-subtle);border-radius:var(--radius-xl);padding:26px 24px;text-align:center}
+  .obchod .foto{width:96px;height:96px;border-radius:50%;background:var(--grey-100);margin:0 auto 14px;
+    display:flex;align-items:center;justify-content:center;font:400 11px/1 var(--font-sans);letter-spacing:.06em;color:var(--grey-400)}
+  details.faq{border-bottom:1px solid var(--border-default);background:var(--surface);padding:0 18px;margin-bottom:2px}
+  details.faq summary{display:flex;gap:12px;align-items:baseline;justify-content:space-between;cursor:pointer;
+    font:700 16px/1.45 var(--font-sans);color:var(--inky);padding:16px 0;min-height:44px}
+  details.faq summary span{color:var(--color-action);font:700 18px/1 var(--font-sans);flex:none}
+  details.faq p{font:400 16px/1.6 var(--font-sans);color:var(--grey-700);margin:0;padding:0 0 18px;max-width:62ch}
+  .todo{background:var(--error-100);color:var(--error-600);border-radius:3px;padding:0 5px}
+  footer{background:var(--surface-dark);color:#cfd8dc}
+  footer .cols{max-width:1200px;margin:0 auto;padding:40px 24px 44px;display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 40px}
+  footer a{color:#e3eaed;text-decoration:none}
+  footer .h{font:800 11px/1 var(--font-sans);letter-spacing:.12em;color:#7e929b;margin-bottom:14px}
+  @media(max-width:700px){.wrap{padding:36px 18px}h2.sec{font-size:24px}}
+</style>
+</head>
+<body>
+
+<div class="prev">
+  <strong>NÁHLED · NENÍ SOUČÁSTÍ STRÁNKY</strong>
+  <span style="width:1px;height:18px;background:#4a5a61"></span>
+  <span style="color:#8fa3ad">segment:</span>
+  <span id="prep" style="display:flex;gap:8px;flex-wrap:wrap"></span>
+</div>
+
+<!-- 1 Hero -->
+<section class="zebra" style="border-top:1px solid var(--border-subtle)">
+  <div class="wrap hero" style="padding:48px 24px 52px">
+    <div>
+      <div style="font:700 15px/1.35 var(--font-sans);color:var(--inky)">Firemní předplatné</div>
+      <div id="podpis" style="font:700 15px/1.35 var(--font-sans);color:var(--blue-700);margin-bottom:20px"></div>
+      <h1 id="h1" style="font-family:var(--font-sans);font-weight:800;line-height:1.13;letter-spacing:-.015em;color:var(--inky);margin:0;max-width:18ch;text-wrap:pretty"></h1>
+      <div style="width:88px;height:3px;background:var(--blue-700);margin:22px 0"></div>
+      <p id="perex" style="font:400 19px/1.55 var(--font-sans);color:var(--grey-700);margin:0 0 26px;max-width:46ch;text-wrap:pretty"></p>
+      <a class="btn" href="#kalkulacka" id="cta"></a>
+      <p id="cenaRozsah" style="font:400 15px/1.5 var(--font-sans);color:var(--grey-500);margin:14px 0 0"></p>
+      <p style="font:400 15px/1.5 var(--font-sans);color:var(--grey-600);margin:6px 0 0">Radši osobně? Zavolejte <a href="tel:+420272015015" style="font-weight:600">+420 272 015 015</a>.</p>
+    </div>
+    <div class="brow">
+      <div class="brow-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="url">brnensky.denik.cz</span>
+      </div>
+      <img src="assets/brnensky-denik-hero.png" width="1002" height="770"
+           alt="Titulní strana Brněnského deníku s hlavním článkem o novém parkovacím domě">
+    </div>
+  </div>
+</section>
+
+<!-- 2 Regionální síť -->
+<section style="background:var(--surface-subtle);border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)">
+  <div class="wrap" style="padding:28px 24px 24px">
+    <h2 id="cislaNadpis" style="font:800 22px/1.25 var(--font-sans);color:var(--inky);margin:0 0 18px"></h2>
+    <div class="nums" id="cisla"></div>
+    <p id="zdroje" style="font:400 14px/1.5 var(--font-sans);color:var(--grey-500);margin:18px 0 0;border-top:1px solid var(--border-default);padding-top:12px"></p>
+  </div>
+</section>
+
+<!-- 3 Co si přečtete -->
+<section>
+  <div class="wrap">
+    <h2 class="sec">Co si přečtete</h2>
+    <p class="lead">Titulky z Brněnského deníku, jak vyšly dnes.</p>
+    <div class="tem" id="temata"></div>
+  </div>
+</section>
+
+<!-- 4 Důvody -->
+<section style="background:var(--surface-subtle);border-top:1px solid var(--border-subtle)">
+  <div class="wrap">
+    <h2 class="sec" style="margin-bottom:32px">Proč se to vyplatí</h2>
+    <div class="duv" id="duvody"></div>
+  </div>
+</section>
+
+<!-- 5 Kalkulačka -->
+<section id="kalkulacka" style="border-top:1px solid var(--border-subtle)">
+  <div class="wrap">
+    <h2 class="sec">Kolik to bude</h2>
+    <p class="lead">Cena je stejná pro všechny. Spočítáte si ji sami a rovnou objednáte.</p>
+    <div class="kalk">
+      <div class="panel">
+        <label for="pocet" style="display:block;font:600 15px/1.4 var(--font-sans);color:var(--grey-700);margin-bottom:10px">Kolik lidí bude číst?</label>
+        <div style="display:flex;align-items:center;gap:10px">
+          <button type="button" class="step" id="dec" aria-label="O jeden přístup méně">−</button>
+          <input id="pocet" type="number" min="1" max="999" value="5">
+          <button type="button" class="step" id="inc" aria-label="O jeden přístup více">+</button>
+        </div>
+        <div style="margin:22px 0 20px;padding:18px 0 0;border-top:1px solid var(--blue-100)">
+          <div style="display:flex;align-items:baseline;gap:8px">
+            <span id="mesicni" style="font:800 40px/1 var(--font-sans);color:var(--blue-700)"></span>
+            <span style="font:400 15px/1.4 var(--font-sans);color:var(--grey-600)">měsíčně na člověka</span>
+          </div>
+          <div id="rocni" style="font:400 15px/1.7 var(--font-sans);color:var(--grey-700);margin-top:10px"></div>
+        </div>
+        <a class="btn" href="#">Objednat</a>
+        <p style="font:400 15px/1.4 var(--font-sans);color:var(--grey-700);margin:14px 0 0">Zaplatíte kartou, nebo převodem na fakturu.</p>
+        <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:10px 0 0">Objednávkou souhlasíte s <a href="#">obchodními podmínkami</a>.</p>
+        <p id="vcene" style="font:400 14px/1.55 var(--font-sans);color:var(--grey-700);margin:16px 0 0;padding-top:14px;border-top:1px solid var(--blue-100)"></p>
+      </div>
+      <div>
+        <details open>
+          <summary style="font:600 16px/1.4 var(--font-sans);color:var(--color-action);cursor:pointer;padding:14px 0;border-bottom:1px solid var(--border-default)">Celý ceník ▾</summary>
+          <table>
+            <caption style="text-align:left;font:400 14px/1.5 var(--font-sans);color:var(--grey-500);padding-bottom:10px">Cena za jednu licenci podle počtu přístupů</caption>
+            <thead><tr>
+              <th scope="col" style="text-align:left">Licencí</th>
+              <th scope="col" style="text-align:right">Kč / měsíc na člověka</th>
+              <th scope="col" style="text-align:right">Kč / rok bez DPH</th>
+              <th scope="col" style="text-align:right">s DPH</th>
+            </tr></thead>
+            <tbody id="cenik"></tbody>
+          </table>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 Jak to funguje -->
+<section style="background:var(--surface-subtle);border-top:1px solid var(--border-subtle)">
+  <div class="wrap">
+    <h2 class="sec" style="margin-bottom:32px">Jak to funguje</h2>
+    <ol class="kroky">
+      <li><div class="n">1</div><h3>Vyberete počet přístupů</h3><p>Cenu vidíte hned, sleva se počítá sama.</p></li>
+      <li><div class="n">2</div><h3>Vyplníte fakturační údaje</h3><p>Název organizace, IČO, adresa.</p></li>
+      <li><div class="n">3</div><h3>Zaplatíte</h3><p>Kartou, nebo převodem na fakturu.</p></li>
+      <li><div class="n">4</div><h3>Rozdělíte přístupy</h3><p>Správce pozve kolegy e-mailem a licence spravuje v přehledu.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 7 Máte otázku -->
+<section id="dotaz" style="border-top:1px solid var(--border-subtle)">
+  <div class="wrap">
+    <div class="obj">
+      <div>
+        <h2 class="sec">Máte otázku, než objednáte?</h2>
+        <p class="lead" style="max-width:48ch">Napište nám, nebo zavolejte. Objednat můžete rovnou nahoře, tohle je pro případ, že si chcete něco ujasnit.</p>
+        <div id="odeslano" role="status" hidden style="background:var(--success-100);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:inset 0 0 0 1px var(--success-400)">
+          <div style="font:800 18px/1.3 var(--font-sans);color:var(--success-700);margin-bottom:6px">Zpráva odešla</div>
+          <p style="font:400 15px/1.6 var(--font-sans);color:var(--grey-700);margin:0">Ozveme se do jednoho pracovního dne.</p>
+        </div>
+        <form id="form" novalidate>
+          <div class="full">
+            <label for="f-org">Organizace</label>
+            <input id="f-org" name="org" type="text">
+            <p class="err" id="e-org" hidden>Doplňte název organizace, ať víme, kdo se ptá.</p>
+          </div>
+          <div><label for="f-jmeno">Jméno a příjmení</label><input id="f-jmeno" name="jmeno" type="text"></div>
+          <div>
+            <label for="f-mail">E-mail</label>
+            <input id="f-mail" name="email" type="email">
+            <p class="err" id="e-mail" hidden>Zkontrolujte e-mail, chybí v něm zavináč nebo domény.</p>
+          </div>
+          <div><label for="f-tel">Telefon <span style="font-weight:400;color:var(--grey-500)">(nepovinný)</span></label><input id="f-tel" name="telefon" type="tel"></div>
+          <div>
+            <label for="f-pocet">Kolik přístupů zvažujete <span style="font-weight:400;color:var(--grey-500)">(nepovinné)</span></label>
+            <input id="f-pocet" name="pocet" type="number" min="1" max="999">
+            <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:6px 0 0">Předplněno z kalkulačky.</p>
+          </div>
+          <div class="full"><label for="f-pozn">Na co se chcete zeptat</label><textarea id="f-pozn" name="poznamka" rows="3"></textarea></div>
+          <div class="full" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px">
+            <button class="btn" type="submit">Poslat</button>
+            <p style="font:400 14px/1.5 var(--font-sans);color:var(--grey-600);margin:0;max-width:44ch">
+              <span class="todo">Ozveme se do jednoho pracovního dne.</span> Údaje použijeme jen k odpovědi, viz <a href="#">zásady zpracování osobních údajů</a>.</p>
+          </div>
+        </form>
+      </div>
+      <div class="obchod">
+        <div class="foto">FOTO</div>
+        <div id="k-jmeno" style="font:800 19px/1.3 var(--font-sans);color:var(--inky)"></div>
+        <div id="k-funkce" style="font:400 15px/1.4 var(--font-sans);color:var(--grey-500);margin-top:4px"></div>
+        <div style="margin-top:16px;display:grid;gap:6px;font:400 16px/1.5 var(--font-sans)">
+          <a href="tel:+420272015015" style="font-weight:600">+420 272 015 015</a>
+          <a href="mailto:denik@mojepredplatne.cz">denik@mojepredplatne.cz</a>
+        </div>
+        <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:16px 0 0;padding-top:14px;border-top:1px solid var(--border-default)">
+          <span class="todo">Kontakt na obchodníka pro Brno zatím doplňujeme, uvedené spojení je centrální.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 Časté dotazy -->
+<section style="background:var(--surface-subtle);border-top:1px solid var(--border-subtle)">
+  <div class="wrap" style="max-width:760px">
+    <h2 class="sec" style="margin-bottom:28px">Časté dotazy</h2>
+    <div id="faq"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="cols">
+    <div>
+      <div style="font:700 12px/1 var(--font-sans);letter-spacing:.26em;color:#fff">BRNĚNSKÝ</div>
+      <div style="font:800 24px/1.05 var(--font-sans);color:#fff;margin-top:4px">deník.cz</div>
+      <p style="font:400 14px/1.6 var(--font-sans);color:#9fb0b8;margin:18px 0 0">VLTAVA LABE MEDIA a.s.<br>U Trezorky 921/2, 158 00 Praha 5<br>IČO 01440578 · DIČ CZ01440578</p>
+    </div>
+    <div>
+      <div class="h">PŘEDPLATNÉ</div>
+      <div style="display:grid;gap:10px;font:400 15px/1.4 var(--font-sans)">
+        <a href="#kalkulacka">Spočítat cenu</a>
+        <a href="#dotaz">Máte otázku?</a>
+        <a href="#">Správa licencí</a>
+      </div>
+    </div>
+    <div>
+      <div class="h">DOKUMENTY</div>
+      <div style="display:grid;gap:10px;font:400 15px/1.4 var(--font-sans)">
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Zásady zpracování osobních údajů</a>
+        <a href="#">Nastavení cookies</a>
+      </div>
+    </div>
+    <div>
+      <div class="h">KONTAKT</div>
+      <div style="display:grid;gap:10px;font:400 15px/1.4 var(--font-sans)">
+        <a href="tel:+420272015015">+420 272 015 015</a>
+        <a href="mailto:denik@mojepredplatne.cz">denik@mojepredplatne.cz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data/brno.js"></script>
+<script src="data/segmenty.js"></script>
+<script>
+(function(){
+  var R=window.REGION, C=window.CENIK, T=window.TEMATA, S=window.SEGMENTY, F=window.FAQ;
+  var IKONY={doprava:'🚊',skolstvi:'🎓',investice:'📈',vystavba:'🏗',bezpecnost:'🛡',verejne:'🏛',zamestnanost:'👥'};
+  var NAZVY={zaklad:'základ','verejna-sprava':'úřady','vysoke-skoly':'vysoké školy',instituce:'instituce',firmy:'firmy'};
+  function todo(t){return String(t).replace(/<([^>]+)>/g,'<span class="todo">$1</span>');}
+  function cislo(n){return n.toLocaleString('cs-CZ');}
+
+  var klice=Object.keys(S), prep=document.getElementById('prep');
+  klice.forEach(function(k,i){
+    var b=document.createElement('button');
+    b.textContent=NAZVY[k]||k; b.setAttribute('aria-pressed',i===0?'true':'false');
+    b.onclick=function(){
+      prep.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true'); vykresli(k);
+      history.replaceState(null,'','?segment='+k);
+    };
+    prep.appendChild(b);
+  });
+
+  function vykresli(k){
+    var s=S[k];
+    document.getElementById('podpis').textContent = (k==='instituce'?R.podpisCelostatni:R.podpis);
+    var h1=document.getElementById('h1');
+    h1.textContent=s.h1;
+    h1.style.fontSize = s.h1.length>44 ? '38px' : '44px';
+    document.getElementById('perex').textContent=s.perex;
+    document.getElementById('cta').textContent='Spočítat cenu '+s.ctaSlovo;
+    var min=C[C.length-1].mesic, max=C[0].mesic;
+    document.getElementById('cenaRozsah').textContent=min+' až '+max+' Kč měsíčně na člověka podle počtu přístupů. Fakturace na rok.';
+    document.getElementById('temata').style.gridTemplateColumns=
+      'repeat(auto-fit,minmax('+(s.temata.length>4?'180px':'220px')+',1fr))';
+    document.getElementById('temata').innerHTML=s.temata.map(function(t){
+      var x=T[t];
+      return '<div><div class="ic">'+(IKONY[t]||'')+'</div><div class="lab">'+x.nazev+'</div>'
+           + '<div class="tit">'+todo(x.titulek)+'</div></div>';
+    }).join('');
+    document.getElementById('duvody').innerHTML=s.duvody.map(function(d){
+      return '<div class="card"><h3>'+d.titulek+'</h3><p>'+d.text+'</p></div>';
+    }).join('');
+    document.getElementById('pocet').value=s.vychoziPocet;
+    prepocti();
+  }
+
+  document.getElementById('cislaNadpis').textContent=R.cislaNadpis;
+  document.getElementById('cisla').innerHTML=R.cisla.map(function(c){
+    return '<div><div class="v">'+todo(c.hodnota)+'</div><div class="p">'+c.popis+'</div></div>';
+  }).join('');
+  document.getElementById('zdroje').textContent='Zdroje: '+R.cisla.map(function(c){return c.zdroj;})
+    .filter(function(v,i,a){return a.indexOf(v)===i;}).join(' · ');
+  document.getElementById('vcene').textContent=window.VCENE;
+  document.getElementById('k-jmeno').innerHTML=todo(R.kontakt.jmeno);
+  document.getElementById('k-funkce').textContent='Firemní předplatné, Brno a Jihomoravský kraj';
+
+  document.getElementById('cenik').innerHTML=C.map(function(r,i){
+    var roz = r.od===r.do ? r.od : (r.do>=999 ? r.od+' a víc' : r.od+'–'+r.do);
+    return '<tr data-i="'+i+'"><th scope="row">'+roz+'</th><td>'+r.mesic+'</td><td>'
+         + cislo(r.rok)+'</td><td>'+cislo(r.rokDph)+'</td></tr>';
+  }).join('');
+
+  function prepocti(){
+    var el=document.getElementById('pocet');
+    var n=Math.max(1,Math.min(999,parseInt(el.value||'1',10)));
+    var p=C.filter(function(r){return n>=r.od&&n<=r.do;})[0]||C[C.length-1];
+    document.getElementById('mesicni').textContent=p.mesic+' Kč';
+    var slovo = n===1?'jeden přístup':(n<5?n+' přístupy':n+' přístupů');
+    document.getElementById('rocni').innerHTML=
+      cislo(p.rok*n)+' Kč za rok bez DPH<br><strong style="font-weight:700">'
+      + cislo(p.rokDph*n)+' Kč s DPH</strong> za '+slovo;
+    document.querySelectorAll('#cenik tr').forEach(function(tr){tr.classList.remove('akt');});
+    var a=document.querySelector('#cenik tr[data-i="'+C.indexOf(p)+'"]');
+    if(a) a.classList.add('akt');
+    document.getElementById('f-pocet').value=n;
+  }
+  document.getElementById('pocet').addEventListener('input',prepocti);
+  document.getElementById('inc').onclick=function(){var e=document.getElementById('pocet');
+    e.value=Math.min(999,(parseInt(e.value||'1',10))+1);prepocti();};
+  document.getElementById('dec').onclick=function(){var e=document.getElementById('pocet');
+    e.value=Math.max(1,(parseInt(e.value||'1',10))-1);prepocti();};
+
+  document.getElementById('faq').innerHTML=F.map(function(o){
+    var z={web:'dnes na webu Deníku',kod:'z objednávkového formuláře',petr:'potvrzeno',
+           doplnit:'odpověď zatím nemáme'}[o.zdroj]||'';
+    return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+todo(o.a)
+         + (z?'<br><span style="font-size:13px;color:var(--grey-500)">zdroj: '+z+'</span>':'')+'</p></details>';
+  }).join('');
+
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var org=document.getElementById('f-org'), mail=document.getElementById('f-mail');
+    var chybaOrg=!org.value.trim(), chybaMail=!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail.value.trim());
+    org.setAttribute('aria-invalid',chybaOrg); mail.setAttribute('aria-invalid',chybaMail);
+    document.getElementById('e-org').hidden=!chybaOrg;
+    document.getElementById('e-mail').hidden=!chybaMail;
+    if(chybaOrg||chybaMail){ (chybaOrg?org:mail).focus(); return; }
+    this.hidden=true; document.getElementById('odeslano').hidden=false;
+  });
+
+  var zParametru=new URLSearchParams(location.search).get('segment');
+  var start = (zParametru && S[zParametru]) ? zParametru : klice[0];
+  if(start!==klice[0]){
+    prep.querySelectorAll('button').forEach(function(x,i){
+      x.setAttribute('aria-pressed', klice[i]===start ? 'true':'false');});
+  }
+  vykresli(start);
+})();
+</script>
+</body>
+</html>
