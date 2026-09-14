@@ -24,7 +24,7 @@ window.SEGMENTY = {
     perex: "Přehled o dění po celé republice pro váš tým na jednom místě.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
-    temata: ["investice", "vystavba", "bezpecnost", "doprava"],
+    temata: ["investice", "vystavba", "bezpecnost", "doprava", "verejne"],
     duvody: [
       { titulek: "Informace, které pomáhají rozhodovat",
         text: "Co se staví, kdo nabírá a co se chystá kolem vašich provozů – dřív, "

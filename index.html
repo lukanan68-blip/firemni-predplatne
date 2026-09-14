@@ -37,8 +37,7 @@
   .nums .v{font:800 32px/1 var(--font-sans);color:var(--blue-700)}
   .nums .p{font:400 14px/1.4 var(--font-sans);color:var(--grey-600);margin-top:6px}
   .tem{display:grid;gap:28px 24px}
-  .tem .ic{width:46px;height:46px;border-radius:50%;background:var(--blue-700);display:flex;
-    align-items:center;justify-content:center;color:#fff;margin-bottom:14px;font:700 18px/1 var(--font-sans)}
+  .tem .ic{display:block;width:46px;height:46px;border-radius:50%;object-fit:cover;margin-bottom:14px}
   .tem .lab{font:800 11px/1 var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--blue-700);margin-bottom:8px}
   .tem .tit{font:700 16px/1.35 var(--font-sans);color:var(--inky)}
   .duv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;align-items:stretch}
@@ -139,7 +138,7 @@
 <section>
   <div class="wrap">
     <h2 class="sec">Co si přečtete</h2>
-    <p class="lead">Titulky z celé sítě Deníku, jak vyšly dnes — celostátní i regionální.</p>
+    <p class="lead">Články, které najdete na Deníku.</p>
     <div class="tem" id="temata"></div>
   </div>
 </section>
@@ -308,7 +307,9 @@
 <script>
 (function(){
   var R=window.REGION, C=window.CENIK, T=window.TEMATA, S=window.SEGMENTY, F=window.FAQ;
-  var IKONY={doprava:'🚊',skolstvi:'🎓',investice:'📈',vystavba:'🏗',bezpecnost:'🛡',verejne:'🏛',zamestnanost:'👥'};
+  var IKONY={doprava:'assets/ikony/doprava.png',skolstvi:'assets/ikony/skolstvi.png',
+    investice:'assets/ikony/investice.png',vystavba:'assets/ikony/vystavba.png',
+    bezpecnost:'assets/ikony/bezpecnost.png',verejne:'assets/ikony/verejne.png'};
   var NAZVY={firmy:'firmy','verejna-sprava':'úřady','vysoke-skoly':'vysoké školy',instituce:'instituce'};
   function todo(t){return String(t).replace(/<([^>]+)>/g,'<span class="todo">$1</span>');}
   function cislo(n){return n.toLocaleString('cs-CZ');}
@@ -338,7 +339,7 @@
       'repeat(auto-fit,minmax('+(s.temata.length>4?'180px':'220px')+',1fr))';
     document.getElementById('temata').innerHTML=s.temata.map(function(t){
       var x=T[t];
-      return '<div><div class="ic">'+(IKONY[t]||'')+'</div><div class="lab">'+x.nazev+'</div>'
+      return '<div>'+(IKONY[t]?'<img class="ic" src="'+IKONY[t]+'" alt="">':'')+'<div class="lab">'+x.nazev+'</div>'
            + '<div class="tit">'+todo(x.titulek)+'</div>'
            + (x.region?'<div style="font:400 12px/1.4 var(--font-sans);color:var(--grey-500);margin-top:6px">'+x.region+'</div>':'')
            + '</div>';
