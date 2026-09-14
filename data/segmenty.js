@@ -24,7 +24,7 @@ window.SEGMENTY = {
     perex: "Přehled o dění po celé republice pro váš tým na jednom místě.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
-    temata: ["investice", "vystavba", "bezpecnost", "doprava", "verejne"],
+    temata: ["investice", "vystavba", "bezpecnost", "doprava"],
     duvody: [
       { titulek: "Informace, které pomáhají rozhodovat",
         text: "Co se staví, kdo nabírá a co se chystá kolem vašich provozů – dřív, "
@@ -45,7 +45,7 @@ window.SEGMENTY = {
          + "vedení i vedoucí odborů.",
     ctaSlovo: "pro náš úřad",
     vychoziPocet: 3,
-    temata: ["doprava", "skolstvi", "investice", "bezpecnost", "verejne"],
+    temata: ["doprava", "skolstvi", "investice", "bezpecnost"],
     duvody: [
       { titulek: "Celá republika i váš kraj",
         text: "72 Deníků pokrývá každý okres, od velkých měst po menší obce." },
@@ -65,7 +65,7 @@ window.SEGMENTY = {
     perex: "Přehled o dění v celé republice pro tiskové oddělení, komunikaci i vedení fakult.",
     ctaSlovo: "pro naši fakultu",
     vychoziPocet: 5,
-    temata: ["skolstvi", "doprava", "vystavba", "verejne", "bezpecnost"],
+    temata: ["skolstvi", "doprava", "vystavba", "verejne"],
     duvody: [
       { titulek: "Vaše škola i celá republika",
         text: "Co se píše o škole, o vysokém školství i o městech, kde stojí vaše budovy." },
