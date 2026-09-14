@@ -1,0 +1,42 @@
+name: Denní screenshot titulky deník.cz
+
+on:
+  schedule:
+    # 05:00 UTC = 6:00/7:00 SEČ/SELČ, ať je snímek čerstvý před ranní špičkou
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalace Playwright
+        run: |
+          npm init -y
+          npm install playwright@1
+          npx playwright install --with-deps chromium
+
+      - name: Vyfotit titulní stranu denik.cz
+        run: node .github/scripts/screenshot-denik.js
+
+      - name: Commitnout, jen pokud se obrázek změnil
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/denik-hero.png
+          if git diff --cached --quiet; then
+            echo "Beze změny, commit se přeskakuje."
+          else
+            git commit -m "Automatická aktualizace titulní strany deník.cz"
+            git push
+          fi
