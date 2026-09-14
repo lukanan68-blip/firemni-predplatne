@@ -1,11 +1,19 @@
 // Vyfotí titulní stránku denik.cz pro hero sekci landing page.
 // Spouští ho .github/workflows/daily-hero-screenshot.yml jednou denně.
-// Poměr stran drží stejný jako předchozí statický obrázek (1002x770 ~ 1.30:1).
+//
+// Celá stránka denik.cz je nekonečný scroll (16 000+ px) -- to "celá titulka"
+// neznamená. Místo toho vyfotíme od vrchu až po konec bloku "Nejnovější
+// články od čtenářů" (ověřeno 14. 9. 2026: tam končí titulní blok a začíná
+// úplně jiná sekce s dalšími články). Hledáme tlačítko "Zobrazit všechny"
+// a řízneme kousek pod ním, ať to sedí den ode dne i když se obsah nad tím
+// o kus posune.
 
 const { chromium } = require("playwright");
 
 const OUT = "assets/denik-hero.png";
 const CONSENT_TEXTS = ["Souhlasím", "Přijmout", "Rozumím", "Souhlasit"];
+const VIEWPORT = { width: 1240, height: 953 };
+const FALLBACK_HEIGHT = 1900; // pro případ, že se "Zobrazit všechny" nenajde
 
 // Deník značí reklamní pozice předvídatelnými ID (ověřeno přímo na denik.cz,
 // 14. 9. 2026): leaderboard-top/bottom, skyscraper-1/2/3, wallpaper-1..4,
@@ -20,7 +28,7 @@ const HIDE_AD_SLOTS_CSS = `
 
 (async () => {
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 1240, height: 953 } });
+  const page = await browser.newPage({ viewport: VIEWPORT });
 
   await page.goto("https://www.denik.cz/", { waitUntil: "networkidle", timeout: 60000 });
 
@@ -38,7 +46,19 @@ const HIDE_AD_SLOTS_CSS = `
   await page.addStyleTag({ content: HIDE_AD_SLOTS_CSS });
   await page.waitForTimeout(500);
 
-  await page.screenshot({ path: OUT });
+  let clipHeight = FALLBACK_HEIGHT;
+  try {
+    const marker = page.getByText("Zobrazit všechny", { exact: true }).first();
+    const box = await marker.boundingBox({ timeout: 5000 });
+    if (box) clipHeight = Math.ceil(box.y + box.height + 40);
+  } catch (e) {
+    console.log("Orientační bod nenalezen, používám výchozí výšku:", e.message);
+  }
+
+  await page.screenshot({
+    path: OUT,
+    clip: { x: 0, y: 0, width: VIEWPORT.width, height: clipHeight },
+  });
   await browser.close();
-  console.log("Screenshot uložen do " + OUT);
+  console.log("Screenshot uložen do " + OUT + " (výška " + clipHeight + "px)");
 })();
