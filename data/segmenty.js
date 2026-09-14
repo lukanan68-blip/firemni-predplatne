@@ -21,7 +21,7 @@ window.SEGMENTY = {
   firmy: {
     stitek: "Firemní předplatné",
     h1: "Když informace patří k práci",
-    perex: "Přehled o dění po celé republice pro váš tým na jednom místě.",
+    perex: "Přehled o dění ve vašem regionu i v celé republice pro váš tým na jednom místě.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
     temata: ["investice", "vystavba", "bezpecnost", "doprava"],
@@ -41,8 +41,8 @@ window.SEGMENTY = {
   "verejna-sprava": {
     stitek: "Firemní předplatné",
     h1: "Informace, které pomáhají rozhodovat",
-    perex: "Přehled o dění v celé republice i ve vašem kraji. Pro tiskové oddělení, "
-         + "vedení i vedoucí odborů.",
+    perex: "Přehled o dění ve vašem regionu i v celé republice i ve vašem kraji. Pro tiskové "
+         + "oddělení, vedení i vedoucí odborů.",
     ctaSlovo: "pro náš úřad",
     vychoziPocet: 3,
     temata: ["doprava", "skolstvi", "investice", "bezpecnost"],
@@ -62,7 +62,8 @@ window.SEGMENTY = {
   "vysoke-skoly": {
     stitek: "Firemní předplatné",
     h1: "Co se píše o vaší škole i o městech, kde působíte",
-    perex: "Přehled o dění v celé republice pro tiskové oddělení, komunikaci i vedení fakult.",
+    perex: "Přehled o dění ve vašem regionu i v celé republice pro tiskové oddělení, vedení "
+         + "fakult a další kolegy.",
     ctaSlovo: "pro naši fakultu",
     vychoziPocet: 5,
     temata: ["skolstvi", "doprava", "vystavba", "verejne"],
@@ -83,7 +84,8 @@ window.SEGMENTY = {
   instituce: {
     stitek: "Firemní předplatné",
     h1: "Zpravodajství ze všech krajů na jednom místě",
-    perex: "Přehled o dění ve všech krajích pro tiskového mluvčího, vnější vztahy i vedení.",
+    perex: "Přehled o dění ve všech krajích i v celé republice pro tiskové oddělení, vedení "
+         + "a další kolegy.",
     ctaSlovo: "pro naši instituci",
     vychoziPocet: 5,
     temata: ["verejne", "bezpecnost", "doprava", "investice"],
