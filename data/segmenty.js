@@ -84,7 +84,7 @@ window.SEGMENTY = {
     stitek: "Firemní předplatné",
     h1: "Zpravodajství ze všech krajů na jednom místě",
     perex: "Přehled o dění ve všech krajích pro tiskového mluvčího, vnější vztahy i vedení.",
-    ctaSlovo: "pro náš úřad",
+    ctaSlovo: "pro naši instituci",
     vychoziPocet: 5,
     temata: ["verejne", "bezpecnost", "doprava", "investice"],
     duvody: [
