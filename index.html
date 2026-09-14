@@ -37,9 +37,16 @@
   .nums .v{font:800 32px/1 var(--font-sans);color:var(--blue-700)}
   .nums .p{font:400 14px/1.4 var(--font-sans);color:var(--grey-600);margin-top:6px}
   .tem{display:grid;gap:28px 24px}
-  .tem .ic{display:block;width:46px;height:46px;border-radius:50%;object-fit:cover;margin-bottom:14px}
+  .tem .card{display:flex;flex-direction:column;height:100%}
+  .tem .thumb{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--radius-lg);margin-bottom:14px;background:var(--surface-subtle)}
+  .tem .ic{display:block;width:32px;height:32px;border-radius:50%;object-fit:cover;margin-bottom:10px}
   .tem .lab{font:800 11px/1 var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--blue-700);margin-bottom:8px}
   .tem .tit{font:700 16px/1.35 var(--font-sans);color:var(--inky)}
+  .tem .region{font:400 12px/1.4 var(--font-sans);color:var(--grey-500);margin-top:6px}
+  .tem .read{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;
+    margin-top:14px;border:2px solid var(--color-action);border-radius:var(--radius-pill);
+    font:700 14px/1 var(--font-sans);color:var(--color-action);text-decoration:none;align-self:flex-start}
+  .tem .read:hover{background:var(--color-action);color:#fff}
   .duv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;align-items:stretch}
   .duv .card{background:var(--surface);border-radius:var(--radius-lg);padding:22px 20px 24px;
     box-shadow:inset 0 0 0 1px var(--border-subtle);display:flex;flex-direction:column;gap:8px}
@@ -304,6 +311,7 @@
 
 <script src="data/region.js"></script>
 <script src="data/segmenty.js"></script>
+<script src="data/temata-live.js"></script>
 <script>
 (function(){
   var R=window.REGION, C=window.CENIK, T=window.TEMATA, S=window.SEGMENTY, F=window.FAQ;
@@ -336,12 +344,16 @@
     var min=C[C.length-1].mesic, max=C[0].mesic;
     document.getElementById('cenaRozsah').textContent=min+' až '+max+' Kč měsíčně na osobu podle počtu přístupů. Fakturace na rok.';
     document.getElementById('temata').style.gridTemplateColumns=
-      'repeat(auto-fit,minmax('+(s.temata.length>4?'180px':'220px')+',1fr))';
+      'repeat(auto-fit,minmax('+(s.temata.length>4?'220px':'260px')+',1fr))';
     document.getElementById('temata').innerHTML=s.temata.map(function(t){
-      var x=T[t];
-      return '<div>'+(IKONY[t]?'<img class="ic" src="'+IKONY[t]+'" alt="">':'')+'<div class="lab">'+x.nazev+'</div>'
+      var x=Object.assign({},T[t],(window.TEMATA_LIVE||{})[t]);
+      return '<div class="card">'
+           + (x.obrazek?'<img class="thumb" src="'+x.obrazek+'" alt="" loading="lazy">':'')
+           + (IKONY[t]?'<img class="ic" src="'+IKONY[t]+'" alt="">':'')
+           + '<div class="lab">'+x.nazev+'</div>'
            + '<div class="tit">'+todo(x.titulek)+'</div>'
-           + (x.region?'<div style="font:400 12px/1.4 var(--font-sans);color:var(--grey-500);margin-top:6px">'+x.region+'</div>':'')
+           + (x.region?'<div class="region">'+x.region+'</div>':'')
+           + (x.odkaz?'<a class="read" href="'+x.odkaz+'" target="_blank" rel="noopener">Přečíst článek</a>':'')
            + '</div>';
     }).join('');
     document.getElementById('duvody').innerHTML=s.duvody.map(function(d){
