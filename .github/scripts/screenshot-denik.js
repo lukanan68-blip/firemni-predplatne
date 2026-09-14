@@ -1,19 +1,18 @@
 // Vyfotí titulní stránku denik.cz pro hero sekci landing page.
 // Spouští ho .github/workflows/daily-hero-screenshot.yml jednou denně.
 //
-// Celá stránka denik.cz je nekonečný scroll (16 000+ px) -- to "celá titulka"
-// neznamená. Místo toho vyfotíme od vrchu až po konec bloku "Nejnovější
-// články od čtenářů" (ověřeno 14. 9. 2026: tam končí titulní blok a začíná
-// úplně jiná sekce s dalšími články). Hledáme tlačítko "Zobrazit všechny"
-// a řízneme kousek pod ním, ať to sedí den ode dne i když se obsah nad tím
-// o kus posune.
+// Chceme jen ten úvodní hlavní článek (nadpis + perex), ne celou nekonečně
+// dlouhou stránku a ne ani blok "Nejnovější články od čtenářů" pod ním --
+// to bylo moc velké. Hlavní článek je na denik.cz vždy první <article>
+// element na stránce (ověřeno 14. 9. 2026), takže hledáme jeho spodní hranu
+// a tam řízneme -- funguje to i beze změny den ode dne.
 
 const { chromium } = require("playwright");
 
 const OUT = "assets/denik-hero.png";
 const CONSENT_TEXTS = ["Souhlasím", "Přijmout", "Rozumím", "Souhlasit"];
 const VIEWPORT = { width: 1240, height: 953 };
-const FALLBACK_HEIGHT = 1900; // pro případ, že se "Zobrazit všechny" nenajde
+const FALLBACK_HEIGHT = 1000; // pro případ, že se hlavní článek nenajde
 
 // Deník značí reklamní pozice předvídatelnými ID (ověřeno přímo na denik.cz,
 // 14. 9. 2026): leaderboard-top/bottom, skyscraper-1/2/3, wallpaper-1..4,
@@ -48,11 +47,11 @@ const HIDE_AD_SLOTS_CSS = `
 
   let clipHeight = FALLBACK_HEIGHT;
   try {
-    const marker = page.getByText("Zobrazit všechny", { exact: true }).first();
-    const box = await marker.boundingBox({ timeout: 5000 });
-    if (box) clipHeight = Math.ceil(box.y + box.height + 40);
+    const mainArticle = page.locator("article").first();
+    const box = await mainArticle.boundingBox({ timeout: 5000 });
+    if (box) clipHeight = Math.ceil(box.y + box.height + 20);
   } catch (e) {
-    console.log("Orientační bod nenalezen, používám výchozí výšku:", e.message);
+    console.log("Hlavní článek nenalezen, používám výchozí výšku:", e.message);
   }
 
   // fullPage: true je tu nutné i s clipem -- bez něj Playwright neumí
