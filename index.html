@@ -70,7 +70,7 @@
     font:800 16px/34px var(--font-sans);text-align:center;margin-bottom:12px}
   ol.kroky h3{font:800 17px/1.3 var(--font-sans);color:var(--inky);margin:0 0 6px}
   ol.kroky p{font:400 15px/1.55 var(--font-sans);color:var(--grey-600);margin:0}
-  .obj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
+  .obj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:stretch}
   form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
   form label{display:block;font:600 14px/1.4 var(--font-sans);color:var(--grey-700);margin-bottom:6px}
   form input,form textarea{width:100%;padding:0 14px;border:none;border-radius:var(--radius-md);
@@ -79,9 +79,7 @@
   form input[aria-invalid=true]{box-shadow:inset 0 0 0 2px var(--error-500)}
   .err{font:600 14px/1.4 var(--font-sans);color:var(--error-600);margin:6px 0 0}
   .full{grid-column:1/-1}
-  .obchod{background:var(--surface-subtle);border-radius:var(--radius-xl);padding:26px 24px;text-align:center}
-  .obchod .foto{width:96px;height:96px;border-radius:50%;background:var(--grey-100);margin:0 auto 14px;
-    display:flex;align-items:center;justify-content:center;font:400 11px/1 var(--font-sans);letter-spacing:.06em;color:var(--grey-400)}
+  .obchod{min-height:320px}
   details.faq{border-bottom:1px solid var(--border-default);background:var(--surface);padding:0 18px;margin-bottom:2px}
   details.faq summary{display:flex;gap:12px;align-items:baseline;justify-content:space-between;cursor:pointer;
     font:700 16px/1.45 var(--font-sans);color:var(--inky);padding:16px 0;min-height:44px}
@@ -218,8 +216,10 @@
 <!-- 7 Máte otázku -->
 <section id="dotaz" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap">
-    <div class="obj">
-      <div>
+    <div class="obj" style="position:relative">
+      <img src="assets/titulky-hromada.png" alt=""
+           style="position:absolute;right:0;bottom:0;height:320px;width:auto;max-width:none;z-index:0;pointer-events:none">
+      <div style="position:relative;z-index:1;background:var(--surface)">
         <h2 class="sec">Máte otázku, než objednáte?</h2>
         <p class="lead" style="max-width:48ch">Napište nám, nebo zavolejte. Objednat můžete rovnou nahoře, tohle je pro případ, že si chcete něco ujasnit.</p>
         <div id="odeslano" role="status" hidden style="background:var(--success-100);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:inset 0 0 0 1px var(--success-400)">
@@ -252,17 +252,7 @@
           </div>
         </form>
       </div>
-      <div class="obchod">
-        <div class="foto">FOTO</div>
-        <div id="k-jmeno" style="font:800 19px/1.3 var(--font-sans);color:var(--inky)"></div>
-        <div id="k-funkce" style="font:400 15px/1.4 var(--font-sans);color:var(--grey-500);margin-top:4px"></div>
-        <div style="margin-top:16px;display:grid;gap:6px;font:400 16px/1.5 var(--font-sans)">
-          <a href="tel:+420272015015" style="font-weight:600">+420 272 015 015</a>
-          <a href="mailto:denik@mojepredplatne.cz">denik@mojepredplatne.cz</a>
-        </div>
-        <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:16px 0 0;padding-top:14px;border-top:1px solid var(--border-default)">
-          <span class="todo">Kontakt na obchodníka zatím doplňujeme, uvedené spojení je centrální.</span></p>
-      </div>
+      <div class="obchod"></div>
     </div>
   </div>
 </section>
@@ -370,8 +360,6 @@
   document.getElementById('zdroje').textContent='Zdroje: '+R.cisla.map(function(c){return c.zdroj;})
     .filter(function(v,i,a){return a.indexOf(v)===i;}).join(' · ');
   document.getElementById('vcene').textContent=window.VCENE;
-  document.getElementById('k-jmeno').innerHTML=todo(R.kontakt.jmeno);
-  document.getElementById('k-funkce').textContent='Firemní předplatné, celá ČR';
 
   document.getElementById('cenik').innerHTML=C.map(function(r,i){
     var roz = r.od===r.do ? r.od : (r.do>=999 ? r.od+' a víc' : r.od+'–'+r.do);
