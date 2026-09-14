@@ -29,8 +29,8 @@ window.SEGMENTY = {
       { titulek: "Informace, které pomáhají rozhodovat",
         text: "Co se staví, kdo nabírá a co se chystá kolem vašich provozů – dřív, "
             + "než to zjistíte od někoho jiného." },
-      { titulek: "Pro celý tým",
-        text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
+      { titulek: "Víte první o dění v regionu",
+        text: "Zjistěte, jaké jsou plány radnic, dopravní novinky a další." },
       { titulek: "Dáte to do nákladů",
         text: "65 Kč na člověka a měsíc od deseti přístupů. Jedna faktura na rok." },
       { titulek: "Kartou i na fakturu",
@@ -47,8 +47,8 @@ window.SEGMENTY = {
     vychoziPocet: 3,
     temata: ["doprava", "skolstvi", "investice", "bezpecnost"],
     duvody: [
-      { titulek: "Celá republika i váš kraj",
-        text: "72 Deníků pokrývá každý okres, od velkých měst po menší obce." },
+      { titulek: "Podklad pro jednání",
+        text: "Zjistíte, jaká jsou fakta a souvislosti." },
       { titulek: "Pro celý úřad",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
@@ -69,8 +69,8 @@ window.SEGMENTY = {
     temata: ["skolstvi", "doprava", "vystavba", "verejne"],
     duvody: [
       { titulek: "Vaše škola i celá republika",
-        text: "Co se píše o škole, o vysokém školství i o městech, kde stojí vaše budovy." },
-      { titulek: "Pro celý tým komunikace",
+        text: "Co se píše o škole, o vysokém školství i o městech, kde působíte." },
+      { titulek: "Pro celý tým",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
         text: "Předplacený Deník.cz je bez reklam." },
@@ -90,8 +90,8 @@ window.SEGMENTY = {
     vychoziPocet: 5,
     temata: ["verejne", "bezpecnost", "doprava", "investice"],
     duvody: [
-      { titulek: "Všech 72 Deníků",
-        text: "Zpravodajství z každého okresu v republice, v jednom přístupu." },
+      { titulek: "Podklad pro jednání",
+        text: "Zjistíte, jaká jsou fakta a souvislosti." },
       { titulek: "I tam, kde sídlíte",
         text: "Doprava, stavby a dění ve městě, kde vaši lidé pracují." },
       { titulek: "Pro celé oddělení",
