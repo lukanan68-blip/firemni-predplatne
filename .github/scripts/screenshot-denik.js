@@ -55,8 +55,12 @@ const HIDE_AD_SLOTS_CSS = `
     console.log("Orientační bod nenalezen, používám výchozí výšku:", e.message);
   }
 
+  // fullPage: true je tu nutné i s clipem -- bez něj Playwright neumí
+  // zachytit nic za hranicí aktuálního viewportu (953px) a clip se potichu
+  // ořízne zpátky na tuhle výšku.
   await page.screenshot({
     path: OUT,
+    fullPage: true,
     clip: { x: 0, y: 0, width: VIEWPORT.width, height: clipHeight },
   });
   await browser.close();
