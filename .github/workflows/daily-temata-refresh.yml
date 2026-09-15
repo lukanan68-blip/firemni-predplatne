@@ -30,7 +30,18 @@ jobs:
           git add data/temata-live.js
           if git diff --cached --quiet; then
             echo "Beze změny, commit se přeskakuje."
-          else
-            git commit -m "Automatická aktualizace titulků k tématům"
-            git push
+            exit 0
           fi
+          git commit -m "Automatická aktualizace titulků k tématům"
+          # Druhý denní robot (hero screenshot) může pushnout těsně předtím --
+          # pár pokusů s rebase na čerstvý main, ať to souběh nezastaví.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push se nepovedl (pokus $i), zkouším rebase na aktuální main..."
+            git pull --rebase origin main
+            sleep 3
+          done
+          echo "Push se nepovedl ani po 5 pokusech."
+          exit 1
