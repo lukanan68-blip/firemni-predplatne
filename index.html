@@ -25,7 +25,7 @@
   .prev button{background:#3a464b;color:#dbe4e7;border:none;border-radius:var(--radius-pill);
     padding:5px 12px;font:600 13px/1.3 var(--font-sans);cursor:pointer}
   .prev button[aria-pressed=true]{background:#fff;color:var(--grey-900)}
-  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center}
+  .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:stretch}
   .zebra{background:var(--surface);background-image:repeating-linear-gradient(115deg,rgba(0,108,185,.045) 0 2px,rgba(0,0,0,0) 2px 26px)}
   .brow{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 12px 34px rgba(28,30,31,.16);background:var(--surface)}
   .brow-bar{background:var(--grey-100);padding:9px 12px;display:flex;align-items:center;gap:8px}
@@ -112,7 +112,7 @@
 <!-- 1 Hero -->
 <section class="zebra" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap hero" style="padding:28px 24px 52px">
-    <div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start">
       <img src="assets/denik-logo.png" alt="Deník.cz" height="28" style="display:block;margin-bottom:20px">
       <div style="font:700 24px/1.35 var(--font-sans);color:var(--inky);margin-bottom:20px">Firemní předplatné</div>
       <h1 id="h1" style="font-family:var(--font-sans);font-weight:800;line-height:1.13;letter-spacing:-.015em;color:var(--inky);margin:0;max-width:18ch;text-wrap:pretty"></h1>
@@ -120,7 +120,7 @@
       <p id="perex" style="font:400 19px/1.55 var(--font-sans);color:var(--grey-700);margin:0 0 26px;max-width:46ch;text-wrap:pretty"></p>
       <a class="btn" href="#kalkulacka" id="cta"></a>
       <p id="cenaRozsah" style="font:400 15px/1.5 var(--font-sans);color:var(--grey-500);margin:14px 0 0"></p>
-      <p style="font:400 15px/1.5 var(--font-sans);color:var(--grey-600);margin:22px 0 0">Radši osobně? Zavolejte <a href="tel:+420272015015" style="font-weight:600">+420 272 015 015</a>.</p>
+      <p style="font:400 15px/1.5 var(--font-sans);color:var(--grey-600);margin:0;margin-top:auto;padding-top:22px">Radši osobně? Zavolejte <a href="tel:+420272015015" style="font-weight:600">+420 272 015 015</a>.</p>
     </div>
     <div class="brow">
       <div class="brow-bar">
@@ -335,7 +335,7 @@
     var s=S[k];
     var h1=document.getElementById('h1');
     h1.textContent=s.h1;
-    h1.style.fontSize = s.h1.length>44 ? '28px' : '32px';
+    h1.style.fontSize = '32px';
     document.getElementById('perex').textContent=s.perex;
     document.getElementById('cta').textContent='Spočítat cenu '+s.ctaSlovo;
     var min=C[C.length-1].mesic, max=C[0].mesic;
