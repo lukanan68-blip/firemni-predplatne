@@ -1,42 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Tahle první verze je ručně poskládaná ze skutečných dnešních titulků
-// (14. 9. 2026), ať web nečeká na první automatický běh.
+// Vygenerováno: 2026-09-15T07:24:39.487Z
 window.TEMATA_LIVE = {
   "skolstvi": {
-    "titulek": "Drama v Německu: Školní autobus se rozjel z kopce a narazil do domu",
-    "odkaz": "https://www.denik.cz/evropa/drama-v-nemecku-skolni-autobus-se-rozjel-z-kopce-a-narazil-do-domu/",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/c0c/c0cfcd8f-f595-4742-bc99-9985bc1cce69.jpeg",
+    "titulek": "Glosa: Dřívější nástup do školky pomáhá. Samotná změna zákona ale nestačí",
+    "odkaz": "https://www.denik.cz/komentare/glosa-drivejsi-nastup-do-skolky-pomaha-samotna-zmena-zakona-ale-nestaci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komentare",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/113/1131698c-7c7a-4185-9f8f-e2626a20f942.jpeg",
     "region": "celostátní"
-  },
-  "investice": {
-    "titulek": "Češi se považují za investory. Část z nich ale ve skutečnosti jen spoří",
-    "odkaz": "https://www.denik.cz/podnikani/cesi-se-povazuji-za-investory-cast-z-nich-ale-ve-skutecnosti-jen-spori/",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/1cf/1cfe18fb-dbfc-4ee4-bb29-323c544cc054.jpeg",
-    "region": "celostátní"
-  },
-  "doprava": {
-    "titulek": "Tunel versus obchvat: Karlovy Vary chtějí šetrnější řešení",
-    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/tunel-versus-obchvat-karlovy-vary-chteji-setrnejsi-reseni/",
-    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/bf0/bf098fdb-09b7-4f2f-b923-9cf36b4ab02c.jpeg",
-    "region": "Karlovarský deník"
   },
   "vystavba": {
-    "titulek": "Pod třídou Karla IV. chodci opět neprojdou. Uzavírka podchodu trvá do konce září",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/uzavirka-podchod-trida-karla-iv-hradec-kralove-rekonstrukce/",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/f32/f32de7e4-f029-4381-be0f-6e5c02e6c813.jpeg",
-    "region": "Hradecký deník"
-  },
-  "bezpecnost": {
-    "titulek": "Hádku o lepší místo pro sledování průvodu ve Znojmě řešila jízdní policie",
-    "odkaz": "https://znojemsky.denik.cz/krimi/hadku-o-lepsi-misto-pro-sledovani-pruvodu-ve-znojme-resila-jizdni-policie/",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/3ee/3ee707f4-a92f-4d6d-814a-d8efa4ef8dea.jpeg",
-    "region": "Znojemský deník"
+    "titulek": "Nové stíhání v kauze Motol: Policie obvinila stavební firmu, ta se brání",
+    "odkaz": "https://www.denik.cz/krimi/nove-stihani-v-kauze-motol-policie-obvinila-stavebni-firmu-ta-se-brani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/62b/62b2e1cc-4f85-4fb9-83ba-511c8fe61406.jpeg",
+    "region": "celostátní"
   },
   "verejne": {
-    "titulek": "Flérování v Kralupech: plamen i hluk zesílí, chemický provoz čeká odstávka",
-    "odkaz": "https://melnicky.denik.cz/zpravy-region/flerovani-v-kralupech-plamen-i-hluk-zesili-chemicky-provoz-ceka-odstavka/",
-    "obrazek": "https://melnicky.denik.cz/images/api/image/1366x910/e9a/e9ad0772-780c-4c84-83a2-a5119ea617dd.jpeg",
-    "region": "Mělnický deník"
+    "titulek": "Bez řidičáku i přes zákaz řízení. Žena v Olomouci bourala s téměř 2,5 promile",
+    "odkaz": "https://olomoucky.denik.cz/krimi/nehoda-olomoc-zakaz-rizeni-alkohol/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=krimi",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/2b3/2b33fa82-5afa-4383-9da8-deb4e8d70677.jpeg",
+    "region": "Olomoucký deník"
+  },
+  "investice": {
+    "titulek": "Slovensko zasáhlo zemětřesení. Lidé zvuk přirovnali k výbuchu",
+    "odkaz": "https://www.denik.cz/evropa/slovensko-zemetreseni-dapalovce/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=evropa",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/3d6/3d6acd44-7ba8-418b-934a-257cfd287aff.jpeg",
+    "region": "Vyškovský deník"
+  },
+  "doprava": {
+    "titulek": "Smrt stopařek: Osud Tatiany a Viery určil zmeškaný vlak",
+    "odkaz": "https://www.denik.cz/pribehy-zla/pribehy-zla-smrt-stoparek-tatiana-viera-jak-to-bylo/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=pribehy-zla",
+    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x910/745/74507b3b-f204-4181-bc91-e31138a7009e.jpeg",
+    "region": "Opavský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Za vraždu spoluvězně ve věznici Bory vyměřil soud v Plzni 17 let vězení",
+    "odkaz": "https://plzensky.denik.cz/zpravy-region/za-vrazdu-spoluvezne-ve-veznici-bory-vymeril-dnes-soud-v-plzni-17-let-vezeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/e6d/e6d3bb83-2968-4861-b92d-7851fc5cba9a.jpeg",
+    "region": "Plzeňský deník"
   }
 };
