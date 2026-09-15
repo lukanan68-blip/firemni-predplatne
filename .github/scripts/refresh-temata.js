@@ -15,12 +15,15 @@ const fs = require("fs");
 // Klíčová slova pro dohledání titulku, který k tématu skutečně sedí.
 // Když se nic nenajde, vezme se první nepoužitý titulek z feedu -- robot
 // nikdy neselže, jen ten den nemusí být shoda dokonalá.
+// Doplněno 15. 9. 2026 po srovnání s ručně vybranými (dobrými) titulky --
+// trolejbusy/MHD linky nespadaly do "doprava", hasiči/záchranka do
+// "bezpecnost" a obchodní řetězce/retail do "investice" vůbec nezapadaly.
 const TOPICS = {
-  doprava: /doprav|tramvaj|vlak|nádraží|silnic|dálnic|autobus|řidič|\bMHD\b|parkov|obchvat|tunel/i,
+  doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|vlak|nádraží|silnic|dálnic|řidič|parkov|obchvat|tunel/i,
   skolstvi: /škol|student|učitel|univerzit|fakult|žáci|žák|vzdělá/i,
-  investice: /invest|miliony|miliard|\bfirm|podnik|koncese|akcie|byznys/i,
-  vystavba: /výstavb|stavb|byt(y|ů)?\b|developer|demolic|rekonstruk|podchod|uzavírk/i,
-  bezpecnost: /polici|zločin|vražd|útok|soud|trest|nehod|havar|zranění|zemřel/i,
+  investice: /invest|miliony|miliard|\bfirm|podnik|koncese|akcie|byznys|obchodní řetězec|retail|prodejn|pobočk|expand/i,
+  vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|rekonstruk|podchod|uzavírk|stavbou roku/i,
+  bezpecnost: /polici|hasič|záchran|požár|zločin|vražd|útok|soud|trest|nehod|havar|zranění/i,
   verejne: /radnice|město|obec|úřad|starost|\bkraj\b|zákaz|pravidl|provoz|odstávk/i,
 };
 
