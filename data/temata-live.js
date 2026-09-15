@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-15T10:00:24.763Z
+// Ručně vráceno 15. 9. 2026 zpět na výběr z ranní ruční opravy -- viz chat.
 window.TEMATA_LIVE = {
-  "verejne": {
-    "titulek": "Za nelegální skládku u Světa obrů padla pokuta. Úřady chystají další kontroly",
-    "odkaz": "https://www.denik.cz/regiony/za-nelegalni-skladku-u-sveta-obru-padla-pokuta-urady-chystaji-dalsi-kontroly/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=regiony",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/9c1/9c122ee6-f948-4ae4-adba-38b31f91128c.jpeg",
-    "region": "celostátní"
-  },
-  "investice": {
-    "titulek": "Nové stíhání v kauze Motol: Policie obvinila stavební firmu, ta se brání",
-    "odkaz": "https://www.denik.cz/krimi/nove-stihani-v-kauze-motol-policie-obvinila-stavebni-firmu-ta-se-brani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/62b/62b2e1cc-4f85-4fb9-83ba-511c8fe61406.jpeg",
-    "region": "celostátní"
-  },
-  "doprava": {
-    "titulek": "Šest piv a problém byl na světě. Řidič z Třebíčska nadýchal",
-    "odkaz": "https://trebicsky.denik.cz/krimi/sest-piv-a-problem-byl-na-svete-ridic-z-trebicska-nadychal/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x910/8d6/8d619b33-a303-4c9c-a7da-7f2961dfdc90.jpeg",
-    "region": "Třebíčský deník"
-  },
   "skolstvi": {
-    "titulek": "Křižovatka Mileta v Hradci slavnostně dokončená. Je to změna k lepšímu? Hlasujte",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/krizovatka-mileta-hradec-slavnostni-dokonceni-anketa/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/d1c/d1cc6267-c529-46a9-a035-994229c7f15e.jpeg",
-    "region": "Hradecký deník"
+    "titulek": "Glosa: Dřívější nástup do školky pomáhá. Samotná změna zákona ale nestačí",
+    "odkaz": "https://www.denik.cz/komentare/glosa-drivejsi-nastup-do-skolky-pomaha-samotna-zmena-zakona-ale-nestaci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komentare",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/113/1131698c-7c7a-4185-9f8f-e2626a20f942.jpeg",
+    "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "V Liberci chtějí volební lídři investovat do dopravy, bytů či veřejného prostoru",
-    "odkaz": "https://liberecky.denik.cz/zpravy-region/v-liberci-chteji-volebni-lidri-investovat-do-dopravy-bytu-ci-verejneho-prostoru/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x910/e9c/e9c27c4d-1ca8-45b5-95f6-b93602fbe81c.jpeg",
-    "region": "Liberecký deník"
+    "titulek": "Stavbou roku se může stát domov pro seniory v Bydžově i hospic ve Stěžerách",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/stavba-roku-nominace-domov-v-aleji-bydzov-luzkovy-hospic-hradecko/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/a90/a90a43fe-24f1-4375-aace-38c20d235c9a.jpeg",
+    "region": "Hradecký deník"
+  },
+  "verejne": {
+    "titulek": "Bez řidičáku i přes zákaz řízení. Žena v Olomouci bourala s téměř 2,5 promile",
+    "odkaz": "https://olomoucky.denik.cz/krimi/nehoda-olomoc-zakaz-rizeni-alkohol/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=krimi",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/2b3/2b33fa82-5afa-4383-9da8-deb4e8d70677.jpeg",
+    "region": "Olomoucký deník"
+  },
+  "investice": {
+    "titulek": "Další obchodní řetězce míří do Ostrova. Tyto značky budou v novém retailu",
+    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/dalsi-obchodni-retezce-miri-do-ostrova-tyto-znacky-budou-v-novem-retailu/",
+    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/412/41225159-0707-4caf-98dd-39ef9569e59d.jpeg",
+    "region": "Karlovarský deník"
+  },
+  "doprava": {
+    "titulek": "Červená, bílá, žlutá a písmeno G. Hradec má nové trolejbusy",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/trolejbus-skoda-mhd-hradec-kralove-zmena-vizual/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/9d1/9d1f097c-aa59-4e5f-ba99-b89d5b77dff6.jpeg",
+    "region": "Hradecký deník"
   },
   "bezpecnost": {
-    "titulek": "Nabourané auto u obchodu ve Vyškově: Po viníkovi pátrá policie, pomohou svědci",
-    "odkaz": "https://vyskovsky.denik.cz/nehody/dopravni-nehoda-vyskov-nabourane-auto-zaparkovane-patrani-po-vinikovi-svedci-policie-fotka-prodejna/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=nehody",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/9dd/9dda5164-cbb8-4992-b4f2-638f17da05da.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Hasiči likvidovali požár v bytě ve výškové budově v hradecké Třebši",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/hradec-kralove-trebes-hasici-likvidovali-pozar-v-byte-ve-vyskove-budove/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/33c/33c65b00-fdc2-4ef6-b470-61e25442b179.jpeg",
+    "region": "Hradecký deník"
   }
 };
