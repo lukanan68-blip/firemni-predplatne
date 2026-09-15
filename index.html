@@ -387,10 +387,7 @@
     e.value=Math.max(1,(parseInt(e.value||'1',10))-1);prepocti();};
 
   document.getElementById('faq').innerHTML=F.map(function(o){
-    var z={web:'dnes na webu Deníku',kod:'z objednávkového formuláře',petr:'potvrzeno',
-           doplnit:'odpověď zatím nemáme'}[o.zdroj]||'';
-    return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+todo(o.a)
-         + (z?'<br><span style="font-size:13px;color:var(--grey-500)">zdroj: '+z+'</span>':'')+'</p></details>';
+    return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+todo(o.a)+'</p></details>';
   }).join('');
 
   document.getElementById('form').addEventListener('submit',function(e){
