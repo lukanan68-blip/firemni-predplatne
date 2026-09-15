@@ -47,6 +47,10 @@
     margin-top:14px;border:2px solid var(--color-action);border-radius:var(--radius-pill);
     font:700 14px/1 var(--font-sans);color:var(--color-action);text-decoration:none;align-self:flex-start}
   .tem .read:hover{background:var(--color-action);color:#fff}
+  /* Tmavě modrý blok -- jednorázová akcentní přestávka v rytmu sekcí. */
+  .tone-dark{background:var(--blue-900)}
+  .tone-dark h2.sec{color:#fff}
+  .tone-dark p.lead{color:#bcdcf5}
   .duv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;align-items:stretch}
   .duv .card{background:var(--surface);border-radius:var(--radius-lg);padding:22px 20px 24px;
     box-shadow:inset 0 0 0 1px var(--border-subtle);display:flex;flex-direction:column;gap:8px}
@@ -150,7 +154,7 @@
 </section>
 
 <!-- 4 Důvody -->
-<section style="background:var(--surface-subtle);border-top:1px solid var(--border-subtle)">
+<section class="tone-dark" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap">
     <h2 class="sec" style="margin-bottom:32px">Proč se to vyplatí</h2>
     <div class="duv" id="duvody"></div>
@@ -158,7 +162,7 @@
 </section>
 
 <!-- 5 Kalkulačka -->
-<section id="kalkulacka" style="border-top:1px solid var(--border-subtle)">
+<section id="kalkulacka" class="zebra" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap">
     <h2 class="sec">Kolik to bude</h2>
     <p class="lead">Cena je stejná pro všechny. Spočítáte si ji sami a rovnou objednáte.</p>
