@@ -1,6 +1,7 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-15T07:24:39.487Z
+// investice/vystavba/bezpecnost/doprava ručně nahrazeny 15. 9. 2026 za lépe
+// sedící titulky (automatický výběr ten den netrefil téma).
 window.TEMATA_LIVE = {
   "skolstvi": {
     "titulek": "Glosa: Dřívější nástup do školky pomáhá. Samotná změna zákona ale nestačí",
@@ -9,10 +10,10 @@ window.TEMATA_LIVE = {
     "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "Nové stíhání v kauze Motol: Policie obvinila stavební firmu, ta se brání",
-    "odkaz": "https://www.denik.cz/krimi/nove-stihani-v-kauze-motol-policie-obvinila-stavebni-firmu-ta-se-brani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/62b/62b2e1cc-4f85-4fb9-83ba-511c8fe61406.jpeg",
-    "region": "celostátní"
+    "titulek": "Stavbou roku se může stát domov pro seniory v Bydžově i hospic ve Stěžerách",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/stavba-roku-nominace-domov-v-aleji-bydzov-luzkovy-hospic-hradecko/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/a90/a90a43fe-24f1-4375-aace-38c20d235c9a.jpeg",
+    "region": "Hradecký deník"
   },
   "verejne": {
     "titulek": "Bez řidičáku i přes zákaz řízení. Žena v Olomouci bourala s téměř 2,5 promile",
@@ -21,21 +22,21 @@ window.TEMATA_LIVE = {
     "region": "Olomoucký deník"
   },
   "investice": {
-    "titulek": "Slovensko zasáhlo zemětřesení. Lidé zvuk přirovnali k výbuchu",
-    "odkaz": "https://www.denik.cz/evropa/slovensko-zemetreseni-dapalovce/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=evropa",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/3d6/3d6acd44-7ba8-418b-934a-257cfd287aff.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Další obchodní řetězce míří do Ostrova. Tyto značky budou v novém retailu",
+    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/dalsi-obchodni-retezce-miri-do-ostrova-tyto-znacky-budou-v-novem-retailu/",
+    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/412/41225159-0707-4caf-98dd-39ef9569e59d.jpeg",
+    "region": "Karlovarský deník"
   },
   "doprava": {
-    "titulek": "Smrt stopařek: Osud Tatiany a Viery určil zmeškaný vlak",
-    "odkaz": "https://www.denik.cz/pribehy-zla/pribehy-zla-smrt-stoparek-tatiana-viera-jak-to-bylo/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=pribehy-zla",
-    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x910/745/74507b3b-f204-4181-bc91-e31138a7009e.jpeg",
-    "region": "Opavský deník"
+    "titulek": "Červená, bílá, žlutá a písmeno G. Hradec má nové trolejbusy",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/trolejbus-skoda-mhd-hradec-kralove-zmena-vizual/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/9d1/9d1f097c-aa59-4e5f-ba99-b89d5b77dff6.jpeg",
+    "region": "Hradecký deník"
   },
   "bezpecnost": {
-    "titulek": "Za vraždu spoluvězně ve věznici Bory vyměřil soud v Plzni 17 let vězení",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/za-vrazdu-spoluvezne-ve-veznici-bory-vymeril-dnes-soud-v-plzni-17-let-vezeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/e6d/e6d3bb83-2968-4861-b92d-7851fc5cba9a.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Hasiči likvidovali požár v bytě ve výškové budově v hradecké Třebši",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/hradec-kralove-trebes-hasici-likvidovali-pozar-v-byte-ve-vyskove-budove/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/33c/33c65b00-fdc2-4ef6-b470-61e25442b179.jpeg",
+    "region": "Hradecký deník"
   }
 };
