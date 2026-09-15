@@ -112,6 +112,12 @@ window.VCENE = "V ceně: všech 72 Deníků, bez reklam, každý přístup na jm
 // zdroj:"web" = odpověď je dnes na webu · "kod" = z objednávkového formuláře
 // "petr" = potvrdil Petr · "doplnit" = odpověď nemáme
 window.FAQ = [
+  { q: "Co mi přinese firemní předplatné?",
+    a: "Možnost číst bez omezení články a rubriky, které nejsou pro běžného čtenáře plně "
+     + "dostupné. K ranní kávě vám připravíme a zašleme do e-mailu Newsletter Deníku – "
+     + "shrnutí nejdůležitějších událostí z vašeho okolí i celé republiky. Pro pohodlnější "
+     + "čtení uvidíte méně reklam a získáte možnost podílet se na našem obsahu." },
+
   { q: "Jsme organizace a chceme předplatné pro víc lidí. Jak postupovat?",
     a: "Objednáte firemní předplatné. Vyberete počet přístupů, zaplatíte a správce je rozdělí "
      + "kolegům. Každý se pak přihlašuje pod svým jménem, ne přes jeden společný účet.",
@@ -139,19 +145,19 @@ window.FAQ = [
     a: "<doplnit z obchodních podmínek>", zdroj: "doplnit" },
 
   { q: "Můžeme přidat další lidi během roku?",
-    a: "<ověřit ve správě firemního předplatného>", zdroj: "doplnit" },
+    a: "Ano, stačí přikoupit další přístupy, zaplatit a rozdělit je mezi nové kolegy." },
 
   { q: "Obnovuje se předplatné po roce samo?",
-    a: "<doplnit, pro úřad je automatická obnova bez objednávky problém>", zdroj: "doplnit" },
+    a: "Automaticky ne. Pokud máte o obnovu předplatného po roce zájem, "
+     + "<a href=\"#dotaz\">napište nám</a> nebo zavolejte na "
+     + "<a href=\"tel:+420272015015\">+420 272 015 015</a>.",
+    raw: true },
 
   { q: "Můžeme přístup předat jinému kolegovi, když někdo odejde?",
     a: "<ověřit ve správě firemního předplatného>", zdroj: "doplnit" },
 
   { q: "Kdy začnou přístupy platit?",
-    a: "<doplnit: po objednávce, nebo po připsání platby?>", zdroj: "doplnit" },
-
-  { q: "Dostaneme fakturu s číslem naší objednávky?",
-    a: "<doplnit>", zdroj: "doplnit" },
+    a: "Jakmile bude objednávka zaplacena." },
 
   { q: "Zaplatili jsme a obsah je pořád zamčený. Co teď?",
     a: "Dokončete registraci podle e-mailu, který přišel po zaplacení, a přihlaste se. "

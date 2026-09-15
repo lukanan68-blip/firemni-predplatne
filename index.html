@@ -387,7 +387,7 @@
     e.value=Math.max(1,(parseInt(e.value||'1',10))-1);prepocti();};
 
   document.getElementById('faq').innerHTML=F.map(function(o){
-    return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+todo(o.a)+'</p></details>';
+    return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+(o.raw?o.a:todo(o.a))+'</p></details>';
   }).join('');
 
   document.getElementById('form').addEventListener('submit',function(e){
