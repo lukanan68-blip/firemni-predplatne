@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Ručně vráceno 15. 9. 2026 zpět na výběr z ranní ruční opravy -- viz chat.
+// Vygenerováno: 2026-09-16T09:52:10.065Z
 window.TEMATA_LIVE = {
-  "skolstvi": {
-    "titulek": "Glosa: Dřívější nástup do školky pomáhá. Samotná změna zákona ale nestačí",
-    "odkaz": "https://www.denik.cz/komentare/glosa-drivejsi-nastup-do-skolky-pomaha-samotna-zmena-zakona-ale-nestaci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komentare",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/113/1131698c-7c7a-4185-9f8f-e2626a20f942.jpeg",
+  "investice": {
+    "titulek": "Strategické podniky odměny svých šéfů tají. Bezdůvodně, končí v zisku",
+    "odkaz": "https://www.denik.cz/cesko/kolik-berou-sefove-mestskych-firem-reditele-strategicke-podniky-platy-taji/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/454/45403a8b-76eb-456a-a346-99124098a391.jpeg",
+    "region": "celostátní"
+  },
+  "bezpecnost": {
+    "titulek": "Minerálkou Natura se zabývá i česká policie. Voda zřejmě obsahovala louh",
+    "odkaz": "https://www.denik.cz/krimi/mineralka-se-stopami-ziraviny-kriminaliste-proveruji-pripad-vody-natura/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/b74/b74541dd-7561-45d5-8c6f-7e19aa5b5332.jpeg",
     "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "Stavbou roku se může stát domov pro seniory v Bydžově i hospic ve Stěžerách",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/stavba-roku-nominace-domov-v-aleji-bydzov-luzkovy-hospic-hradecko/",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/a90/a90a43fe-24f1-4375-aace-38c20d235c9a.jpeg",
-    "region": "Hradecký deník"
+    "titulek": "Změna času přijde letos dřív. Rozhodla jedna věc v kalendáři",
+    "odkaz": "https://www.denik.cz/cesko/zmena-casu-prijde-letos-driv-prechod-z-letniho-na-zimni-proc-kdy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=cesko",
+    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x910/8f4/8f4dcde8-7c53-4d3f-87cd-a3f420510280.jpeg",
+    "region": "Kladenský deník"
   },
   "verejne": {
-    "titulek": "Bez řidičáku i přes zákaz řízení. Žena v Olomouci bourala s téměř 2,5 promile",
-    "odkaz": "https://olomoucky.denik.cz/krimi/nehoda-olomoc-zakaz-rizeni-alkohol/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=krimi",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/2b3/2b33fa82-5afa-4383-9da8-deb4e8d70677.jpeg",
-    "region": "Olomoucký deník"
+    "titulek": "Kurýři čekají na nová pravidla. Odbory se obávají rozšíření švarcsystému",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-kuryri-nova-pravidla-svarcsystem/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/728/728b844c-6625-4eda-b278-a0ed9d440b98.jpeg",
+    "region": "Znojemský deník"
   },
-  "investice": {
-    "titulek": "Další obchodní řetězce míří do Ostrova. Tyto značky budou v novém retailu",
-    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/dalsi-obchodni-retezce-miri-do-ostrova-tyto-znacky-budou-v-novem-retailu/",
-    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/412/41225159-0707-4caf-98dd-39ef9569e59d.jpeg",
-    "region": "Karlovarský deník"
+  "skolstvi": {
+    "titulek": "U škol v Pardubicích přibudou pomocníci. Za bezpečný přechod dostanou 200 korun",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/u-skol-pribudou-pomocnici-za-bezpecny-prechod-dostanou-200-korun/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/f21/f21aa21b-79dc-4210-a794-490b10213002.jpeg",
+    "region": "Pardubický deník"
   },
   "doprava": {
-    "titulek": "Červená, bílá, žlutá a písmeno G. Hradec má nové trolejbusy",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/trolejbus-skoda-mhd-hradec-kralove-zmena-vizual/",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/9d1/9d1f097c-aa59-4e5f-ba99-b89d5b77dff6.jpeg",
-    "region": "Hradecký deník"
-  },
-  "bezpecnost": {
-    "titulek": "Hasiči likvidovali požár v bytě ve výškové budově v hradecké Třebši",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/hradec-kralove-trebes-hasici-likvidovali-pozar-v-byte-ve-vyskove-budove/",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/33c/33c65b00-fdc2-4ef6-b470-61e25442b179.jpeg",
+    "titulek": "Výluka na trati. Vlaky dočasně nepojedou mezi Hradcem Králové a Týništěm",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/vyluka-na-trati-vlaky-docasne-nepojedou-mezi-hradcem-kralove-a-tynistem/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/316/3164d821-462a-4e2f-a678-07d95391f994.jpeg",
     "region": "Hradecký deník"
   }
 };
