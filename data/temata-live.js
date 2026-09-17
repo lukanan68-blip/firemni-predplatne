@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-16T09:52:10.065Z
+// Vygenerováno: 2026-09-17T09:57:01.988Z
 window.TEMATA_LIVE = {
-  "investice": {
-    "titulek": "Strategické podniky odměny svých šéfů tají. Bezdůvodně, končí v zisku",
-    "odkaz": "https://www.denik.cz/cesko/kolik-berou-sefove-mestskych-firem-reditele-strategicke-podniky-platy-taji/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/454/45403a8b-76eb-456a-a346-99124098a391.jpeg",
+  "verejne": {
+    "titulek": "Ve Frankfurtu přibývá lidí s letištní malárií. Pozor na příznaky, varují úřady",
+    "odkaz": "https://www.denik.cz/evropa/frankfurt-malarie-letiste-komari-nove-pripady/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/77a/77a954f4-1f21-4568-9819-c993129892f2.jpeg",
     "region": "celostátní"
   },
-  "bezpecnost": {
-    "titulek": "Minerálkou Natura se zabývá i česká policie. Voda zřejmě obsahovala louh",
-    "odkaz": "https://www.denik.cz/krimi/mineralka-se-stopami-ziraviny-kriminaliste-proveruji-pripad-vody-natura/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/b74/b74541dd-7561-45d5-8c6f-7e19aa5b5332.jpeg",
+  "investice": {
+    "titulek": "Koalice se dohodla na rozpočtu. Schodek klesne o jednotky miliard, řekl Macinka",
+    "odkaz": "https://www.denik.cz/cesko/koalice-se-dohodla-schodek-rozpoctu-klesne-o-jednotky-miliard-oznamil-macinka/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/c8a/c8ac47d0-0ad7-494e-b584-d0410be2296d.jpeg",
     "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "Změna času přijde letos dřív. Rozhodla jedna věc v kalendáři",
-    "odkaz": "https://www.denik.cz/cesko/zmena-casu-prijde-letos-driv-prechod-z-letniho-na-zimni-proc-kdy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=cesko",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x910/8f4/8f4dcde8-7c53-4d3f-87cd-a3f420510280.jpeg",
-    "region": "Kladenský deník"
+    "titulek": "Vteřiny od tragédie. Muž ignoroval křik lidí. Netušil, že ho sleduje medvěd",
+    "odkaz": "https://www.denik.cz/svet/video-medved-pronasledoval-muze-krik-lidi-ho-zahnal-kanada/?utm_source=rss&utm_medium=feed-vse&utm_campaign=jihlavsky.denik.cz&utm_content=svet",
+    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x910/909/9091306e-9947-48df-95ca-6d2d85410d97.jpeg",
+    "region": "Jihlavský deník"
   },
-  "verejne": {
-    "titulek": "Kurýři čekají na nová pravidla. Odbory se obávají rozšíření švarcsystému",
-    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-kuryri-nova-pravidla-svarcsystem/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/728/728b844c-6625-4eda-b278-a0ed9d440b98.jpeg",
-    "region": "Znojemský deník"
+  "bezpecnost": {
+    "titulek": "Další útok medvěda na Slovensku. Šelma na návsi poškrábala 79letou ženu",
+    "odkaz": "https://www.denik.cz/evropa/medved-slovensko-utok-zena-blatnica/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=evropa",
+    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x910/5a3/5a32af1e-ca85-4d34-a47c-593def38d4f7.jpeg",
+    "region": "Prostějovský deník"
   },
   "skolstvi": {
-    "titulek": "U škol v Pardubicích přibudou pomocníci. Za bezpečný přechod dostanou 200 korun",
-    "odkaz": "https://pardubicky.denik.cz/zpravy-region/u-skol-pribudou-pomocnici-za-bezpecny-prechod-dostanou-200-korun/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/f21/f21aa21b-79dc-4210-a794-490b10213002.jpeg",
-    "region": "Pardubický deník"
+    "titulek": "Babiš otočil. Mluvil o škrtech, teď už soukromým školám dotace krátit nechce",
+    "odkaz": "https://www.denik.cz/skolstvi-a-vzdelavani/cesko-skolstvi-soukrome-skoly-dotace-kratit-andrej-babis-nechce/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=skolstvi-a-vzdelavani",
+    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/1b8/1b8ecf27-831a-4559-9539-23bf895a933a.jpeg",
+    "region": "Karlovarský deník"
   },
   "doprava": {
-    "titulek": "Výluka na trati. Vlaky dočasně nepojedou mezi Hradcem Králové a Týništěm",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/vyluka-na-trati-vlaky-docasne-nepojedou-mezi-hradcem-kralove-a-tynistem/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/316/3164d821-462a-4e2f-a678-07d95391f994.jpeg",
-    "region": "Hradecký deník"
+    "titulek": "Popadané stromy komplikovaly provoz na trati z Neratovic. Vlak narazil do větví",
+    "odkaz": "https://melnicky.denik.cz/nehody/popadane-stromy-komplikuji-provoz-na-trati-z-neratovic-vlak-narazil-do-vetvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=melnicky.denik.cz&utm_content=nehody",
+    "obrazek": "https://melnicky.denik.cz/images/api/image/1366x910/db7/db7fa703-82e5-4235-a613-40b07c1c48d7.jpeg",
+    "region": "Mělnický deník"
   }
 };
