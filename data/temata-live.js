@@ -1,12 +1,13 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-18T09:38:59.120Z
+// Ručně opraveno 18. 9. 2026 -- investice/výstavba/doprava vůbec neseděly
+// (viz chat), nahrazeno reálně sedícími titulky ze dne 18. 9. 2026.
 window.TEMATA_LIVE = {
   "investice": {
-    "titulek": "Platy šéfů dopravních podniků se v Česku tají. I kvůli trafikanství",
-    "odkaz": "https://www.denik.cz/cesko/platy-sefu-dopravnich-podniku-se-v-cesku-taji-i-kvuli-trafikanstvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/4f4/4f4862df-36ba-4525-9190-5aed2c090ddc.jpeg",
-    "region": "celostátní"
+    "titulek": "Firma ZAKO Turčín má novou výrobní halu, bude dodávat díly pro bojová vozidla",
+    "odkaz": "https://zlinsky.denik.cz/podnikani/firma-zako-turcin-ma-novou-vyrobni-halu-bude-dodavat-dily-pro-bojova-vozidla/",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/1bb/1bb3bce0-0c8b-4e60-9a15-f92847f823c8.jpeg",
+    "region": "Zlínský deník"
   },
   "verejne": {
     "titulek": "Jsem pořádně hladový po úspěchu, hlásí Pastrňák. Céčko? To není moje starost",
@@ -21,16 +22,16 @@ window.TEMATA_LIVE = {
     "region": "Opavský deník"
   },
   "vystavba": {
-    "titulek": "Velká banka po dvě noci odstaví internetové bankovnictví. Omezí i další služby",
-    "odkaz": "https://www.denik.cz/ekonomika/cesko-banka-raiffeisenbank-odstavka-nepujde-internetove-bankovnictvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/328/32838bb2-f6fb-412f-8ba3-1d795ade8650.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Zastupitelé Boršova schválili smlouvu s investorem na stavbu haly pro Amazon",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/zastupitele-borsova-schvalili-smlouvu-s-investorem-na-stavbu-haly-pro-amazon/",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/a5c/a5c58deb-1772-4dd1-aecf-d1dcad1c9792.jpeg",
+    "region": "Českobudějovický deník"
   },
   "doprava": {
-    "titulek": "Pistolník a muž v ženských šatech přepadávali řidiče. Případ ožil",
-    "odkaz": "https://zdarsky.denik.cz/krimi/pistolnik-a-muz-v-zenskych-satech-prepadavali-ridice-pripad-ozil/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/eef/eef40d27-f158-4434-8357-c29ec11fc4cc.jpeg",
-    "region": "Brněnský deník"
+    "titulek": "Na průtahu Libercem začíná další uzavírka. Zavřou i důležité nájezdy a sjezdy",
+    "odkaz": "https://liberecky.denik.cz/zpravy-region/na-prutahu-libercem-zacina-dalsi-uzavirka-zavrou-i-dulezite-najezdy-a-sjezdy/",
+    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x910/b39/b397b631-f49a-4cd2-82f7-70592d8b985c.jpeg",
+    "region": "Liberecký deník"
   },
   "bezpecnost": {
     "titulek": "Další útok medvěda na Slovensku. Ukrýval se ve křoví, pak napadl pastevce",

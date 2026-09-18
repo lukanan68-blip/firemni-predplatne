@@ -18,11 +18,17 @@ const fs = require("fs");
 // Doplněno 15. 9. 2026 po srovnání s ručně vybranými (dobrými) titulky --
 // trolejbusy/MHD linky nespadaly do "doprava", hasiči/záchranka do
 // "bezpecnost" a obchodní řetězce/retail do "investice" vůbec nezapadaly.
+// Upraveno 18. 9. 2026 -- "podnik" u investic chytal i "dopravní podnik"
+// (plat šéfa dopravního podniku != investice), "řidič" u dopravy chytal
+// i krádeže/přepadení, kde je řidič jen oběť, ne dopravní zpráva. Obě
+// slova pryč. "uzavírk" patří k dopravě (uzavírka silnice), ne k výstavbě,
+// přesunuto. Přidána i další slova pro reálné uzavírky/výluky a investice
+// do nových výrobních hal.
 const TOPICS = {
-  doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|vlak|nádraží|silnic|dálnic|řidič|parkov|obchvat|tunel/i,
+  doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|jízdní pruh|vlak|nádraží|silnic|dálnic|parkov|obchvat|tunel|uzavírk|výluk|objížďk|kruhový objezd|průtah/i,
   skolstvi: /škol|student|učitel|univerzit|fakult|žáci|žák|vzdělá/i,
-  investice: /invest|miliony|miliard|\bfirm|podnik|koncese|akcie|byznys|obchodní řetězec|retail|prodejn|pobočk|expand/i,
-  vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|rekonstruk|podchod|uzavírk|stavbou roku/i,
+  investice: /invest|miliony|miliard|\bfirm|koncese|akcie|byznys|obchodní řetězec|retail|prodejn|pobočk|expand|výrobní hal/i,
+  vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|rekonstruk|podchod|stavbou roku/i,
   bezpecnost: /polici|hasič|záchran|požár|zločin|vražd|útok|soud|trest|nehod|havar|zranění/i,
   verejne: /radnice|město|obec|úřad|starost|\bkraj\b|zákaz|pravidl|provoz|odstávk/i,
 };
