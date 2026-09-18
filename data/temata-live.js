@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-17T09:57:01.988Z
+// Vygenerováno: 2026-09-18T09:38:59.120Z
 window.TEMATA_LIVE = {
-  "verejne": {
-    "titulek": "Ve Frankfurtu přibývá lidí s letištní malárií. Pozor na příznaky, varují úřady",
-    "odkaz": "https://www.denik.cz/evropa/frankfurt-malarie-letiste-komari-nove-pripady/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/77a/77a954f4-1f21-4568-9819-c993129892f2.jpeg",
-    "region": "celostátní"
-  },
   "investice": {
-    "titulek": "Koalice se dohodla na rozpočtu. Schodek klesne o jednotky miliard, řekl Macinka",
-    "odkaz": "https://www.denik.cz/cesko/koalice-se-dohodla-schodek-rozpoctu-klesne-o-jednotky-miliard-oznamil-macinka/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/c8a/c8ac47d0-0ad7-494e-b584-d0410be2296d.jpeg",
+    "titulek": "Platy šéfů dopravních podniků se v Česku tají. I kvůli trafikanství",
+    "odkaz": "https://www.denik.cz/cesko/platy-sefu-dopravnich-podniku-se-v-cesku-taji-i-kvuli-trafikanstvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/4f4/4f4862df-36ba-4525-9190-5aed2c090ddc.jpeg",
     "region": "celostátní"
   },
-  "vystavba": {
-    "titulek": "Vteřiny od tragédie. Muž ignoroval křik lidí. Netušil, že ho sleduje medvěd",
-    "odkaz": "https://www.denik.cz/svet/video-medved-pronasledoval-muze-krik-lidi-ho-zahnal-kanada/?utm_source=rss&utm_medium=feed-vse&utm_campaign=jihlavsky.denik.cz&utm_content=svet",
-    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x910/909/9091306e-9947-48df-95ca-6d2d85410d97.jpeg",
-    "region": "Jihlavský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Další útok medvěda na Slovensku. Šelma na návsi poškrábala 79letou ženu",
-    "odkaz": "https://www.denik.cz/evropa/medved-slovensko-utok-zena-blatnica/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=evropa",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x910/5a3/5a32af1e-ca85-4d34-a47c-593def38d4f7.jpeg",
-    "region": "Prostějovský deník"
+  "verejne": {
+    "titulek": "Jsem pořádně hladový po úspěchu, hlásí Pastrňák. Céčko? To není moje starost",
+    "odkaz": "https://www.denik.cz/hokej/david-pastrnak-boston-bruins-nova-sezona-kapitan-stanley-cup-nhl/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=hokej",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/f2f/f2f187fb-3051-45bc-8b48-226699206f7b.jpeg",
+    "region": "celostátní"
   },
   "skolstvi": {
-    "titulek": "Babiš otočil. Mluvil o škrtech, teď už soukromým školám dotace krátit nechce",
-    "odkaz": "https://www.denik.cz/skolstvi-a-vzdelavani/cesko-skolstvi-soukrome-skoly-dotace-kratit-andrej-babis-nechce/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=skolstvi-a-vzdelavani",
-    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/1b8/1b8ecf27-831a-4559-9539-23bf895a933a.jpeg",
-    "region": "Karlovarský deník"
+    "titulek": "Moravskoslezský kraj rozdělil univerzitám 91 milionů korun na vědce ze zahraničí",
+    "odkaz": "https://moravskoslezsky.denik.cz/kraj-a-okoli/moravskoslezsky-kraj-rozdelil-univerzitam-91-milionu-korun-na-vedce-ze-zahranici/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=kraj-a-okoli",
+    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x910/8b1/8b155a96-1d52-4dad-824e-a59b2c317fff.jpeg",
+    "region": "Opavský deník"
+  },
+  "vystavba": {
+    "titulek": "Velká banka po dvě noci odstaví internetové bankovnictví. Omezí i další služby",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-banka-raiffeisenbank-odstavka-nepujde-internetove-bankovnictvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/328/32838bb2-f6fb-412f-8ba3-1d795ade8650.jpeg",
+    "region": "Vyškovský deník"
   },
   "doprava": {
-    "titulek": "Popadané stromy komplikovaly provoz na trati z Neratovic. Vlak narazil do větví",
-    "odkaz": "https://melnicky.denik.cz/nehody/popadane-stromy-komplikuji-provoz-na-trati-z-neratovic-vlak-narazil-do-vetvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=melnicky.denik.cz&utm_content=nehody",
-    "obrazek": "https://melnicky.denik.cz/images/api/image/1366x910/db7/db7fa703-82e5-4235-a613-40b07c1c48d7.jpeg",
-    "region": "Mělnický deník"
+    "titulek": "Pistolník a muž v ženských šatech přepadávali řidiče. Případ ožil",
+    "odkaz": "https://zdarsky.denik.cz/krimi/pistolnik-a-muz-v-zenskych-satech-prepadavali-ridice-pripad-ozil/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/eef/eef40d27-f158-4434-8357-c29ec11fc4cc.jpeg",
+    "region": "Brněnský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Další útok medvěda na Slovensku. Ukrýval se ve křoví, pak napadl pastevce",
+    "odkaz": "https://www.denik.cz/evropa/utok-medved-martin-slovensko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=evropa",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/2d8/2d813d80-1b67-4925-95cd-63a1d3c13aea.jpeg",
+    "region": "Olomoucký deník"
   }
 };
