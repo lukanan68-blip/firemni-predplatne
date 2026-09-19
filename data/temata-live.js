@@ -1,19 +1,24 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Ručně opraveno 18. 9. 2026 -- investice/výstavba/doprava vůbec neseděly
-// (viz chat), nahrazeno reálně sedícími titulky ze dne 18. 9. 2026.
+// Vygenerováno: 2026-09-19T09:25:22.183Z
 window.TEMATA_LIVE = {
-  "investice": {
-    "titulek": "Firma ZAKO Turčín má novou výrobní halu, bude dodávat díly pro bojová vozidla",
-    "odkaz": "https://zlinsky.denik.cz/podnikani/firma-zako-turcin-ma-novou-vyrobni-halu-bude-dodavat-dily-pro-bojova-vozidla/",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/1bb/1bb3bce0-0c8b-4e60-9a15-f92847f823c8.jpeg",
-    "region": "Zlínský deník"
-  },
   "verejne": {
-    "titulek": "Jsem pořádně hladový po úspěchu, hlásí Pastrňák. Céčko? To není moje starost",
-    "odkaz": "https://www.denik.cz/hokej/david-pastrnak-boston-bruins-nova-sezona-kapitan-stanley-cup-nhl/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=hokej",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/f2f/f2f187fb-3051-45bc-8b48-226699206f7b.jpeg",
+    "titulek": "Znáte pravidla jízdy na parkovišti? Některá vás asi překvapí",
+    "odkaz": "https://www.denik.cz/zivot-ridice/znate-pravidla-jizdy-na-parkovisti-nektera-vas-asi-prekvapi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zivot-ridice",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/cb7/cb723281-a2b9-44df-a0e0-71fad2677fbd.jpeg",
     "region": "celostátní"
+  },
+  "bezpecnost": {
+    "titulek": "Kuriózní vloupání do domu: Pes místo útoku přivítal vetřelce s hračkou",
+    "odkaz": "https://www.denik.cz/svet/kuriozni-vloupani-do-domu-pes-misto-utoku-privital-vetrelce-s-hrackou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/467/467219bf-a5d0-4838-9e48-a85019b128b8.jpeg",
+    "region": "celostátní"
+  },
+  "doprava": {
+    "titulek": "Autobusy místo tramvají: Husovice i Juliánov čekají o víkendu výluky MHD",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/autobusy-misto-tramvaji-husovice-i-julianov-cekaji-o-vikendu-vyluky-mhd/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/f6d/f6d22ac0-856d-44ff-b890-c69024030376.jpeg",
+    "region": "Brněnský deník"
   },
   "skolstvi": {
     "titulek": "Moravskoslezský kraj rozdělil univerzitám 91 milionů korun na vědce ze zahraničí",
@@ -22,21 +27,15 @@ window.TEMATA_LIVE = {
     "region": "Opavský deník"
   },
   "vystavba": {
-    "titulek": "Zastupitelé Boršova schválili smlouvu s investorem na stavbu haly pro Amazon",
-    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/zastupitele-borsova-schvalili-smlouvu-s-investorem-na-stavbu-haly-pro-amazon/",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/a5c/a5c58deb-1772-4dd1-aecf-d1dcad1c9792.jpeg",
-    "region": "Českobudějovický deník"
+    "titulek": "Cisterna se srazila s osobákem. Silnice u Žižic je neprůjezdná",
+    "odkaz": "https://kladensky.denik.cz/zpravy-region/cisterna-nehoda-kladensko-srazka-s-autem-pet-zranenych/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x910/4f0/4f0e3dd0-5705-43dc-a877-375d0cb055dd.jpeg",
+    "region": "Kladenský deník"
   },
-  "doprava": {
-    "titulek": "Na průtahu Libercem začíná další uzavírka. Zavřou i důležité nájezdy a sjezdy",
-    "odkaz": "https://liberecky.denik.cz/zpravy-region/na-prutahu-libercem-zacina-dalsi-uzavirka-zavrou-i-dulezite-najezdy-a-sjezdy/",
-    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x910/b39/b397b631-f49a-4cd2-82f7-70592d8b985c.jpeg",
-    "region": "Liberecký deník"
-  },
-  "bezpecnost": {
-    "titulek": "Další útok medvěda na Slovensku. Ukrýval se ve křoví, pak napadl pastevce",
-    "odkaz": "https://www.denik.cz/evropa/utok-medved-martin-slovensko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=evropa",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/2d8/2d813d80-1b67-4925-95cd-63a1d3c13aea.jpeg",
-    "region": "Olomoucký deník"
+  "investice": {
+    "titulek": "Pirátka Tereza Nislerová chce navázat na Hřibovu éru",
+    "odkaz": "https://www.denik.cz/jiny-pohled/piratka-tereza-nislerova-chce-navazat-na-hribovu-eru/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=jiny-pohled",
+    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x910/ec1/ec1fdf34-689d-4a9b-999f-4a1dfb826498.jpeg",
+    "region": "Třebíčský deník"
   }
 };
