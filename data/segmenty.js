@@ -149,7 +149,7 @@ window.FAQ = [
 
   { q: "Obnovuje se předplatné po roce samo?",
     a: "Automaticky ne. Pokud máte o obnovu předplatného po roce zájem, "
-     + "<a href=\"#dotaz\">napište nám</a> nebo zavolejte na "
+     + "<a href=\"mailto:denik@mojepredplatne.cz\">napište nám</a> nebo zavolejte na "
      + "<a href=\"tel:+420272015015\">+420 272 015 015</a>.",
     raw: true },
 

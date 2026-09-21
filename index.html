@@ -219,53 +219,8 @@
   </div>
 </section>
 
-<!-- 7 Máte otázku -->
-<section id="dotaz" style="border-top:1px solid var(--border-subtle)">
-  <div class="wrap">
-    <div class="obj">
-      <div>
-        <h2 class="sec">Máte otázku, než objednáte?</h2>
-        <p class="lead" style="max-width:48ch">Napište nám, nebo zavolejte. Objednat můžete rovnou nahoře, tohle je pro případ, že si chcete něco ujasnit.</p>
-        <div id="odeslano" role="status" hidden style="background:var(--success-100);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:inset 0 0 0 1px var(--success-400)">
-          <div style="font:800 18px/1.3 var(--font-sans);color:var(--success-700);margin-bottom:6px">Zpráva odešla</div>
-          <p style="font:400 15px/1.6 var(--font-sans);color:var(--grey-700);margin:0">Ozveme se do jednoho pracovního dne.</p>
-        </div>
-        <form id="form" novalidate>
-          <div class="full">
-            <label for="f-org">Organizace</label>
-            <input id="f-org" name="org" type="text">
-            <p class="err" id="e-org" hidden>Doplňte název organizace, ať víme, kdo se ptá.</p>
-          </div>
-          <div><label for="f-jmeno">Jméno a příjmení</label><input id="f-jmeno" name="jmeno" type="text"></div>
-          <div>
-            <label for="f-mail">E-mail</label>
-            <input id="f-mail" name="email" type="email">
-            <p class="err" id="e-mail" hidden>Zkontrolujte e-mail, chybí v něm zavináč nebo domény.</p>
-          </div>
-          <div><label for="f-tel">Telefon <span style="font-weight:400;color:var(--grey-500)">(nepovinný)</span></label><input id="f-tel" name="telefon" type="tel"></div>
-          <div>
-            <label for="f-pocet">Kolik přístupů zvažujete <span style="font-weight:400;color:var(--grey-500)">(nepovinné)</span></label>
-            <input id="f-pocet" name="pocet" type="number" min="1" max="999">
-            <p style="font:400 13px/1.5 var(--font-sans);color:var(--grey-500);margin:6px 0 0">Předplněno z kalkulačky.</p>
-          </div>
-          <div class="full"><label for="f-pozn">Na co se chcete zeptat</label><textarea id="f-pozn" name="poznamka" rows="3"></textarea></div>
-          <div class="full" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px">
-            <button class="btn" type="submit">Poslat</button>
-            <p style="font:400 14px/1.5 var(--font-sans);color:var(--grey-600);margin:0;max-width:44ch">
-              Údaje použijeme jen k odpovědi, viz <a href="#">zásady zpracování osobních údajů</a>.</p>
-          </div>
-        </form>
-      </div>
-      <div class="obchod">
-        <img src="assets/zarizeni.png" alt="Deník.cz na notebooku, tabletu a telefonu">
-        <img class="titulka" src="assets/titulka-noviny.jpg" alt="Titulní strana tištěného Deníku">
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 8 Časté dotazy -->
-<section class="tone-dark" style="border-top:1px solid var(--border-subtle)">
+<section id="dotazy" class="tone-dark" style="border-top:1px solid var(--border-subtle)">
   <div class="wrap" style="max-width:760px">
     <h2 class="sec" style="margin-bottom:28px">Časté dotazy</h2>
     <div id="faq"></div>
@@ -284,16 +239,16 @@
       <div class="h">PŘEDPLATNÉ</div>
       <div style="display:grid;gap:10px;font:400 15px/1.4 var(--font-sans)">
         <a href="#kalkulacka">Spočítat cenu</a>
-        <a href="#dotaz">Máte otázku?</a>
-        <a href="#">Správa licencí</a>
+        <a href="#dotazy">Máte otázku?</a>
+        <a href="https://www.vlmedia.cz/zmena-osobnich-udaju/" target="_blank" rel="noopener">Práva subjektů údajů</a>
       </div>
     </div>
     <div>
       <div class="h">DOKUMENTY</div>
       <div style="display:grid;gap:10px;font:400 15px/1.4 var(--font-sans)">
-        <a href="#">Obchodní podmínky</a>
-        <a href="#">Zásady zpracování osobních údajů</a>
-        <a href="#">Nastavení cookies</a>
+        <a href="https://www.vlmedia.cz/podminky/" target="_blank" rel="noopener">Obchodní podmínky</a>
+        <a href="https://www.vlmedia.cz/zasady-zpracovani-osobnich-udaju/" target="_blank" rel="noopener">Zásady zpracování osobních údajů</a>
+        <a href="https://www.vlmedia.cz/cookies/" target="_blank" rel="noopener">Použití cookies</a>
       </div>
     </div>
     <div>
@@ -386,7 +341,6 @@
     document.querySelectorAll('#cenik tr').forEach(function(tr){tr.classList.remove('akt');});
     var a=document.querySelector('#cenik tr[data-i="'+C.indexOf(p)+'"]');
     if(a) a.classList.add('akt');
-    document.getElementById('f-pocet').value=n;
   }
   document.getElementById('pocet').addEventListener('input',prepocti);
   document.getElementById('inc').onclick=function(){var e=document.getElementById('pocet');
@@ -397,17 +351,6 @@
   document.getElementById('faq').innerHTML=F.map(function(o){
     return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+(o.raw?o.a:todo(o.a))+'</p></details>';
   }).join('');
-
-  document.getElementById('form').addEventListener('submit',function(e){
-    e.preventDefault();
-    var org=document.getElementById('f-org'), mail=document.getElementById('f-mail');
-    var chybaOrg=!org.value.trim(), chybaMail=!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail.value.trim());
-    org.setAttribute('aria-invalid',chybaOrg); mail.setAttribute('aria-invalid',chybaMail);
-    document.getElementById('e-org').hidden=!chybaOrg;
-    document.getElementById('e-mail').hidden=!chybaMail;
-    if(chybaOrg||chybaMail){ (chybaOrg?org:mail).focus(); return; }
-    this.hidden=true; document.getElementById('odeslano').hidden=false;
-  });
 
   var zParametru=new URLSearchParams(location.search).get('segment');
   var start = (zParametru && S[zParametru]) ? zParametru : klice[0];
