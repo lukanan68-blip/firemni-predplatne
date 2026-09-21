@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-21T14:35:19.976Z
+// Ručně vybráno 21. 9. 2026: 2 články z Brněnského deníku, 4 zamčené.
 window.TEMATA_LIVE = {
   "verejne": {
-    "titulek": "Výpadek O2 dnes trval tři hodiny. Experti popsali, co může zákazník reklamovat",
-    "odkaz": "https://www.denik.cz/cesko/cesko-vypadek-o2-internet-oneplay-jak-je-to-s-reklamaci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/6d1/6d1899d1-7fa7-4659-9076-d1cf82f9a188.jpeg",
-    "region": "celostátní"
+    "titulek": "Spor o územní plán Stěžer: Investor vidí chyby obce i úřadu, ty vinu odmítají",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/stezery-uzemni-plan-spor-magistrat-bicz-hradec-kralove/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/a68/a68142a3-d071-4fc5-b1f0-34f72b7a6aa1.jpeg",
+    "region": "Hradecký deník"
   },
   "skolstvi": {
-    "titulek": "Po nemocnici i superškola. ANO navrhuje kampus pro tisíce středoškoláků",
-    "odkaz": "https://prazsky.denik.cz/komunalni-volby/po-nemocnici-i-superskola-ano-navrhuje-kampus-pro-tisice-stredoskolaku/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/bbd/bbd238f3-a57a-45e0-b48e-0cb4c44399a0.jpeg",
-    "region": "celostátní"
+    "titulek": "Na rektora zlínské univerzity budou kandidovat tři lidé, obhajuje Adámek",
+    "odkaz": "https://zlinsky.denik.cz/zpravy-region/na-rektora-zlinske-univerzity-budou-kandidovat-tri-lide-obhajuje-adamek/",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/281/28194d88-4853-4073-a57d-58b79310a9c8.jpeg",
+    "region": "Zlínský deník"
   },
   "doprava": {
-    "titulek": "Voda brzdí dopravu na brněnském úřadu. Kvůli vyplavení už měsíc funguje omezeně",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-urad-vyplaveni-voda-omezeny-provoz-registr-vozidel-ridicu-kounicova/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/a5b/a5b62f5f-de46-4b39-893a-8c67c0e6bd6e.jpeg",
+    "titulek": "Náhrada přetížené I/43 u Brna: letos zažádají o povolení stavby prvního úseku",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/nahrada-pretizene-i43-u-brna-letos-zazadaji-o-povoleni-stavby-prvniho-useku/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/ef9/ef9d2c7e-14ca-4ea0-918e-2383486cdadf.jpeg",
     "region": "Brněnský deník"
   },
+  "bezpecnost": {
+    "titulek": "Noc v kabině na D1. Kamioňáci dveře jistí kurtem, bojí se krádeží",
+    "odkaz": "https://zdarsky.denik.cz/krimi/noc-v-kabine-na-d1-kamionaci-dvere-jisti-kurtem-boji-se-kradezi/",
+    "obrazek": "https://zdarsky.denik.cz/images/api/image/1366x910/4ba/4ba67838-e788-436b-9902-7fc833b6febf.jpeg",
+    "region": "Žďárský deník"
+  },
   "investice": {
-    "titulek": "Vládci fotbalu na Pardubicku: Za miliardáře se dostal zázrak z vesnice",
-    "odkaz": "https://pardubicky.denik.cz/fotbal-okres/vladci-fotbalu-pardubicko-prazak-zavrel-zivny-bilek-drabek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=fotbal-okres",
-    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/cc2/cc2ac5df-64aa-4425-aa55-5188b0adac12.jpeg",
-    "region": "Pardubický deník"
+    "titulek": "Další logistický park u Plzně. Nedaleko Chotíkova vzniknou sklady i kanceláře",
+    "odkaz": "https://plzensky.denik.cz/zpravy-region/dalsi-logisticky-park-u-plzne-v-chotikove-vzniknou-sklady-i-kancelare/",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/5bf/5bfd8e95-f7cd-4f99-bf04-041ffb532a78.jpeg",
+    "region": "Plzeňský deník"
   },
   "vystavba": {
-    "titulek": "Výpadek O2 dnes trval tři hodiny. Experti popsali, co může zákazník reklamovat",
-    "odkaz": "https://www.denik.cz/cesko/cesko-vypadek-o2-internet-oneplay-jak-je-to-s-reklamaci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=cesko",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x910/6d1/6d1899d1-7fa7-4659-9076-d1cf82f9a188.jpeg",
-    "region": "Prostějovský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Nezletilý vrah z Olomoucka se neodvolal. Trest 9,5 roku za dvě vraždy platí",
-    "odkaz": "https://olomoucky.denik.cz/krimi/vrazdy-zabreh-unicov-pachatel-mladistvy-soud-rozsudek-vezeni-trest-95-roku/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=krimi",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/6a0/6a015f54-10a8-4c9b-b26f-ed91c27865f8.jpeg",
-    "region": "Olomoucký deník"
+    "titulek": "Velké bourání u Brněnské přehrady. Zmizí dominanty přístaviště, postaví jiné",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-prehrada-pristaviste-hangary-lode-demolice-bourani/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0aa/0aaa82cf-246e-4ddd-973e-cea9f989a4da.jpeg",
+    "region": "Brněnský deník"
   }
 };

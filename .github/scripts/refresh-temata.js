@@ -1,41 +1,38 @@
 // Aktualizuje denní titulky v sekci "Co si přečtete".
 // Spouští .github/workflows/daily-temata-refresh.yml jednou denně.
 //
-// 6 témat, každý den 2 dostanou titulek z celostátního feedu Deník.cz
-// a 4 z náhodně vybraných (různých) krajských mutací -- kterých přesně
-// 2 jsou celostátní a ze kterých regionů se čte, se každý den mění náhodně.
+// 6 témat: 2 z celostátního feedu Deník.cz, 4 z krajských mutací. Pravidla:
+//  - aspoň 2 články z Brněnského deníku (doprava + jedno další téma),
+//  - aspoň 2 články zamčené (jen pro předplatitele), pokud sedí k tématu,
+//  - článek musí sedět k tématu (klíčová slova) -- když se nenajde, hledá se
+//    v ostatních feedech, nikdy se nebere "první co je",
+//  - žádný sport, kultura ani volný čas, žádný článek dvakrát.
 // Výsledek jde do data/temata-live.js, který index.html načte a jeho
 // hodnoty přebijí statický fallback v data/region.js (window.TEMATA).
-// Tenhle soubor (na rozdíl od region.js) nemá žádné ruční komentáře
-// k zachování -- robot ho každý den celý přepíše, klidně do něj nic
-// ručně nepiš.
+// Tenhle soubor se každý den celý přepisuje, ručně do něj nic nepsat.
 
 const fs = require("fs");
 
 // Klíčová slova pro dohledání titulku, který k tématu skutečně sedí.
-// Když se nic nenajde, vezme se první nepoužitý titulek z feedu -- robot
-// nikdy neselže, jen ten den nemusí být shoda dokonalá.
-// Doplněno 15. 9. 2026 po srovnání s ručně vybranými (dobrými) titulky --
-// trolejbusy/MHD linky nespadaly do "doprava", hasiči/záchranka do
-// "bezpecnost" a obchodní řetězce/retail do "investice" vůbec nezapadaly.
-// Upraveno 18. 9. 2026 -- "podnik" u investic chytal i "dopravní podnik"
-// (plat šéfa dopravního podniku != investice), "řidič" u dopravy chytal
-// i krádeže/přepadení, kde je řidič jen oběť, ne dopravní zpráva. Obě
-// slova pryč. "uzavírk" patří k dopravě (uzavírka silnice), ne k výstavbě,
-// přesunuto. Přidána i další slova pro reálné uzavírky/výluky a investice
-// do nových výrobních hal.
+// Historie: 15. 9. doplněna slova pro MHD/hasiče/retail; 18. 9. odstraněno
+// "podnik" (chytal "dopravní podnik") a "řidič" (chytal přepadení);
+// 21. 9. odstraněno "miliony|miliard" a "provoz|pravidl|město|obec" (chytaly
+// sport, O2 výpadek a všechno možné), přidána slova pro bourání, logistiku,
+// územní plány a volby.
 const TOPICS = {
-  doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|jízdní pruh|vlak|nádraží|silnic|dálnic|parkov|obchvat|tunel|uzavírk|výluk|objížďk|kruhový objezd|průtah/i,
-  skolstvi: /škol|student|učitel|univerzit|fakult|žáci|žák|vzdělá/i,
-  investice: /invest|miliony|miliard|\bfirm|koncese|akcie|byznys|obchodní řetězec|retail|prodejn|pobočk|expand|výrobní hal/i,
-  vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|rekonstruk|podchod|stavbou roku/i,
-  bezpecnost: /polici|hasič|záchran|požár|zločin|vražd|útok|soud|trest|nehod|havar|zranění/i,
-  verejne: /radnice|město|obec|úřad|starost|\bkraj\b|zákaz|pravidl|provoz|odstávk/i,
+  doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|jízdní pruh|vlak|nádraží|silnic|dálnic|\bD\d{1,2}\b|\bI\/\d+|parkov|obchvat|tunel|uzavírk|výluk|objížďk|kruhový objezd|průtah/i,
+  skolstvi: /škol|student|učitel|univerzit|fakult|rektor|žáci|žák|vzdělá/i,
+  investice: /invest|\bfirm|koncese|akcie|byznys|podnikatel|podnikání|obchodní řetězec|retail|prodejn|pobočk|expand|výrobní hal|logistick|průmyslov|nájemc|\bsklady?\b|tržb|zaměstnavat|\bhotel/i,
+  vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|bourá|bourán|přestavb|rekonstruk|podchod|lávk|kasárn|územní plán|stavbou roku/i,
+  bezpecnost: /polici|hasič|záchran|požár|zločin|vražd|útok|soud|trest|nehod|havar|zranění|krádež|krádeží|přepad/i,
+  verejne: /radnice|radnic|úřad|starost|zastupitel|magistrát|městsk|rozpočet|\bkraj\b|volb|kandiduj|kandidát|odstávk|územní plán/i,
 };
 
-// Ověřeno ručně 14. 9. 2026 (curl na <slug>.denik.cz/rss/vse.xml) -- funkční
-// krajské mutace, jejichž subdoména odpovídá počeštěnému přídavnému jménu
-// bez diakritiky. Deník jich má 72, tohle je jen bezpečný ověřený výběr.
+// Nechtěné rubriky podle části adresy článku (sport, kultura, volný čas...).
+const NECHTENE = /denik\.cz\/(fotbal|hokej|basket|volejbal|florbal|ostatni-sporty|sport|volny-cas|kultura|zabava|magazin|lifestyle|horoskopy|cestovani|auto|tv|kam-o-vikendu)/i;
+const NECHTENE_TITULEK = /kdo vládne fotbalu|vládci fotbalu|smluvní oznámení|přehled zesnulých|rozloučili jsme se/i;
+
+// Ověřeno ručně 14. 9. 2026 (curl na <slug>.denik.cz/rss/vse.xml).
 const REGIONS = {
   brnensky: "Brněnský deník",
   zlinsky: "Zlínský deník",
@@ -58,6 +55,8 @@ const REGIONS = {
 
 const OUT = "data/temata-live.js";
 const POCET_CELOSTATNICH = 2;
+const MIN_BRNO = 2;
+const MIN_ZAMCENYCH = 2;
 const BRNO_TEMA = "doprava";
 
 function shuffle(arr) {
@@ -81,7 +80,7 @@ function decodeEntity(s) {
 
 // Vrací pole { titulek, odkaz, obrazek } -- jeden záznam na článek z feedu.
 async function fetchItems(url) {
-  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" }, signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(url + " -> HTTP " + res.status);
   const xml = await res.text();
   const bloky = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
@@ -96,7 +95,7 @@ async function fetchItems(url) {
         obrazek: imgM ? decodeEntity(imgM[1]) : "",
       };
     })
-    .filter((it) => it.titulek && it.odkaz);
+    .filter((it) => it.titulek && it.odkaz && !NECHTENE.test(it.odkaz) && !NECHTENE_TITULEK.test(it.titulek));
 }
 
 // Zamčený článek (jen pro předplatitele) se pozná podle isAccessibleForFree:false
@@ -113,64 +112,101 @@ async function isLocked(url) {
   return v;
 }
 
-// Mezi články, které k tématu sedí (podle klíčových slov), se bere první
-// zamčený; když žádný zamčený není, první shodný. Zamčenost se nikdy nehledá
-// na úkor shody s tématem.
-async function pickForTopic(items, regex, used) {
-  const shodne = items.filter((it) => regex.test(it.titulek) && !used.has(it.titulek));
-  let zvoleny = null;
-  for (const it of shodne.slice(0, 8)) {
-    if (await isLocked(it.odkaz)) { zvoleny = it; break; }
+// Z kandidátů (už seřazených podle preference) vrátí první zamčený mezi
+// prvními 8, jinak první.
+async function nejlepsiZ(kandidati, zamcenyPreferuj) {
+  if (!kandidati.length) return null;
+  if (zamcenyPreferuj) {
+    for (const it of kandidati.slice(0, 8)) if (await isLocked(it.odkaz)) return it;
   }
-  zvoleny = zvoleny || shodne[0] || items.find((it) => !used.has(it.titulek)) || items[0];
-  if (zvoleny) used.add(zvoleny.titulek);
-  return zvoleny || { titulek: "<dnešní feed nevrátil žádný titulek>", odkaz: "", obrazek: "" };
+  return kandidati[0];
 }
 
 (async () => {
-  const topicKeys = Object.keys(TOPICS);
-  // Doprava je v obsahu všech 4 segmentů, takže je vždy z Brněnského deníku
-  // -- díky tomu má každý segment aspoň jeden brněnský článek.
-  const zamichane = shuffle(topicKeys.filter((k) => k !== BRNO_TEMA));
-  const celostatniTemata = zamichane.slice(0, POCET_CELOSTATNICH);
-  const regionalniTemata = [BRNO_TEMA, ...zamichane.slice(POCET_CELOSTATNICH)];
+  const feeds = {};
+  const nacti = async (klic, url) => {
+    try { feeds[klic] = await fetchItems(url); } catch (e) { console.log("Feed " + klic + " selhal: " + e.message); feeds[klic] = []; }
+  };
+  await Promise.all([
+    nacti("celostatni", "https://www.denik.cz/rss/vse.xml"),
+    ...Object.keys(REGIONS).map((s) => nacti(s, "https://" + s + ".denik.cz/rss/vse.xml")),
+  ]);
 
-  const vybraneRegiony = [
-    "brnensky",
-    ...shuffle(Object.keys(REGIONS).filter((r) => r !== "brnensky")).slice(0, regionalniTemata.length - 1),
-  ];
+  const temata = Object.keys(TOPICS);
+  const brnoTemata = [BRNO_TEMA, ...shuffle(temata.filter((t) => t !== BRNO_TEMA)).slice(0, MIN_BRNO - 1)];
+  const ostatni = shuffle(temata.filter((t) => !brnoTemata.includes(t)));
+  const celostatniTemata = ostatni.slice(0, POCET_CELOSTATNICH);
+  const regionalniTemata = ostatni.slice(POCET_CELOSTATNICH);
+  const nahodneRegiony = shuffle(Object.keys(REGIONS).filter((r) => r !== "brnensky"));
 
-  const result = {};
+  // Preferovaný zdroj pro každé téma.
+  const zdroj = {};
+  brnoTemata.forEach((t) => (zdroj[t] = "brnensky"));
+  celostatniTemata.forEach((t) => (zdroj[t] = "celostatni"));
+  regionalniTemata.forEach((t, i) => (zdroj[t] = nahodneRegiony[i]));
 
-  const nationalItems = await fetchItems("https://www.denik.cz/rss/vse.xml");
-  const usedNational = new Set();
-  for (const tema of celostatniTemata) {
-    const it = await pickForTopic(nationalItems, TOPICS[tema], usedNational);
-    result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: "celostátní" };
+  const pouzite = new Set();
+  const vysledek = {};
+  const pojmenuj = (slug) => (slug === "celostatni" ? "celostátní" : REGIONS[slug]);
+
+  // Všechny shodné, dosud nepoužité články z daného feedu.
+  const shodne = (slug, tema) =>
+    (feeds[slug] || []).filter((it) => TOPICS[tema].test(it.titulek) && !pouzite.has(it.odkaz.split("?")[0]));
+  const klic = (it) => it.odkaz.split("?")[0];
+
+  for (const tema of [...brnoTemata, ...celostatniTemata, ...regionalniTemata]) {
+    const slug = zdroj[tema];
+    let it = await nejlepsiZ(shodne(slug, tema), true);
+    let odkud = slug;
+    if (!it) {
+      // V preferovaném feedu nic nesedí -- hledá se ve všech ostatních.
+      for (const jiny of shuffle(Object.keys(feeds))) {
+        it = await nejlepsiZ(shodne(jiny, tema), true);
+        if (it) { odkud = jiny; break; }
+      }
+    }
+    if (!it) { console.log("Pro téma " + tema + " dnes nic nesedí, ponechávám prázdné."); continue; }
+    pouzite.add(klic(it));
+    vysledek[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: pojmenuj(odkud), _zdroj: odkud };
   }
 
-  for (let i = 0; i < regionalniTemata.length; i++) {
-    const tema = regionalniTemata[i];
-    const slug = vybraneRegiony[i];
-    try {
-      const items = await fetchItems("https://" + slug + ".denik.cz/rss/vse.xml");
-      const used = new Set();
-      const it = await pickForTopic(items, TOPICS[tema], used);
-      result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: REGIONS[slug] };
-    } catch (e) {
-      console.log("Feed pro " + slug + " selhal (" + e.message + "), beru celostátní náhradou.");
-      const it = await pickForTopic(nationalItems, TOPICS[tema], usedNational);
-      result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: "celostátní" };
+  // Doladění: aspoň MIN_ZAMCENYCH zamčených -- nezamčené se zkusí vyměnit
+  // za zamčený článek stejného tématu (stále musí sedět k tématu).
+  const pocetZamcenych = async () => {
+    let n = 0;
+    for (const t of Object.keys(vysledek)) if (await isLocked(vysledek[t].odkaz)) n++;
+    return n;
+  };
+  let zamcenych = await pocetZamcenych();
+  for (const tema of Object.keys(vysledek)) {
+    if (zamcenych >= MIN_ZAMCENYCH) break;
+    if (await isLocked(vysledek[tema].odkaz)) continue;
+    // Brněnská témata zůstávají v Brně, pokud by to porušilo minimum.
+    for (const jiny of shuffle(Object.keys(feeds))) {
+      const kandidati = shodne(jiny, tema);
+      let zamcen = null;
+      for (const it of kandidati.slice(0, 8)) if (await isLocked(it.odkaz)) { zamcen = it; break; }
+      if (!zamcen) continue;
+      const bylBrno = vysledek[tema]._zdroj === "brnensky";
+      const brnoPoVymene = Object.values(vysledek).filter((v) => v._zdroj === "brnensky").length - (bylBrno ? 1 : 0) + (jiny === "brnensky" ? 1 : 0);
+      if (brnoPoVymene < MIN_BRNO) continue;
+      pouzite.delete(klic({ odkaz: vysledek[tema].odkaz }));
+      pouzite.add(klic(zamcen));
+      vysledek[tema] = { titulek: zamcen.titulek, odkaz: zamcen.odkaz, obrazek: zamcen.obrazek, region: pojmenuj(jiny), _zdroj: jiny };
+      zamcenych++;
+      break;
     }
   }
+
+  for (const t of Object.keys(vysledek)) delete vysledek[t]._zdroj;
 
   const hlavicka =
     "// Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.\n" +
     "// Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).\n" +
     "// Vygenerováno: " + new Date().toISOString() + "\n";
-  const obsah = hlavicka + "window.TEMATA_LIVE = " + JSON.stringify(result, null, 2) + ";\n";
+  const obsah = hlavicka + "window.TEMATA_LIVE = " + JSON.stringify(vysledek, null, 2) + ";\n";
 
   fs.writeFileSync(OUT, obsah);
-  console.log("Uloženo do " + OUT + ":");
-  console.log(JSON.stringify(result, null, 2));
+  console.log("Uloženo do " + OUT + " (zamčených: " + zamcenych + "):");
+  console.log(JSON.stringify(vysledek, null, 2));
 })();
