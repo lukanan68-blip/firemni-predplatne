@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-21T14:54:48.401Z
+// Ručně vybráno 21. 9. 2026: 2 články z Brněnského deníku, 4 zamčené.
 window.TEMATA_LIVE = {
-  "doprava": {
-    "titulek": "Noc v kabině na D1. Kamioňáci dveře jistí kurtem, bojí se krádeží",
-    "odkaz": "https://zdarsky.denik.cz/krimi/noc-v-kabine-na-d1-kamionaci-dvere-jisti-kurtem-boji-se-kradezi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/4ba/4ba67838-e788-436b-9902-7fc833b6febf.jpeg",
-    "region": "Brněnský deník"
+  "verejne": {
+    "titulek": "Spor o územní plán Stěžer: Investor vidí chyby obce i úřadu, ty vinu odmítají",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/stezery-uzemni-plan-spor-magistrat-bicz-hradec-kralove/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/a68/a68142a3-d071-4fc5-b1f0-34f72b7a6aa1.jpeg",
+    "region": "Hradecký deník"
   },
-  "vystavba": {
-    "titulek": "Velké bourání u Brněnské přehrady. Zmizí dominanty přístaviště, postaví jiné",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-prehrada-pristaviste-hangary-lode-demolice-bourani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0aa/0aaa82cf-246e-4ddd-973e-cea9f989a4da.jpeg",
+  "skolstvi": {
+    "titulek": "Na rektora zlínské univerzity budou kandidovat tři lidé, obhajuje Adámek",
+    "odkaz": "https://zlinsky.denik.cz/zpravy-region/na-rektora-zlinske-univerzity-budou-kandidovat-tri-lide-obhajuje-adamek/",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/281/28194d88-4853-4073-a57d-58b79310a9c8.jpeg",
+    "region": "Zlínský deník"
+  },
+  "doprava": {
+    "titulek": "Náhrada přetížené I/43 u Brna: letos zažádají o povolení stavby prvního úseku",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/nahrada-pretizene-i43-u-brna-letos-zazadaji-o-povoleni-stavby-prvniho-useku/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/ef9/ef9d2c7e-14ca-4ea0-918e-2383486cdadf.jpeg",
     "region": "Brněnský deník"
   },
   "bezpecnost": {
-    "titulek": "Soud zrušil povolení ke zvýšení hladiny Nových Mlýnů. Ministerstvo chybovalo",
-    "odkaz": "https://www.denik.cz/regiony/soud-zrusil-povoleni-ke-zvyseni-hladiny-novych-mlynu-ministerstvo-chybovalo/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=regiony",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/a3c/a3cffa18-5aa0-4df1-84ef-ab22ea7a3cc9.jpeg",
-    "region": "celostátní"
-  },
-  "verejne": {
-    "titulek": "Volby v Rusku? Šlo o zkoušku loajality elit, tvrdí analytici. Výsledek byl jasný",
-    "odkaz": "https://www.denik.cz/evropa/rusko-volby-vysledky-vitezstvi-strana-vladimira-putina-jednotne-rusko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/c60/c6039470-cfff-412b-a3f0-6bf648a759fc.jpeg",
-    "region": "celostátní"
-  },
-  "skolstvi": {
-    "titulek": "Den bez aut ve Znojmě si společně užilo přes 600 dětí ze škol a školek",
-    "odkaz": "https://znojemsky.denik.cz/zpravy-region/den-bez-aut-ve-znojme-si-spolecne-uzilo-pres-600-deti-ze-skol-a-skolek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/797/797a5a95-0bf2-4524-85e8-e402e10e06ed.jpeg",
-    "region": "Znojemský deník"
+    "titulek": "Noc v kabině na D1. Kamioňáci dveře jistí kurtem, bojí se krádeží",
+    "odkaz": "https://zdarsky.denik.cz/krimi/noc-v-kabine-na-d1-kamionaci-dvere-jisti-kurtem-boji-se-kradezi/",
+    "obrazek": "https://zdarsky.denik.cz/images/api/image/1366x910/4ba/4ba67838-e788-436b-9902-7fc833b6febf.jpeg",
+    "region": "Žďárský deník"
   },
   "investice": {
-    "titulek": "V průmyslovém parku v Myslince našli prostory pro své podnikání další nájemci",
-    "odkaz": "https://plzensky.denik.cz/podnikani/prumyslovy-park-p3-myslinka-plzensko-novi-najemci-outdoor-concept-raben-logistika-sklad/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=podnikani",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/9eb/9eb630af-ca40-4afc-b111-ddd3cea1f56c.jpeg",
+    "titulek": "Další logistický park u Plzně. Nedaleko Chotíkova vzniknou sklady i kanceláře",
+    "odkaz": "https://plzensky.denik.cz/zpravy-region/dalsi-logisticky-park-u-plzne-v-chotikove-vzniknou-sklady-i-kancelare/",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/5bf/5bfd8e95-f7cd-4f99-bf04-041ffb532a78.jpeg",
     "region": "Plzeňský deník"
+  },
+  "vystavba": {
+    "titulek": "Velké bourání u Brněnské přehrady. Zmizí dominanty přístaviště, postaví jiné",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-prehrada-pristaviste-hangary-lode-demolice-bourani/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0aa/0aaa82cf-246e-4ddd-973e-cea9f989a4da.jpeg",
+    "region": "Brněnský deník"
   }
 };
