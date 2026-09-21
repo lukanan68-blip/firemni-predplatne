@@ -58,6 +58,7 @@ const REGIONS = {
 
 const OUT = "data/temata-live.js";
 const POCET_CELOSTATNICH = 2;
+const BRNO_TEMA = "doprava";
 
 function shuffle(arr) {
   const a = arr.slice();
@@ -98,27 +99,53 @@ async function fetchItems(url) {
     .filter((it) => it.titulek && it.odkaz);
 }
 
-function pickForTopic(items, regex, used) {
-  const shodny = items.find((it) => regex.test(it.titulek) && !used.has(it.titulek));
-  const zvoleny = shodny || items.find((it) => !used.has(it.titulek)) || items[0];
+// Zamčený článek (jen pro předplatitele) se pozná podle isAccessibleForFree:false
+// v kódu stránky.
+const lockCache = new Map();
+async function isLocked(url) {
+  if (lockCache.has(url)) return lockCache.get(url);
+  let v = false;
+  try {
+    const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" }, signal: AbortSignal.timeout(15000) });
+    v = /"isAccessibleForFree":\s*false/.test(await res.text());
+  } catch (e) {}
+  lockCache.set(url, v);
+  return v;
+}
+
+// Mezi články, které k tématu sedí (podle klíčových slov), se bere první
+// zamčený; když žádný zamčený není, první shodný. Zamčenost se nikdy nehledá
+// na úkor shody s tématem.
+async function pickForTopic(items, regex, used) {
+  const shodne = items.filter((it) => regex.test(it.titulek) && !used.has(it.titulek));
+  let zvoleny = null;
+  for (const it of shodne.slice(0, 8)) {
+    if (await isLocked(it.odkaz)) { zvoleny = it; break; }
+  }
+  zvoleny = zvoleny || shodne[0] || items.find((it) => !used.has(it.titulek)) || items[0];
   if (zvoleny) used.add(zvoleny.titulek);
   return zvoleny || { titulek: "<dnešní feed nevrátil žádný titulek>", odkaz: "", obrazek: "" };
 }
 
 (async () => {
   const topicKeys = Object.keys(TOPICS);
-  const zamichane = shuffle(topicKeys);
+  // Doprava je v obsahu všech 4 segmentů, takže je vždy z Brněnského deníku
+  // -- díky tomu má každý segment aspoň jeden brněnský článek.
+  const zamichane = shuffle(topicKeys.filter((k) => k !== BRNO_TEMA));
   const celostatniTemata = zamichane.slice(0, POCET_CELOSTATNICH);
-  const regionalniTemata = zamichane.slice(POCET_CELOSTATNICH);
+  const regionalniTemata = [BRNO_TEMA, ...zamichane.slice(POCET_CELOSTATNICH)];
 
-  const vybraneRegiony = shuffle(Object.keys(REGIONS)).slice(0, regionalniTemata.length);
+  const vybraneRegiony = [
+    "brnensky",
+    ...shuffle(Object.keys(REGIONS).filter((r) => r !== "brnensky")).slice(0, regionalniTemata.length - 1),
+  ];
 
   const result = {};
 
   const nationalItems = await fetchItems("https://www.denik.cz/rss/vse.xml");
   const usedNational = new Set();
   for (const tema of celostatniTemata) {
-    const it = pickForTopic(nationalItems, TOPICS[tema], usedNational);
+    const it = await pickForTopic(nationalItems, TOPICS[tema], usedNational);
     result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: "celostátní" };
   }
 
@@ -128,11 +155,11 @@ function pickForTopic(items, regex, used) {
     try {
       const items = await fetchItems("https://" + slug + ".denik.cz/rss/vse.xml");
       const used = new Set();
-      const it = pickForTopic(items, TOPICS[tema], used);
+      const it = await pickForTopic(items, TOPICS[tema], used);
       result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: REGIONS[slug] };
     } catch (e) {
       console.log("Feed pro " + slug + " selhal (" + e.message + "), beru celostátní náhradou.");
-      const it = pickForTopic(nationalItems, TOPICS[tema], usedNational);
+      const it = await pickForTopic(nationalItems, TOPICS[tema], usedNational);
       result[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: "celostátní" };
     }
   }
