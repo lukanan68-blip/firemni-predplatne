@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-22T09:52:52.386Z
+// Vygenerováno: 2026-09-23T09:54:09.914Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Bílá místa uprostřed zón v Brně zmodrala. Pro nové parkoviště už upravují skálu",
@@ -8,34 +8,34 @@ window.TEMATA_LIVE = {
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/536/53629762-7c25-42ee-8457-23433991bdfd.jpeg",
     "region": "Brněnský deník"
   },
-  "skolstvi": {
-    "titulek": "Návrat do škol přináší i virózy: Kdy už nechat dítě doma a jak posílit prevenci",
-    "odkaz": "https://www.denik.cz/zdravotnictvi/zdravi-skola-navrat-nemoce-virozy-kdy-nechar-dite-doma/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zdravotnictvi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/6a9/6a9a996a-039b-4874-9177-9f3d94ec33db.jpeg",
+  "verejne": {
+    "titulek": "Senátní volby 2026: Křeslo chce 154 zájemců, v jednom obvodu rozhodne už 1. kolo",
+    "odkaz": "https://www.denik.cz/komunalni-volby/senatni-volby-2026-vsichni-kandidati-prehled/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/a5b/a5b64686-e78b-4fdb-8c72-fdb8c3e7d4ba.jpeg",
     "region": "Brněnský deník"
   },
+  "skolstvi": {
+    "titulek": "KVÍZ: Kdo šetří, je starej, doplnili žáci přísloví. A jak to zvládnete vy?",
+    "odkaz": "https://www.denik.cz/spolecnost/kviz-prislovi-porekadla/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=spolecnost",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/0b4/0b4d8f86-c725-49cf-af45-9dbf2324a25b.jpeg",
+    "region": "celostátní"
+  },
   "investice": {
-    "titulek": "Kanada žaluje OpenAI kvůli střelbě ve škole. Firma mohla varovat policii",
-    "odkaz": "https://www.denik.cz/svet/kanada-zaluje-openai-kvuli-strelbe-ve-skole-firma-mohla-varovat-policii/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/e52/e52c427a-39aa-4756-873d-2bf066d19b84.jpeg",
-    "region": "celostátní"
-  },
-  "verejne": {
-    "titulek": "Volby by vyhrálo ANO před STAN a ODS, Motoristé by poslance nezískali",
-    "odkaz": "https://www.denik.cz/cesko/volby-by-vyhralo-ano-pred-stan-a-ods-motoriste-by-poslance-neziskali/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/971/971f63d9-237d-4d45-9880-36ca278c5716.jpeg",
-    "region": "celostátní"
-  },
-  "vystavba": {
-    "titulek": "Přestavba křižovatky na I/50 finišuje. Na tahu z Brna do Slavkova skončí omezení",
-    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/silnice-50-doprava-provoz-omezeni-krizovatka-velesovice-brno-slavkov-uzavirka-rsd-prestavba-vyskovsko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/f2d/f2ddde51-c5f8-418e-8116-fdd5b941d234.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "V bývalém průmyslovém areálu ve Znojmě má vzniknout nákupní centrum",
+    "odkaz": "https://znojemsky.denik.cz/zpravy-region/v-byvalem-prumyslovem-arealu-ve-znojme-ma-vzniknout-nakupni-centrum/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/fa5/fa5ea72c-8a22-4ece-839a-9bd0bdaba24f.jpeg",
+    "region": "Znojemský deník"
   },
   "bezpecnost": {
     "titulek": "Noc v kabině na D1. Kamioňáci dveře jistí kurtem, bojí se krádeží",
     "odkaz": "https://zdarsky.denik.cz/krimi/noc-v-kabine-na-d1-kamionaci-dvere-jisti-kurtem-boji-se-kradezi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=krimi",
     "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x910/4ba/4ba67838-e788-436b-9902-7fc833b6febf.jpeg",
     "region": "Karlovarský deník"
+  },
+  "vystavba": {
+    "titulek": "Kraj spustil nový nástroj. Ukáže ceny bydlení i dobu spoření na vlastní byt",
+    "odkaz": "https://fm.denik.cz/zpravy-region/kraj-spustil-novy-nastroj-ukaze-ceny-bydleni-i-dobu-sporeni-na-vlastni-byt/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x910/3a3/3a3f1950-e452-4d68-bee6-162dac6770cb.jpeg",
+    "region": "Opavský deník"
   }
 };
