@@ -123,26 +123,9 @@ window.FAQ = [
      + "kolegům. Každý se pak přihlašuje pod svým jménem, ne přes jeden společný účet.",
     zdroj: "petr" },
 
-  { q: "Můžeme číst i Deníky z jiných krajů?",
-    a: "Ano. Firemní přístup otevírá všech 72 regionálních Deníků i celostátní zpravodajství "
-     + "Deník.cz. Nezáleží na tom, kde sídlíte.",
-    zdroj: "petr" },
-
   { q: "Jak se platí?",
     a: "Kartou, nebo bankovním převodem na fakturu. Předplatné se hradí na rok dopředu.",
     zdroj: "kod" },
-
-  { q: "Máme tištěný Deník. Platíme digitální verzi znovu?",
-    a: "Ne. Kdo má zaplacené předplatné tištěného Deníku, čte Deník.cz bez omezení. Stačí se "
-     + "přihlásit stejným e-mailem, na který je předplatné vedené.",
-    zdroj: "web" },
-
-  { q: "Máme na Deník.cz účty. Musíme se registrovat znovu?",
-    a: "Ne. Přihlásíte se stávajícím e-mailem a předplatné si k němu objednáte.",
-    zdroj: "web" },
-
-  { q: "Kolik zařízení může jeden přístup používat?",
-    a: "<doplnit z obchodních podmínek>", zdroj: "doplnit" },
 
   { q: "Můžeme přidat další lidi během roku?",
     a: "Ano, stačí přikoupit další přístupy, zaplatit a rozdělit je mezi nové kolegy." },
@@ -152,12 +135,6 @@ window.FAQ = [
      + "<a href=\"mailto:denik@mojepredplatne.cz\">napište nám</a> nebo zavolejte na "
      + "<a href=\"tel:+420272015015\">+420 272 015 015</a>.",
     raw: true },
-
-  { q: "Můžeme přístup předat jinému kolegovi, když někdo odejde?",
-    a: "<ověřit ve správě firemního předplatného>", zdroj: "doplnit" },
-
-  { q: "Kdy začnou přístupy platit?",
-    a: "Jakmile bude objednávka zaplacena." },
 
   { q: "Zaplatili jsme a obsah je pořád zamčený. Co teď?",
     a: "Dokončete registraci podle e-mailu, který přišel po zaplacení, a přihlaste se. "
