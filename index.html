@@ -26,6 +26,12 @@
     padding:5px 12px;font:600 13px/1.3 var(--font-sans);cursor:pointer}
   .prev button[aria-pressed=true]{background:#fff;color:var(--grey-900)}
   .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:stretch}
+  .banner{position:relative;background:#F6EEDB;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;overflow:hidden;min-height:300px;--g:max(24px,calc((100vw - 1200px)/2 + 24px))}
+  .banner .logo{display:block;height:52px;width:auto;margin:30px 0 0 var(--g)}
+  .banner .zar{display:block;height:auto;width:min(690px,62%);max-height:300px;object-fit:cover;object-position:left center;align-self:flex-end}
+  .banner .ttl{position:absolute;left:0;right:0;bottom:0;padding:70px var(--g) 22px;color:#fff;font:800 clamp(28px,4.4vw,50px)/1.1 var(--font-sans);
+    background:linear-gradient(to top,rgba(12,16,26,.9) 0%,rgba(12,16,26,.55) 55%,rgba(12,16,26,0) 100%)}
+  @media (max-width:1020px){.banner{flex-direction:column;gap:0;--g:24px}.banner .logo{height:40px;margin-top:22px}.banner .zar{width:100%;max-width:690px;align-self:flex-end;object-position:right center}}
   .zebra{background:var(--surface);background-image:repeating-linear-gradient(115deg,rgba(0,108,185,.045) 0 2px,rgba(0,0,0,0) 2px 26px)}
   .brow{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 12px 34px rgba(28,30,31,.16);background:var(--surface)}
   .brow-bar{background:var(--grey-100);padding:9px 12px;display:flex;align-items:center;gap:8px}
@@ -107,6 +113,13 @@
   <span style="width:1px;height:18px;background:#4a5a61"></span>
   <span style="color:#8fa3ad">segment:</span>
   <span id="prep" style="display:flex;gap:8px;flex-wrap:wrap"></span>
+</div>
+
+<!-- 0 Banner Deník klub -->
+<div class="banner">
+  <img class="logo" src="assets/denik-logo.png" alt="Deník.cz">
+  <img class="zar" src="assets/banner-zarizeni.jpg" alt="Deník.cz na notebooku, tabletu a telefonu">
+  <div class="ttl">Firemní předplatné</div>
 </div>
 
 <!-- 1 Hero -->
