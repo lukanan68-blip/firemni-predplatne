@@ -53,9 +53,8 @@ window.SEGMENTY = {
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
         text: "Předplacený Deník.cz je bez reklam." },
-      { titulek: "Kartou i na fakturu",
-        text: "Objednáte online. Zaplatíte kartou, nebo převodem na fakturu. "
-            + "Jedna faktura na rok." }
+      { titulek: "Přehled o regionu, kde žijete",
+        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." }
     ]
   },
 
@@ -74,9 +73,8 @@ window.SEGMENTY = {
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
         text: "Předplacený Deník.cz je bez reklam." },
-      { titulek: "Kartou i na fakturu",
-        text: "Objednat online může rektorát i jedna fakulta. Kartou, nebo převodem "
-            + "na fakturu." }
+      { titulek: "Přehled o regionu, kde žijete",
+        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." }
     ],
     faqNavic: []
   },
@@ -96,9 +94,8 @@ window.SEGMENTY = {
         text: "Doprava, stavby a dění ve městě, kde vaši lidé pracují." },
       { titulek: "Pro celé oddělení",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
-      { titulek: "Kartou i na fakturu",
-        text: "Objednáte online. Zaplatíte kartou, nebo převodem na fakturu. "
-            + "Předplatné na rok." }
+      { titulek: "Přehled o regionu, kde žijete",
+        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." }
     ],
     faqNavic: []
   }
