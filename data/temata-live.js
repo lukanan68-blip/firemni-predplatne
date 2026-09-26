@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-25T10:08:52.936Z
+// Vygenerováno: 2026-09-26T09:49:19.815Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Změny v okolí T Areny: přibyly stovky parkovacích míst, zastávky i stromy",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/okoli-t-arena-pribyly-stovky-parkovaci-mista-zastavky-stromy-novinky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/c07/c07f0478-9033-4352-a9af-1b8f36aea6b7.jpeg",
-    "region": "Brněnský deník"
-  },
-  "vystavba": {
-    "titulek": "Další posun bydlení na Kamenném vrchu v Brně. Místo je připravené na stavbu",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/druzstevni-bydleni-kamenny-vrch-je-pripraveno-na-stavbu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/530/53082d83-bc98-4123-839e-ee56c43997c6.jpeg",
+    "titulek": "Hlavní tah z Brna na Vídeň dostane čtyři pruhy. Příští rok začne přestavba D52",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/pristi-rok-vzniknou-dva-useky-ctyrproudove-dalnice-na-d52/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/dee/dee3d198-44ea-4a8d-8c77-bab05e347497.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Tyto firmy ze Zlína odmítly zveřejnit platy šéfů. Deník je hledal jinde",
-    "odkaz": "https://zlinsky.denik.cz/zpravy-region/tyto-firmy-ze-zlina-odmitly-zverejnit-platy-sefu-denik-je-hledal-jinde/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/290/2902d4bf-0564-460c-a40f-fd537f44ec2b.jpeg",
-    "region": "Zlínský deník"
+    "titulek": "Tyhle firmy z Brna nechtěly říct, kolik berou šéfové. Proč na tom trváme",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/tyhle-firmy-zbrna-nechtely-rict-kolik-berou-sefove-proc-na-tom-trvame/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/7cd/7cd1b93d-6340-4eeb-ba8c-87cb3a58ddc7.jpeg",
+    "region": "Brněnský deník"
   },
-  "verejne": {
-    "titulek": "Ohlédnutí za volbami 2022: K urnám přišlo 3,8 milionu lidí, zastupitelé stárnou",
-    "odkaz": "https://www.denik.cz/cesi-v-cislech/ohlednuti-za-volbami-2022-vysledky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesi-v-cislech",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/c21/c214fcde-77a4-4230-8d6e-78fd88b0ade0.jpeg",
+  "vystavba": {
+    "titulek": "Pátrání po Janě z Frýdku-Místku: V bytě chybí nože, manžel poslal emotivní vzkaz",
+    "odkaz": "https://www.denik.cz/regiony/manzel-promluvil-pohresovana-jana-serjenikova-emotivni-vzkaz-noze-vysilacky-patrani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=regiony",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/f99/f9916ac1-0165-4a5a-bda7-d7631333893b.jpeg",
     "region": "celostátní"
   },
+  "verejne": {
+    "titulek": "Deník v Budějovicích zjišťoval platy vedení městských firem. Některé to tají",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/denik-v-budejovicich-zjistoval-platy-vedeni-mestskych-firem-nektere-to-taji/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/220/22019ca3-1260-4fd0-b407-41dffb979b58.jpeg",
+    "region": "Českobudějovický deník"
+  },
   "bezpecnost": {
-    "titulek": "80kilová figurína a pak 384 schodů. Hasiči trénovali na finále v mrakodrapu",
-    "odkaz": "https://zlinsky.denik.cz/hasici/80kilova-figurina-a-pak-384-schodu-hasici-trenovali-na-finale-v-mrakodrapu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=hasici",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x910/dde/dde0edd4-c435-4410-8f01-45d0d0226dbb.jpeg",
-    "region": "Zlínský deník"
+    "titulek": "Pražský rodák Eppinger zvrhle experimentoval v Dachau. Trestu unikl sebevraždou",
+    "odkaz": "https://www.denik.cz/historie/prazsky-rodak-eppinger-zvrhle-experimentoval-v-dachau-trestu-unikl-sebevrazdou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=historie",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/d4b/d4b2b547-1a7d-404c-be0d-e0f27e742ebe.jpeg",
+    "region": "Olomoucký deník"
   },
   "skolstvi": {
-    "titulek": "Za zhoršené výsledky žáků nemůže inkluze, říká ministr Robert Plaga",
-    "odkaz": "https://www.denik.cz/cesko/ministr-skolstvi-robert-plaga-zaci-vysledky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=melnicky.denik.cz&utm_content=cesko",
-    "obrazek": "https://melnicky.denik.cz/images/api/image/1366x910/ec5/ec502780-3362-42d6-a9dd-92fc3f2e333f.jpeg",
-    "region": "Mělnický deník"
+    "titulek": "Policisté v Pardubicích hledají třináctiletého Tadeáše. Nepřišel ze školy domů",
+    "odkaz": "https://pardubicky.denik.cz/krimi/policiste-v-pardubicich-hledaji-trinactileteho-tadease-neprisel-ze-skoly-domu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=krimi",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/45a/45a5c8a8-e1ce-4cd7-9f55-917f07362747.jpeg",
+    "region": "Pardubický deník"
   }
 };
