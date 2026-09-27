@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-26T09:49:19.815Z
+// Vygenerováno: 2026-09-27T10:31:24.020Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Hlavní tah z Brna na Vídeň dostane čtyři pruhy. Příští rok začne přestavba D52",
@@ -8,16 +8,22 @@ window.TEMATA_LIVE = {
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/dee/dee3d198-44ea-4a8d-8c77-bab05e347497.jpeg",
     "region": "Brněnský deník"
   },
-  "investice": {
-    "titulek": "Tyhle firmy z Brna nechtěly říct, kolik berou šéfové. Proč na tom trváme",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/tyhle-firmy-zbrna-nechtely-rict-kolik-berou-sefove-proc-na-tom-trvame/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/7cd/7cd1b93d-6340-4eeb-ba8c-87cb3a58ddc7.jpeg",
+  "skolstvi": {
+    "titulek": "Modrá vlna se rozleje kolem Fakultní nemocnice Brno. Zahrne dvě městské části",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/rezidentni-parkovani-zacne-platit-kolem-fakultni-nemocnice-brno-modre-zony-se-rozleji-do-dvou-casti/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/831/8318681c-8c68-46a2-81f3-1631b24580ca.jpeg",
     "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "Pátrání po Janě z Frýdku-Místku: V bytě chybí nože, manžel poslal emotivní vzkaz",
-    "odkaz": "https://www.denik.cz/regiony/manzel-promluvil-pohresovana-jana-serjenikova-emotivni-vzkaz-noze-vysilacky-patrani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=regiony",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/f99/f9916ac1-0165-4a5a-bda7-d7631333893b.jpeg",
+    "titulek": "Lidé v domově důchodců si mají platit jídlo i pobyt sami? Návrh vyvolal poprask",
+    "odkaz": "https://www.denik.cz/zdravotnictvi/cesko-duchodci-by-si-v-domovech-mohli-sami-platit-jidlo-i-ubytovani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zdravotnictvi",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/87c/87c5eeff-aeba-4a2d-8110-783beffba6a8.jpeg",
+    "region": "celostátní"
+  },
+  "bezpecnost": {
+    "titulek": "Hledání výbušnin a zatýkání. Britská policie zasahovala u letecké základny",
+    "odkaz": "https://www.denik.cz/evropa/britanie-zakladna-fairford-policie-zasah-zatceni-vybusniny/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/ba0/ba0c378c-7233-461f-a264-50c55947945f.jpeg",
     "region": "celostátní"
   },
   "verejne": {
@@ -26,16 +32,10 @@ window.TEMATA_LIVE = {
     "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/220/22019ca3-1260-4fd0-b407-41dffb979b58.jpeg",
     "region": "Českobudějovický deník"
   },
-  "bezpecnost": {
-    "titulek": "Pražský rodák Eppinger zvrhle experimentoval v Dachau. Trestu unikl sebevraždou",
-    "odkaz": "https://www.denik.cz/historie/prazsky-rodak-eppinger-zvrhle-experimentoval-v-dachau-trestu-unikl-sebevrazdou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=historie",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/d4b/d4b2b547-1a7d-404c-be0d-e0f27e742ebe.jpeg",
-    "region": "Olomoucký deník"
-  },
-  "skolstvi": {
-    "titulek": "Policisté v Pardubicích hledají třináctiletého Tadeáše. Nepřišel ze školy domů",
-    "odkaz": "https://pardubicky.denik.cz/krimi/policiste-v-pardubicich-hledaji-trinactileteho-tadease-neprisel-ze-skoly-domu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=krimi",
-    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/45a/45a5c8a8-e1ce-4cd7-9f55-917f07362747.jpeg",
-    "region": "Pardubický deník"
+  "investice": {
+    "titulek": "Madeta loni snížila zisk o 55 procent na 107,5 milionu korun. Tržby loni rostly",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/madeta-loni-snizila-zisk-o-55-procent-na-1075-milionu-korun-trzby-loni-rostly/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/2c1/2c1b43a2-8e66-4345-813e-9cb8b2ec7006.jpeg",
+    "region": "Českobudějovický deník"
   }
 };
