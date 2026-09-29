@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-28T11:38:30.891Z
+// Vygenerováno: 2026-09-29T11:19:23.983Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Hlavní tah z Brna na Vídeň dostane čtyři pruhy. Příští rok začne přestavba D52",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/pristi-rok-vzniknou-dva-useky-ctyrproudove-dalnice-na-d52/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/dee/dee3d198-44ea-4a8d-8c77-bab05e347497.jpeg",
+    "titulek": "Bývalý areál Zetoru v Líšni: přibudou cyklostezky, parkovací dům bude později",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/zetor-brno-lisen-promena-novinky-ctp-parkovaci-dum/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/c43/c4387528-751c-48f5-bcae-9417d0d82f27.jpeg",
     "region": "Brněnský deník"
   },
-  "investice": {
-    "titulek": "Logistický park v Obříství: Záměr je pozastaven. Investor změní projekt",
-    "odkaz": "https://melnicky.denik.cz/zpravy-region/obristvi-logisticky-park-projekt-investor-eia/?utm_source=rss&utm_medium=feed-vse&utm_campaign=melnicky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://melnicky.denik.cz/images/api/image/1366x910/bd7/bd701d78-6534-413b-b523-0848e4189405.jpeg",
-    "region": "Mělnický deník"
-  },
-  "skolstvi": {
-    "titulek": "Studenti soupeřili v ovládání dronů, týmy z Plzeňska mají dvě prvenství",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/minidron-soutez-drony-klatovy-studenti-stredni-skoly-plzensky-kraj-vysledky-plzensko-plasy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/ac9/ac9da121-4ccc-4b81-9680-395b0170854e.jpeg",
-    "region": "Plzeňský deník"
-  },
   "verejne": {
-    "titulek": "Srbský prezident Vučić rezignoval, bude kandidovat v parlamentních volbách",
-    "odkaz": "https://www.denik.cz/evropa/srbsky-prezident-vucic-rezignoval-bude-kandidovat-v-parlamentnich-volbach/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/926/92600f44-4383-4f8b-a2f8-4e1bd5ef40e3.jpeg",
-    "region": "celostátní"
+    "titulek": "Tři oříšky nebo Žijeme zde. Jaké názvy letos v Brně zaujmou na kandidátkách?",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/komunalni-volby-bizar-nazvy-originalni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/cb7/cb73c601-d3bb-440e-9f62-0a5b3c3821ac.jpeg",
+    "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "Lidé v domově důchodců si mají platit jídlo i pobyt sami? Návrh vyvolal poprask",
-    "odkaz": "https://www.denik.cz/zdravotnictvi/cesko-duchodci-by-si-v-domovech-mohli-sami-platit-jidlo-i-ubytovani/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=zdravotnictvi",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x910/87c/87c5eeff-aeba-4a2d-8110-783beffba6a8.jpeg",
-    "region": "Třebíčský deník"
+    "titulek": "Místo mrazíren vzniklo 102 nových bytů. Developer na Kladně chystá dalších 750",
+    "odkaz": "https://kladensky.denik.cz/zpravy-region/misto-mraziren-vzniklo-102-novych-bytu-developer-na-kladne-chysta-dalsich-750/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x910/021/021836d1-e62a-4e51-9e12-4f85faa13572.jpeg",
+    "region": "Kladenský deník"
+  },
+  "investice": {
+    "titulek": "Otevřeno, zavřeno? V Česku se znovu rozhořel spor o prodejní dobu o svátcích",
+    "odkaz": "https://www.denik.cz/ekonomika/ekonomika-oteviraci-doba-svatky-cesko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/3d6/3d67a088-f4da-429d-98d5-7d796538e91a.jpeg",
+    "region": "Vyškovský deník"
+  },
+  "skolstvi": {
+    "titulek": "Ve fakultní nemocnici v Hradci Králové vyroste 500 parkovacích míst",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/nemocnice-hradec-kralove-parkovani-chirurgicky-pavilon/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/cc3/cc33fa6b-4d9e-4e0e-bc5b-e20ba3ca2855.jpeg",
+    "region": "Hradecký deník"
   },
   "bezpecnost": {
-    "titulek": "Většina Čechů neví, kam se v případě leteckého útoku schovat, varuje expert",
-    "odkaz": "https://www.denik.cz/cesko/cesko-letecky-utok-hroba-kde-najit-kryty/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=cesko",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x910/b87/b8784975-d170-4bad-9905-ab73921197d4.jpeg",
-    "region": "Prostějovský deník"
+    "titulek": "Kuriózní zásah hasičů v obci na Vyškovsku: Zachraňovali kotě z kanalizace",
+    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/kuriozni-zasah-hasicu-zachrana-kote-kanalizace-prusy-boskuvky-pondeli-hasici-zvire/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/102/1021de02-59df-40e2-a7e2-4f0a6c4dce89.jpeg",
+    "region": "Vyškovský deník"
   }
 };
