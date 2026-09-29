@@ -18,7 +18,9 @@ const fs = require("fs");
 // "podnik" (chytal "dopravní podnik") a "řidič" (chytal přepadení);
 // 21. 9. odstraněno "miliony|miliard" a "provoz|pravidl|město|obec" (chytaly
 // sport, O2 výpadek a všechno možné), přidána slova pro bourání, logistiku,
-// územní plány a volby.
+// územní plány a volby. 29. 9. přidáno doladění Brna (viz níže u MIN_BRNO) --
+// dřív se mohlo stát, že když v Brně nic nesedělo ke druhému brněnskému
+// tématu, spadlo se na náhodný jiný zdroj a minimum 2 z Brna nebylo jisté.
 const TOPICS = {
   doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|jízdní pruh|vlak|nádraží|silnic|dálnic|\bD\d{1,2}\b|\bI\/\d+|parkov|obchvat|tunel|uzavírk|výluk|objížďk|kruhový objezd|průtah/i,
   skolstvi: /škol|student|učitel|univerzit|fakult|rektor|žáci|žák|vzdělá/i,
@@ -168,6 +170,22 @@ async function nejlepsiZ(kandidati, zamcenyPreferuj) {
     if (!it) { console.log("Pro téma " + tema + " dnes nic nesedí, ponechávám prázdné."); continue; }
     pouzite.add(klic(it));
     vysledek[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: pojmenuj(odkud), _zdroj: odkud };
+  }
+
+  // Doladění: aspoň MIN_BRNO článků z Brna. První průchod nahoře to obvykle
+  // trefí (doprava je vždy z Brna), ale když v Brně toho dne nic nesedělo
+  // k druhému brněnskému tématu, zafungoval tam náhradní zdroj -- tady se to
+  // zkusí ještě jednou, tentokrát na úkor libovolného jiného tématu (nikdy ne
+  // na úkor shody s tématem -- pokud v Brně nic nesedí, zůstane to, jak je).
+  const pocetBrno = () => Object.values(vysledek).filter((v) => v._zdroj === "brnensky").length;
+  for (const tema of Object.keys(vysledek)) {
+    if (pocetBrno() >= MIN_BRNO) break;
+    if (vysledek[tema]._zdroj === "brnensky") continue;
+    const it = await nejlepsiZ(shodne("brnensky", tema), true);
+    if (!it) continue;
+    pouzite.delete(klic({ odkaz: vysledek[tema].odkaz }));
+    pouzite.add(klic(it));
+    vysledek[tema] = { titulek: it.titulek, odkaz: it.odkaz, obrazek: it.obrazek, region: pojmenuj("brnensky"), _zdroj: "brnensky" };
   }
 
   // Doladění: aspoň MIN_ZAMCENYCH zamčených -- nezamčené se zkusí vyměnit

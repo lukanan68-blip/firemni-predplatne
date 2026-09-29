@@ -1,41 +1,43 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-09-29T11:19:23.983Z
+// Ručně upraveno 29. 9. 2026: výstavba = Zetor Líšeň dle chatu (Brno, zamčeno),
+// doprava přesunuta na jiný brněnský článek, aby zůstaly aspoň 2 z Brna;
+// školství a bezpečnost vyměněny za lépe sedící (a u bezpečnosti zamčený).
 window.TEMATA_LIVE = {
   "doprava": {
+    "titulek": "Další nové omezení na silnici mezi Brnem a Vysočinou. Dopravu brzdí semafory",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/omezeni-doprava-oprava-silnice-23-zakrany-zastavka-semafory/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/6f1/6f1f376d-fbd0-48f6-a652-66f61462f6cc.jpeg",
+    "region": "Brněnský deník"
+  },
+  "vystavba": {
     "titulek": "Bývalý areál Zetoru v Líšni: přibudou cyklostezky, parkovací dům bude později",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/zetor-brno-lisen-promena-novinky-ctp-parkovaci-dum/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/zetor-brno-lisen-promena-novinky-ctp-parkovaci-dum/",
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/c43/c4387528-751c-48f5-bcae-9417d0d82f27.jpeg",
     "region": "Brněnský deník"
   },
   "verejne": {
-    "titulek": "Tři oříšky nebo Žijeme zde. Jaké názvy letos v Brně zaujmou na kandidátkách?",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/komunalni-volby-bizar-nazvy-originalni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/cb7/cb73c601-d3bb-440e-9f62-0a5b3c3821ac.jpeg",
-    "region": "Brněnský deník"
-  },
-  "vystavba": {
-    "titulek": "Místo mrazíren vzniklo 102 nových bytů. Developer na Kladně chystá dalších 750",
-    "odkaz": "https://kladensky.denik.cz/zpravy-region/misto-mraziren-vzniklo-102-novych-bytu-developer-na-kladne-chysta-dalsich-750/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x910/021/021836d1-e62a-4e51-9e12-4f85faa13572.jpeg",
-    "region": "Kladenský deník"
+    "titulek": "Jihlava roste, Telč obyvatele ztrácí. Výhled do roku 2040 překvapuje",
+    "odkaz": "https://jihlavsky.denik.cz/komunalni-volby/jihlava-roste-telc-obyvatele-ztraci-vyhled-do-roku-2040-prekvapuje/",
+    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x910/40c/40c8d909-b0a5-497b-bd2e-afbd1a8fbf54.jpeg",
+    "region": "Jihlavský deník"
   },
   "investice": {
-    "titulek": "Otevřeno, zavřeno? V Česku se znovu rozhořel spor o prodejní dobu o svátcích",
-    "odkaz": "https://www.denik.cz/ekonomika/ekonomika-oteviraci-doba-svatky-cesko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/3d6/3d67a088-f4da-429d-98d5-7d796538e91a.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Hotel s wellness, byty i domov pro seniory. Zámek u Olomouce píše novou éru",
+    "odkaz": "https://olomoucky.denik.cz/zpravy-region/hotel-s-wellness-byty-i-domov-pro-seniory-zamek-u-olomouce-pise-novou-eru/",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x910/6d3/6d32585e-2141-43ce-ae15-a7a0af2fd04c.jpeg",
+    "region": "Olomoucký deník"
   },
   "skolstvi": {
-    "titulek": "Ve fakultní nemocnici v Hradci Králové vyroste 500 parkovacích míst",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/nemocnice-hradec-kralove-parkovani-chirurgicky-pavilon/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/cc3/cc33fa6b-4d9e-4e0e-bc5b-e20ba3ca2855.jpeg",
-    "region": "Hradecký deník"
+    "titulek": "Noc vědy na pardubické univerzitě lákala na roboty i operační sál",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/foto-video-noc-vedy-na-pardubicke-univerzite-lakala-na-roboty-i-operacni-sal/",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x910/2aa/2aa704f3-7928-44f6-b1ac-b495230762e9.jpeg",
+    "region": "Pardubický deník"
   },
   "bezpecnost": {
-    "titulek": "Kuriózní zásah hasičů v obci na Vyškovsku: Zachraňovali kotě z kanalizace",
-    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/kuriozni-zasah-hasicu-zachrana-kote-kanalizace-prusy-boskuvky-pondeli-hasici-zvire/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x910/102/1021de02-59df-40e2-a7e2-4f0a6c4dce89.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Co se stalo na Znojemsku? Tragédie na silnicích, padl trest v korupční aféře",
+    "odkaz": "https://znojemsky.denik.cz/zpravy-region/co-se-stalo-na-znojemsku-tragedie-na-silnicich-padl-trest-v-korupcni-afere/",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x910/c77/c776c586-b64a-4bdd-a58d-fda835731f08.jpeg",
+    "region": "Znojemský deník"
   }
 };
