@@ -9,19 +9,23 @@
 // 1. 10. 2026: objevila se ukotvená (position:fixed) reklama u spodního
 // okraje obrazovky. Ve spojení s "fullPage" snímkem a clipem ji Playwright
 // vykreslil "přimrazenou" doprostřed stránky, i když na živé stránce je
-// dole mimo vše podstatné. Řešení: místo "fullPage" + clip se okno
-// prohlížeče předem zvětší na potřebnou výšku a snímek se bere bez
-// "fullPage" -- ukotvené prvky se pak vykreslí tam, kam skutečně patří
-// (dole, mimo oříznutou oblast), ne doprostřed. Zkoušelo se i schovat celý
-// pravý postranní sloupec (počasí, čtenářské články) najednou, aby reklama
-// neměla kam se dosadit, ale to se nelíbilo -- sloupec má zůstat vidět,
-// i za cenu rizika, že se tam reklama občas znovu objeví.
+// dole mimo vše podstatné. Zkoušelo se i schovat celý pravý postranní
+// sloupec (počasí, čtenářské články) najednou, aby reklama neměla kam se
+// dosadit, ale to se nelíbilo -- sloupec má zůstat vidět, i za cenu rizika,
+// že se tam reklama občas znovu objeví.
+//
+// První oprava (zvětšit okno těsně před snímkem) nestačila -- tahle reklama
+// si svou pozici dopočítává přes JavaScript podle výšky okna v okamžiku
+// načtení stránky, takže pozdější zvětšení okna už nezachytila. Řešení:
+// okno je od začátku (ještě před načtením stránky) vysoké s rezervou --
+// reklama se pak sama umístí daleko pod oříznutou oblastí.
 
 const { chromium } = require("playwright");
 
 const OUT = "assets/denik-hero.png";
 const CONSENT_TEXTS = ["Souhlasím", "Přijmout", "Rozumím", "Souhlasit"];
-const VIEWPORT = { width: 1240, height: 953 };
+const PAGE_HEIGHT = 2200; // dost na hlavičku i nejdelší běžný úvodní článek + rezerva
+const VIEWPORT = { width: 1240, height: PAGE_HEIGHT };
 const CONTENT_WIDTH = 1000; // šířka sloupce obsahu na denik.cz při viewportu 1240
 const FALLBACK_HEIGHT = 900; // pro případ, že se hlavní článek nenajde
 
@@ -87,10 +91,9 @@ const HIDE_AD_SLOTS_CSS = `
 
   const clip = { x: (VIEWPORT.width - CONTENT_WIDTH) / 2, y: top, width: CONTENT_WIDTH, height: bottom - top };
 
-  // Okno se zvětší na výšku potřebnou pro clip (+ rezerva), aby nebylo
-  // potřeba "fullPage" -- viz komentář nahoře, proč se mu radši vyhýbáme.
-  await page.setViewportSize({ width: VIEWPORT.width, height: Math.ceil(bottom) + 100 });
-  await page.waitForTimeout(300);
+  // Okno je vysoké už od začátku (viz PAGE_HEIGHT nahoře), takže tu není
+  // potřeba nic měnit ani brát "fullPage" snímek -- obyčejný snímek
+  // s oříznutím stačí.
   await page.screenshot({ path: OUT, clip });
   await browser.close();
   console.log("Screenshot uložen do " + OUT + " (" + clip.width + "x" + clip.height + "px)");
