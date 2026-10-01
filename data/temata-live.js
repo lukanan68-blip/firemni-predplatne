@@ -1,41 +1,43 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-01T11:33:33.884Z
+// Ručně upraveno 1. 10. 2026: výstavba a investice nesedely, doprava podle
+// chatu nahrazena; cestou opraveno i skolstvi (sportu-nesouvisející false
+// positive) a verejne (sportovní článek, mělo být vyloučené).
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Brno přijde o velké parkoviště, nahradí ho nový parkovací dům. Nabídne víc míst",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-novy-liskovec-kampus-parkoviste-parkovaci-dum-stavba/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0fb/0fb8e88b-93f7-43e2-9d82-0ec36364ba71.jpeg",
-    "region": "Brněnský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Výsměch kvůli ukrajinskému původu a hrozba uříznutí prstu: soud rozhodl o trestu",
-    "odkaz": "https://brnensky.denik.cz/krimi/brno-soud-rusove-ukrajinci-konflikt-napadeni-uriznuti-prstu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/81c/81cf2b64-f055-40e2-b861-c55e65d04dd9.jpeg",
+    "titulek": "Ucpaným Brnem do porodnice? Rodičům pomohl policejní doprovod",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/cesta-do-porodnice-v-brne-policejni-doprovod-patecni-kolony/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/940/940221c4-6950-4c2d-a6f1-cb5b1f8493e2.jpeg",
     "region": "Brněnský deník"
   },
   "skolstvi": {
-    "titulek": "Mladík na Slovensku vyhrožoval dětem sekerou, hrozil i návštěvou školy",
-    "odkaz": "https://www.denik.cz/evropa/mladik-na-slovensku-vyhrozoval-detem-sekerou-hrozil-i-navstevou-skoly/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/4f7/4f7ae64c-4685-4df8-8e74-262be8727f53.jpeg",
-    "region": "celostátní"
-  },
-  "investice": {
-    "titulek": "Černé pásky, sklopené hlavy. Brankář strávil „zápas proti genocidě“ na hotelu",
-    "odkaz": "https://www.denik.cz/ostatni-fotbal/liga-narodu-izrael-irsko-valka-genocida-bojkot-brankar-gavin-bazunu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=ostatni-fotbal",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x910/273/27380ce7-65e3-47d1-82ec-81b9edcce431.jpeg",
-    "region": "celostátní"
+    "titulek": "Nová obří brněnská škola: unikát, který bude fungovat jako laboratoř pro učitele",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-nova-klinicka-skola-nova-zbrojovka-masarykova-univerzita/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/bda/bdadad1f-42f4-47b8-be54-1a48088dd304.jpeg",
+    "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "Plzeň zrekonstruovala další domy v Kotkově ulici. V nabídce je dvacet čtyři bytů",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/plzen-rekonstrukce-domy-kotkova-ulice-mestske-byty-najem-prihlasky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x910/10e/10eaae79-c01e-48bc-a240-1726ae68d651.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Brno přijde o velké parkoviště, nahradí ho nový parkovací dům. Nabídne víc míst",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-novy-liskovec-kampus-parkoviste-parkovaci-dum-stavba/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0fb/0fb8e88b-93f7-43e2-9d82-0ec36364ba71.jpeg",
+    "region": "Brněnský deník"
   },
   "verejne": {
-    "titulek": "Češi před komunálními volbami: Necelá polovina chce volit stejně jako minule",
-    "odkaz": "https://www.denik.cz/komunalni-volby/komunalni-volby-2026-cesko-kraje-jak-chteji-lide-volit-prehled/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x910/5c1/5c12452c-5c62-4da1-b74f-31cb2b8101d7.jpeg",
-    "region": "Českobudějovický deník"
+    "titulek": "Lidé porušují zákaz vstupu na hráz Brněnské přehrady. Na místo už dohlíží kamery",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-prehrada-prygl-hraz-zakaz-vstupu-porusovani-kamery/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/43e/43ec1d76-0b52-400c-85a0-a27661bd0a6e.jpeg",
+    "region": "Brněnský deník"
+  },
+  "investice": {
+    "titulek": "Nová nákupní zóna na Brněnsku: vznikne hypermarket, obchody a známý fastfood",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/pohorelice-brnensko-nova-nakupni-zona-obchody-kaufland-fastfood/",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/bde/bdef7555-ac86-445e-a0f7-20002e1e7928.jpeg",
+    "region": "Brněnský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Babiš: S prezidentem jsem jednal o krocích v případě ruského útoku",
+    "odkaz": "https://www.denik.cz/cesko/andrej-babis-debata-prezident-petr-pavel-mozny-rusky-utokna-pobalti/",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/ca0/ca077924-73eb-4e1e-b1d8-2f7b70b6f2b0.jpeg",
+    "region": "Hradecký deník"
   }
 };

@@ -21,9 +21,12 @@ const fs = require("fs");
 // územní plány a volby. 29. 9. přidáno doladění Brna (viz níže u MIN_BRNO) --
 // dřív se mohlo stát, že když v Brně nic nesedělo ke druhému brněnskému
 // tématu, spadlo se na náhodný jiný zdroj a minimum 2 z Brna nebylo jisté.
+// 1. 10. "žák" bez hranice slova chytal i "činžák" (bytovku) -- JS regex
+// \b bohužel nerozezná české znaky jako písmena, takže \bžák\b by to
+// nespravilo; místo toho se přímo vyloučí "čin" jako předpona.
 const TOPICS = {
   doprava: /doprav|tramvaj|trolejbus|autobus|\bMHD\b|linka|jízdní řád|jízdní pruh|vlak|nádraží|silnic|dálnic|\bD\d{1,2}\b|\bI\/\d+|parkov|obchvat|tunel|uzavírk|výluk|objížďk|kruhový objezd|průtah/i,
-  skolstvi: /škol|student|učitel|univerzit|fakult|rektor|žáci|žák|vzdělá/i,
+  skolstvi: /škol|student|učitel|univerzit|fakult|rektor|(?<!čin)žáci?|vzdělá/i,
   investice: /invest|\bfirm|koncese|akcie|byznys|podnikatel|podnikání|obchodní řetězec|retail|prodejn|pobočk|expand|výrobní hal|logistick|průmyslov|nájemc|\bsklady?\b|tržb|zaměstnavat|\bhotel/i,
   vystavba: /výstavb|\bstavb|byt(y|ů)?\b|developer|demolic|bourá|bourán|přestavb|rekonstruk|podchod|lávk|kasárn|územní plán|stavbou roku/i,
   bezpecnost: /polici|hasič|záchran|požár|zločin|vražd|útok|soud|trest|nehod|havar|zranění|krádež|krádeží|přepad/i,
@@ -31,7 +34,11 @@ const TOPICS = {
 };
 
 // Nechtěné rubriky podle části adresy článku (sport, kultura, volný čas...).
-const NECHTENE = /denik\.cz\/(fotbal|hokej|basket|volejbal|florbal|ostatni-sporty|sport|volny-cas|kultura|zabava|magazin|lifestyle|horoskopy|cestovani|auto|tv|kam-o-vikendu)/i;
+// "[a-z-]*" před výčtem je kvůli rubrikám jako "ostatni-fotbal" nebo
+// "ostatni-sporty" -- bez něj regex chytil jen rubriky začínající přímo
+// na "fotbal"/"sport" a "ostatni-fotbal" (skutečný sportovní článek)
+// prošel (1. 10. 2026).
+const NECHTENE = /denik\.cz\/[a-z-]*(fotbal|hokej|basket|volejbal|florbal|sport|volny-cas|kultura|zabava|magazin|lifestyle|horoskopy|cestovani|auto|tv|kam-o-vikendu)/i;
 const NECHTENE_TITULEK = /kdo vládne fotbalu|vládci fotbalu|smluvní oznámení|přehled zesnulých|rozloučili jsme se/i;
 
 // Ověřeno ručně 14. 9. 2026 (curl na <slug>.denik.cz/rss/vse.xml).
