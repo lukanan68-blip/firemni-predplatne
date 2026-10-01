@@ -14,11 +14,11 @@ window.REGION = {
   // Nadpis bloku čísel.
   cislaNadpis: "Největší regionální zpravodajská síť v ČR",
   cisla: [
-    { hodnota: "20",       popis: "let na trhu — zavedená značka, které dlouhodobě důvěřují čtenáři", zdroj: "denik.cz/o-deniku" },
-    { hodnota: "72",       popis: "regionálních Deníků po celé republice", zdroj: "denik.cz/o-deniku" },
     // ⚠ interně: číslo je od Petra, není to měření NetMonitoru. Na stránce se uvádí
     //    jako interní data Deníku. Před ostrým spuštěním nechat potvrdit.
-    { hodnota: "4,5 mil.", popis: "lidí čte Deník.cz každý měsíc", zdroj: "NetMonitor 7/2026" }
+    { hodnota: "4,5 mil.", popis: "lidí čte Deník.cz každý měsíc", zdroj: "NetMonitor 7/2026" },
+    { hodnota: "72",       popis: "regionálních Deníků po celé republice", zdroj: "denik.cz/o-deniku" },
+    { hodnota: "20",       popis: "let na trhu — zavedená značka, které dlouhodobě důvěřují čtenáři", zdroj: "denik.cz/o-deniku" }
   ],
 
   // Feed pro živé titulky k tématům.
