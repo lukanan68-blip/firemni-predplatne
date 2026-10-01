@@ -21,7 +21,10 @@ window.SEGMENTY = {
   firmy: {
     stitek: "Firemní předplatné",
     h1: "Když informace patří k práci",
-    perex: "Přehled o dění ve vašem regionu i v celé republice pro váš tým na jednom místě.",
+    perex: "Firemní předplatné Deník.cz je hromadný přístup ke všem 72 regionálním Deníkům "
+         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jedné firmy. "
+         + "Každý se přihlašuje pod svým jménem, bez reklam. Cena se odvíjí od počtu přístupů "
+         + "a platí se ročně předem, kartou nebo na fakturu.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
     temata: ["investice", "vystavba", "bezpecnost", "doprava"],
@@ -41,8 +44,11 @@ window.SEGMENTY = {
   "verejna-sprava": {
     stitek: "Firemní předplatné",
     h1: "Informace, které pomáhají rozhodovat",
-    perex: "Přehled o dění ve vašem regionu i v celé republice i ve vašem kraji. Pro tiskové "
-         + "oddělení, vedení i vedoucí odborů.",
+    perex: "Firemní předplatné Deník.cz je hromadný přístup ke všem 72 regionálním Deníkům "
+         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jednoho "
+         + "úřadu (tiskové oddělení, vedení, vedoucí odborů a další kolegy). Každý se "
+         + "přihlašuje pod svým jménem, bez reklam. Cena se odvíjí od počtu přístupů a platí "
+         + "se ročně předem, kartou nebo na fakturu.",
     ctaSlovo: "pro náš úřad",
     vychoziPocet: 3,
     temata: ["doprava", "skolstvi", "investice", "bezpecnost"],
@@ -61,8 +67,11 @@ window.SEGMENTY = {
   "vysoke-skoly": {
     stitek: "Firemní předplatné",
     h1: "Co se píše o vaší škole i o městech, kde působíte",
-    perex: "Přehled o dění ve vašem regionu i v celé republice pro tiskové oddělení, vedení "
-         + "fakult a další kolegy.",
+    perex: "Firemní předplatné Deník.cz je hromadný přístup ke všem 72 regionálním Deníkům "
+         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jedné "
+         + "školy (tiskové oddělení, vedení fakult a další kolegy). Každý se přihlašuje pod "
+         + "svým jménem, bez reklam. Cena se odvíjí od počtu přístupů a platí se ročně "
+         + "předem, kartou nebo na fakturu.",
     ctaSlovo: "pro naši fakultu",
     vychoziPocet: 5,
     temata: ["skolstvi", "doprava", "vystavba", "verejne"],
@@ -82,8 +91,11 @@ window.SEGMENTY = {
   instituce: {
     stitek: "Firemní předplatné",
     h1: "Zpravodajství ze všech krajů na jednom místě",
-    perex: "Přehled o dění ve všech krajích i v celé republice pro tiskové oddělení, vedení "
-         + "a další kolegy.",
+    perex: "Firemní předplatné Deník.cz je hromadný přístup ke všem 72 regionálním Deníkům "
+         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jedné "
+         + "instituce (tiskové oddělení, vedení a další kolegy). Každý se přihlašuje pod "
+         + "svým jménem, bez reklam. Cena se odvíjí od počtu přístupů a platí se ročně "
+         + "předem, kartou nebo na fakturu.",
     ctaSlovo: "pro naši instituci",
     vychoziPocet: 5,
     temata: ["verejne", "bezpecnost", "doprava", "investice"],
