@@ -6,21 +6,16 @@
 // a bez plovoucího tlačítka nahoru. Hlavní článek je na denik.cz vždy první
 // <article> element (ověřeno 14. 9. 2026).
 //
-// Reklamy v pravém postranním sloupci (vedle článku) se nedají spolehlivě
-// schovat podle ID/textu -- Deník je dosazuje dynamicky a formát i umístění
-// se mění. Proto se celý postranní sloupec (počasí, čtenářské články,
-// reklama) schovává jako celek podle třídy "container__secondary". Sloupec
-// s hlavním článkem zůstává na svém místě, jen se po pravé straně místo
-// reklamy ukáže prázdné místo.
-//
-// 1. 10. 2026: tohle samo nestačilo -- objevila se ukotvená (position:fixed)
-// reklama u spodního okraje obrazovky. Ve spojení s "fullPage" snímkem a
-// clipem (viz dřívější komentář u screenshotu) ji Playwright vykreslí
-// "přimrazenou" doprostřed stránky, i když na živé stránce je dole mimo
-// vše podstatné. Řešení: místo "fullPage" + clip se okno prohlížeče předem
-// zvětší na potřebnou výšku a snímek se bere bez "fullPage" -- ukotvené
-// prvky se pak vykreslí tam, kam skutečně patří (dole, mimo oříznutou
-// oblast), ne doprostřed.
+// 1. 10. 2026: objevila se ukotvená (position:fixed) reklama u spodního
+// okraje obrazovky. Ve spojení s "fullPage" snímkem a clipem ji Playwright
+// vykreslil "přimrazenou" doprostřed stránky, i když na živé stránce je
+// dole mimo vše podstatné. Řešení: místo "fullPage" + clip se okno
+// prohlížeče předem zvětší na potřebnou výšku a snímek se bere bez
+// "fullPage" -- ukotvené prvky se pak vykreslí tam, kam skutečně patří
+// (dole, mimo oříznutou oblast), ne doprostřed. Zkoušelo se i schovat celý
+// pravý postranní sloupec (počasí, čtenářské články) najednou, aby reklama
+// neměla kam se dosadit, ale to se nelíbilo -- sloupec má zůstat vidět,
+// i za cenu rizika, že se tam reklama občas znovu objeví.
 
 const { chromium } = require("playwright");
 
@@ -69,9 +64,6 @@ const HIDE_AD_SLOTS_CSS = `
     // "EXKLUZIVNĚ", "Prezident na Deník.cz" atd.), ale má stálou třídu.
     document.querySelectorAll(".js-breaking-news").forEach(hide);
     document.querySelectorAll(".js-button-up").forEach(hide);
-    // Celý pravý postranní sloupec (počasí, čtenářské články, reklama) --
-    // viz komentář nahoře u HIDE_AD_SLOTS_CSS.
-    document.querySelectorAll(".container__secondary").forEach(hide);
     window.scrollTo(0, 0);
   });
   await page.waitForTimeout(500);
