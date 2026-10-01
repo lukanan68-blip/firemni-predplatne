@@ -22,8 +22,9 @@ window.SEGMENTY = {
     stitek: "Firemní předplatné",
     h1: "Když informace patří k práci",
     perex: "Firemní předplatné Deník.cz je hromadný přístup ke všem 72 regionálním Deníkům "
-         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jedné firmy. "
-         + "Každý se přihlašuje pod svým jménem, bez reklam. Cena se odvíjí od počtu přístupů "
+         + "i celostátnímu zpravodajství, včetně placeného obsahu, pro víc lidí z jedné firmy "
+         + "(vedení, obchodní tým a další kolegy). Každý se přihlašuje pod svým jménem, bez "
+         + "reklam. Cena se odvíjí od počtu přístupů "
          + "a platí se ročně předem, kartou nebo na fakturu.",
     ctaSlovo: "pro náš tým",
     vychoziPocet: 10,
