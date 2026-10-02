@@ -1,43 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Ručně upraveno 1. 10. 2026: výstavba a investice nesedely, doprava podle
-// chatu nahrazena; cestou opraveno i skolstvi (sportu-nesouvisející false
-// positive) a verejne (sportovní článek, mělo být vyloučené).
+// Vygenerováno: 2026-10-02T11:02:48.088Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Ucpaným Brnem do porodnice? Rodičům pomohl policejní doprovod",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/cesta-do-porodnice-v-brne-policejni-doprovod-patecni-kolony/",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/940/940221c4-6950-4c2d-a6f1-cb5b1f8493e2.jpeg",
-    "region": "Brněnský deník"
-  },
-  "skolstvi": {
-    "titulek": "Nová obří brněnská škola: unikát, který bude fungovat jako laboratoř pro učitele",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-nova-klinicka-skola-nova-zbrojovka-masarykova-univerzita/",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/bda/bdadad1f-42f4-47b8-be54-1a48088dd304.jpeg",
-    "region": "Brněnský deník"
-  },
-  "vystavba": {
-    "titulek": "Brno přijde o velké parkoviště, nahradí ho nový parkovací dům. Nabídne víc míst",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-novy-liskovec-kampus-parkoviste-parkovaci-dum-stavba/",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/0fb/0fb8e88b-93f7-43e2-9d82-0ec36364ba71.jpeg",
-    "region": "Brněnský deník"
-  },
-  "verejne": {
-    "titulek": "Lidé porušují zákaz vstupu na hráz Brněnské přehrady. Na místo už dohlíží kamery",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-prehrada-prygl-hraz-zakaz-vstupu-porusovani-kamery/",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/43e/43ec1d76-0b52-400c-85a0-a27661bd0a6e.jpeg",
+    "titulek": "Změna parkování u bohunické nemocnice. Okolí největšího špitálu v Brně zmodrá",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-bohunice-nemocnice-rezidentni-parkovani-modre-zony-zacatek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1b0/1b07f99a-65b0-4e6b-b5c5-0fd9c2b39428.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Nová nákupní zóna na Brněnsku: vznikne hypermarket, obchody a známý fastfood",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/pohorelice-brnensko-nova-nakupni-zona-obchody-kaufland-fastfood/",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x910/bde/bdef7555-ac86-445e-a0f7-20002e1e7928.jpeg",
+    "titulek": "Nejlepší zaměstnavatel v kraji? Opět společnost Agel",
+    "odkaz": "https://prostejovsky.denik.cz/podnikani/nejlepsi-zamestnavatel-v-kraji-opet-spolecnost-agel/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=podnikani",
+    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/a96/a9620c52-2885-44e5-b28c-66b70831ded2.jpeg",
+    "region": "Prostějovský deník"
+  },
+  "verejne": {
+    "titulek": "Srdíčka, rohy nebo záchody: lidová tvořivost i guerilla baví před volbami v Brně",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-volby-billboardy-zabava-upravy-lidova-tvorivost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1fe/1fe024ab-73d5-4e45-814b-a43484e818ee.jpeg",
     "region": "Brněnský deník"
   },
+  "skolstvi": {
+    "titulek": "Francouzské protesty se zvrhly v násilnosti. Hořely školy i hasičský vůz",
+    "odkaz": "https://www.denik.cz/evropa/francouzske-protesty-se-zvrhly-v-nasilnosti-horely-skoly-i-hasicsky-vuz/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/144/144635cf-8d36-49ec-aa07-b26cda611540.jpeg",
+    "region": "celostátní"
+  },
+  "vystavba": {
+    "titulek": "Náměstí Svobody ve Znojmě je po rekonstrukci. Přišla na 30 milionů",
+    "odkaz": "https://znojemsky.denik.cz/zpravy-region/namesti-svobody-ve-znojme-je-po-rekonstrukci-prisla-na-30-milionu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/e6b/e6b9567f-6a9b-4bfc-bf84-3297e433a1ef.jpeg",
+    "region": "Znojemský deník"
+  },
   "bezpecnost": {
-    "titulek": "Babiš: S prezidentem jsem jednal o krocích v případě ruského útoku",
-    "odkaz": "https://www.denik.cz/cesko/andrej-babis-debata-prezident-petr-pavel-mozny-rusky-utokna-pobalti/",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x910/ca0/ca077924-73eb-4e1e-b1d8-2f7b70b6f2b0.jpeg",
-    "region": "Hradecký deník"
+    "titulek": "Nehoda traktoru s přívěsem uzavřela I/20 mezi Sedlecem a Lékařovou Lhotou",
+    "odkaz": "https://ceskobudejovicky.denik.cz/nehody/nehoda-traktoru-s-privesem-uzavrela-i20-mezi-sedlecem-a-lekarovou-lhotou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=nehody",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/7a0/7a0535f2-1e09-4527-8cca-f682e5703ad1.jpeg",
+    "region": "Českobudějovický deník"
   }
 };
