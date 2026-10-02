@@ -9,10 +9,10 @@
   --success-700:#037736;--success-600:#06883f;--success-400:#06d360;--success-100:#d6f8e6;
   --error-600:#c80032;--error-500:#df0038;--error-100:#ffe5ef;
   --gold-700:#a68108;--gold-900:#7f681b;
-  --color-brand:var(--blue-700);--color-action:var(--accent-800);--color-action-hover:var(--blue-900);
+  --color-brand:var(--blue-700);--color-action:var(--blue-700);--color-action-hover:var(--blue-900);
   --color-premium:var(--gold-700);
   --text-strong:var(--inky);--text-body:var(--grey-900);--text-muted:var(--grey-500);
-  --text-link:var(--accent-800);
+  --text-link:var(--blue-700);
   --surface-subtle:var(--grey-50);--surface-dark:var(--grey-900);
   --border-subtle:var(--grey-100);--border-default:var(--grey-200);--border-strong:var(--grey-300);
   --radius-xs:2px;--radius-sm:4px;--radius-md:6px;--radius-lg:8px;--radius-xl:16px;--radius-pill:9999px;
