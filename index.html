@@ -20,7 +20,13 @@
 <meta name="twitter:description" content="Přehled o dění po celé republice pro celý váš tým. Bez reklam, každý pod svým jménem.">
 <meta name="twitter:image" content="https://firemni-predplatne-denik.vercel.app/assets/og-image.jpg">
 <link rel="stylesheet" href="assets/tokens.css">
+<script>
+  // Na jednotlivých podwebech (/firmy, /urady, /skoly, /instituce) se nahoře nepřepíná mezi segmenty --
+  // lišta se schová hned, ať nebliká. Na hlavní adrese zůstává.
+  if(/^\/(firmy|urady|skoly|instituce)\/?$/.test(location.pathname)) document.documentElement.className+=' sub';
+</script>
 <style>
+  .sub .top{display:none}
   *{box-sizing:border-box}
   body{margin:0;background:#fff;font-family:var(--font-sans);color:var(--text-body)}
   a{color:var(--text-link)} a:hover{color:var(--color-action-hover)}
@@ -281,15 +287,13 @@
   function todo(t){return String(t).replace(/<([^>]+)>/g,'<span class="todo">$1</span>');}
   function cislo(n){return n.toLocaleString('cs-CZ');}
 
+  // Každý segment má vlastní adresu (viz vercel.json, který je všechny posílá na tento soubor).
+  var CESTY={firmy:'/firmy','verejna-sprava':'/urady','vysoke-skoly':'/skoly',instituce:'/instituce'};
   var klice=Object.keys(S), prep=document.getElementById('prep');
   klice.forEach(function(k,i){
     var b=document.createElement('button');
     b.textContent=NAZVY[k]||k; b.setAttribute('aria-pressed',i===0?'true':'false');
-    b.onclick=function(){
-      prep.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false');});
-      b.setAttribute('aria-pressed','true'); vykresli(k);
-      history.replaceState(null,'','?segment='+k);
-    };
+    b.onclick=function(){ location.assign(CESTY[k]||('/?segment='+k)); };
     prep.appendChild(b);
   });
 
@@ -357,8 +361,10 @@
     return '<details class="faq"><summary>'+o.q+'<span>+</span></summary><p>'+(o.raw?o.a:todo(o.a))+'</p></details>';
   }).join('');
 
+  var cesta=location.pathname.replace(/\/+$/,'');
+  var zCesty=klice.filter(function(k){return CESTY[k]===cesta;})[0];
   var zParametru=new URLSearchParams(location.search).get('segment');
-  var start = (zParametru && S[zParametru]) ? zParametru : klice[0];
+  var start = zCesty || ((zParametru && S[zParametru]) ? zParametru : klice[0]);
   if(start!==klice[0]){
     prep.querySelectorAll('button').forEach(function(x,i){
       x.setAttribute('aria-pressed', klice[i]===start ? 'true':'false');});

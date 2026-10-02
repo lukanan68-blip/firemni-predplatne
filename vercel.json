@@ -1,0 +1,9 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/firmy", "destination": "/index.html" },
+    { "source": "/urady", "destination": "/index.html" },
+    { "source": "/skoly", "destination": "/index.html" },
+    { "source": "/instituce", "destination": "/index.html" }
+  ]
+}
