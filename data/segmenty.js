@@ -54,14 +54,14 @@ window.SEGMENTY = {
     vychoziPocet: 3,
     temata: ["doprava", "skolstvi", "investice", "bezpecnost"],
     duvody: [
-      { titulek: "Podklad pro jednání",
-        text: "Zjistíte, jaká jsou fakta a souvislosti." },
+      { titulek: "Přehled o regionu, kde žijete",
+        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." },
       { titulek: "Pro celý úřad",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
       { titulek: "Bez reklam",
         text: "Předplacený Deník.cz je bez reklam." },
-      { titulek: "Přehled o regionu, kde žijete",
-        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." }
+      { titulek: "Fakta a souvislosti",
+        text: "Zjistíte, co se skutečně děje a jak spolu události souvisejí." }
     ]
   },
 
@@ -101,14 +101,14 @@ window.SEGMENTY = {
     vychoziPocet: 5,
     temata: ["verejne", "bezpecnost", "doprava", "investice"],
     duvody: [
-      { titulek: "Podklad pro jednání",
-        text: "Zjistíte, jaká jsou fakta a souvislosti." },
-      { titulek: "I tam, kde sídlíte",
-        text: "Doprava, stavby a dění ve městě, kde vaši lidé pracují." },
+      { titulek: "Přehled o regionu, kde žijete",
+        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." },
       { titulek: "Pro celé oddělení",
         text: "Každý pod svým jménem, ne jedno heslo pro všechny." },
-      { titulek: "Přehled o regionu, kde žijete",
-        text: "Co se děje ve vašem okolí i ve zbytku republiky: doprava, stavby, sport a další." }
+      { titulek: "Bez reklam",
+        text: "Předplacený Deník.cz je bez reklam." },
+      { titulek: "Fakta a souvislosti",
+        text: "Zjistíte, co se skutečně děje a jak spolu události souvisejí." }
     ],
     faqNavic: []
   }
