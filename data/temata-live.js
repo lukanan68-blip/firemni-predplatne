@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-02T11:02:48.088Z
+// Vygenerováno: 2026-10-03T10:21:49.586Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Změna parkování u bohunické nemocnice. Okolí největšího špitálu v Brně zmodrá",
@@ -8,23 +8,11 @@ window.TEMATA_LIVE = {
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1b0/1b07f99a-65b0-4e6b-b5c5-0fd9c2b39428.jpeg",
     "region": "Brněnský deník"
   },
-  "investice": {
-    "titulek": "Nejlepší zaměstnavatel v kraji? Opět společnost Agel",
-    "odkaz": "https://prostejovsky.denik.cz/podnikani/nejlepsi-zamestnavatel-v-kraji-opet-spolecnost-agel/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=podnikani",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/a96/a9620c52-2885-44e5-b28c-66b70831ded2.jpeg",
-    "region": "Prostějovský deník"
-  },
   "verejne": {
     "titulek": "Srdíčka, rohy nebo záchody: lidová tvořivost i guerilla baví před volbami v Brně",
     "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-volby-billboardy-zabava-upravy-lidova-tvorivost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1fe/1fe024ab-73d5-4e45-814b-a43484e818ee.jpeg",
     "region": "Brněnský deník"
-  },
-  "skolstvi": {
-    "titulek": "Francouzské protesty se zvrhly v násilnosti. Hořely školy i hasičský vůz",
-    "odkaz": "https://www.denik.cz/evropa/francouzske-protesty-se-zvrhly-v-nasilnosti-horely-skoly-i-hasicsky-vuz/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/144/144635cf-8d36-49ec-aa07-b26cda611540.jpeg",
-    "region": "celostátní"
   },
   "vystavba": {
     "titulek": "Náměstí Svobody ve Znojmě je po rekonstrukci. Přišla na 30 milionů",
@@ -33,9 +21,21 @@ window.TEMATA_LIVE = {
     "region": "Znojemský deník"
   },
   "bezpecnost": {
-    "titulek": "Nehoda traktoru s přívěsem uzavřela I/20 mezi Sedlecem a Lékařovou Lhotou",
-    "odkaz": "https://ceskobudejovicky.denik.cz/nehody/nehoda-traktoru-s-privesem-uzavrela-i20-mezi-sedlecem-a-lekarovou-lhotou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=nehody",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/7a0/7a0535f2-1e09-4527-8cca-f682e5703ad1.jpeg",
-    "region": "Českobudějovický deník"
+    "titulek": "Retropárty na Klatovsku skončila ohnivým peklem. Viník stanul před soudem",
+    "odkaz": "https://klatovsky.denik.cz/krimi/retroparty-klatovsko-susice-santos-vybuch-obecne-ohrozeni-soud/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/13e/13e52dd7-4e4c-4b22-8951-c989f2b0645c.jpeg",
+    "region": "Plzeňský deník"
+  },
+  "skolstvi": {
+    "titulek": "Velké trápení samoživitelek. Kvůli vysokým výdajům za školu odkládají i zubaře",
+    "odkaz": "https://www.denik.cz/cesko/cesko-ekonomika-samozivitelkyproblemy-financni-sitace-pomoc/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=cesko",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/c71/c71a29d4-28fb-40e3-a6b2-f984cb091765.jpeg",
+    "region": "Znojemský deník"
+  },
+  "investice": {
+    "titulek": "Firma z Olomoucka dodala armádě první přívěs pro polní kuchyně",
+    "odkaz": "https://olomoucky.denik.cz/podnikani/panav-senice-na-hane-acr-polni-kuchyne-prives/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=podnikani",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/dea/dea9d6bb-04bb-4bb1-a5ac-4e47505b0bc3.jpeg",
+    "region": "Olomoucký deník"
   }
 };
