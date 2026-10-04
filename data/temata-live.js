@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-03T10:21:49.586Z
+// Vygenerováno: 2026-10-04T11:04:27.567Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Změna parkování u bohunické nemocnice. Okolí největšího špitálu v Brně zmodrá",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-bohunice-nemocnice-rezidentni-parkovani-modre-zony-zacatek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1b0/1b07f99a-65b0-4e6b-b5c5-0fd9c2b39428.jpeg",
+    "titulek": "O pomoc žádaly marně, nasadily vlastní autobus. Rosice si ho platí ze svého",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/rosice-nahradni-doprava-autobus-linka-zdarma-rosbus/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/377/37727ba5-b015-4242-995e-7ffc4aaad645.jpeg",
     "region": "Brněnský deník"
   },
+  "bezpecnost": {
+    "titulek": "Tuningový sraz v Brně: policie zkontrolovala 700 aut, pokuty přesáhly 200 tisíc",
+    "odkaz": "https://brnensky.denik.cz/krimi/brno-europe-illegal-season-end-2026/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/6aa/6aaed0d1-dda1-4699-b819-f091b2da5577.jpeg",
+    "region": "Brněnský deník"
+  },
+  "skolstvi": {
+    "titulek": "Oslava ve školce se prodražuje. Někde už narozeninové balíčky zakázali",
+    "odkaz": "https://www.denik.cz/spolecnost/skolka-narozeninove-balicky-pravidla/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=spolecnost",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/e2b/e2be3c16-4804-45ce-9678-b55948dfc1df.jpeg",
+    "region": "celostátní"
+  },
   "verejne": {
-    "titulek": "Srdíčka, rohy nebo záchody: lidová tvořivost i guerilla baví před volbami v Brně",
-    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-volby-billboardy-zabava-upravy-lidova-tvorivost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1fe/1fe024ab-73d5-4e45-814b-a43484e818ee.jpeg",
+    "titulek": "Hrozí banánem a rozmlouvá s hračkou dcery: bizarní kampaně brněnských kandidátů",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-volby-kampan-videa-bizar-banany-hracka/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/1cd/1cd67b01-e60d-4cc8-b8df-358da8e91f13.jpeg",
     "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "Náměstí Svobody ve Znojmě je po rekonstrukci. Přišla na 30 milionů",
-    "odkaz": "https://znojemsky.denik.cz/zpravy-region/namesti-svobody-ve-znojme-je-po-rekonstrukci-prisla-na-30-milionu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/e6b/e6b9567f-6a9b-4bfc-bf84-3297e433a1ef.jpeg",
-    "region": "Znojemský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Retropárty na Klatovsku skončila ohnivým peklem. Viník stanul před soudem",
-    "odkaz": "https://klatovsky.denik.cz/krimi/retroparty-klatovsko-susice-santos-vybuch-obecne-ohrozeni-soud/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/13e/13e52dd7-4e4c-4b22-8951-c989f2b0645c.jpeg",
-    "region": "Plzeňský deník"
-  },
-  "skolstvi": {
-    "titulek": "Velké trápení samoživitelek. Kvůli vysokým výdajům za školu odkládají i zubaře",
-    "odkaz": "https://www.denik.cz/cesko/cesko-ekonomika-samozivitelkyproblemy-financni-sitace-pomoc/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=cesko",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/c71/c71a29d4-28fb-40e3-a6b2-f984cb091765.jpeg",
-    "region": "Znojemský deník"
+    "titulek": "Úleva pro obyvatele okraje Brna. Investor obří výstavby couvl, má ale jiný plán",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-jih-dolni-herspice-prumyslovy-areal-sklady-stop-stavba-jiny-plan/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/b4e/b4ed1071-d84d-4a61-b0fa-6e816cd66cf2.jpeg",
+    "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Firma z Olomoucka dodala armádě první přívěs pro polní kuchyně",
-    "odkaz": "https://olomoucky.denik.cz/podnikani/panav-senice-na-hane-acr-polni-kuchyne-prives/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=podnikani",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/dea/dea9d6bb-04bb-4bb1-a5ac-4e47505b0bc3.jpeg",
-    "region": "Olomoucký deník"
+    "titulek": "Ocenění Zaměstnavatel roku už zná vítěze v Libereckém kraji",
+    "odkaz": "https://liberecky.denik.cz/podnikani/oceneni-zamestnavatel-roku-uz-zna-viteze-v-libereckem-kraji/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=podnikani",
+    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/bbf/bbf8993b-6d49-4b92-9ad8-99018844aa41.jpeg",
+    "region": "Liberecký deník"
   }
 };
