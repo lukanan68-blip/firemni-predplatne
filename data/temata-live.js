@@ -9,9 +9,9 @@ window.TEMATA_LIVE = {
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Šlachta uspěl s návrhem referenda. Lidé sami rozhodnou o osudu bývalého hotelu",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/slachta-uspel-s-navrhem-referenda-lide-sami-rozhodnou-o-osudu-byvaleho-hotelu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/ab4/ab4aabfc-543b-43c4-80f2-d06c2047bb17.jpeg",
+    "titulek": "Proměna ostudy Brna: jak by mohl vypadat nový stadion za Lužánkami podle AI",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-ostuda-stadion-za-luzankami-podoba-ai-vizualizace-starosto-vyres-to/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/937/937dc19b-ef61-4413-9e03-f5b1a662992a.jpeg",
     "region": "Brněnský deník"
   },
   "vystavba": {
@@ -21,9 +21,9 @@ window.TEMATA_LIVE = {
     "region": "Liberecký deník"
   },
   "skolstvi": {
-    "titulek": "Studentka nafotila titulní stranu Playboye. Zkouška mé komfortní zóny, říká",
-    "odkaz": "https://www.denik.cz/regiony/studentka-nafotila-titulni-stranu-playboye-zkouska-me-komfortni-zony-rika/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=regiony",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/f40/f401db1c-89fd-4ed3-a759-f7508b1b210d.jpeg",
+    "titulek": "Mějte školy jako prioritu, apelují organizace před volbami na kandidáty",
+    "odkaz": "https://www.denik.cz/skolstvi-a-vzdelavani/mejte-skoly-jako-prioritu-apeluji-organizace-pred-volbami-na-kandidaty/",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/ab9/ab93b89f-1c85-437e-bf2a-c9f7978bb8ef.jpeg",
     "region": "celostátní"
   },
   "bezpecnost": {
