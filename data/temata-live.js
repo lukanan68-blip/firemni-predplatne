@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-07T11:43:38.714Z
+// Vygenerováno: 2026-10-08T11:58:54.886Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Nový radar na dálnici u Brna: po smrtelných nehodách začnou měřit rychlost",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-dalnice-d2-radar-mereni-rychlost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/511/511ecc16-7d8c-4f69-9942-1df850a47eee.jpeg",
-    "region": "Brněnský deník"
-  },
-  "investice": {
-    "titulek": "Šlachta uspěl s návrhem referenda. Lidé sami rozhodnou o osudu bývalého hotelu",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/slachta-uspel-s-navrhem-referenda-lide-sami-rozhodnou-o-osudu-byvaleho-hotelu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/ab4/ab4aabfc-543b-43c4-80f2-d06c2047bb17.jpeg",
-    "region": "Brněnský deník"
-  },
-  "vystavba": {
-    "titulek": "Připomíná křídlo, kosmickou loď. Vyhledávanou stavbou v Brně prošly miliony lidí",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-letiste-turany-odletovy-terminal-vyroci-20-let/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/71d/71d64443-76e4-4a43-975a-ba4ead1d4705.jpeg",
+    "titulek": "Řidiči kamionů na D1 u Brna ztratili nervy, nacpali se do záchranářské uličky",
+    "odkaz": "https://brnensky.denik.cz/krimi/ridici-kamionu-na-d1-z-brna-ztratili-nervy-nacpali-se-do-zachranarske-ulicky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/264/26496126-97ee-4b9f-8bc3-9229af071cc5.jpeg",
     "region": "Brněnský deník"
   },
   "verejne": {
-    "titulek": "Co se ví o možném moru v Rusku: Nařízené jsou karantény i masky. Úřady dál mlčí",
-    "odkaz": "https://www.denik.cz/svet/rusko-plicni-mor-nemocnce-karantena-ochranne-obleky-urady-dal-taji-informace/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/47a/47ac5517-31a8-41f0-8bb1-985dafbbbf5f.jpeg",
-    "region": "celostátní"
+    "titulek": "Docházka zastupitelů Brna: od jen třetinové účasti až po ženu, která přijde vždy",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-zastupitelstvo-dochazka-volby/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/609/609a0cad-d3b4-4f49-bfac-8a65ba7d8a40.jpeg",
+    "region": "Brněnský deník"
   },
-  "skolstvi": {
-    "titulek": "Učitelky ze Staškova prosily policii o pomoc už pět dní před krvavým útokem",
-    "odkaz": "https://www.denik.cz/evropa/slovensko-utok-na-skole-staskov-necekany-zvrat-ucitelky-zadaly-o-pomoc/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=evropa",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/fe0/fe0152ab-4352-4490-a489-f05b421cc45a.jpeg",
-    "region": "Prostějovský deník"
+  "investice": {
+    "titulek": "Od studentské Boudy po Tatry. Budějovice hostily příběhy, které změnily byznys",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/od-studentske-boudy-po-tatry-budejovice-hostily-pribehy-ktere-zmenily-byznys/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/6fc/6fc2f9ea-9adc-4cd6-b285-43ebe3f94a58.jpeg",
+    "region": "Českobudějovický deník"
   },
   "bezpecnost": {
-    "titulek": "Brutalita mladých začíná být problém, varuje psycholog po vraždě hocha u Děčína",
-    "odkaz": "https://decinsky.denik.cz/krimi/brutalita-mladych-zacina-byt-problem-varuje-psycholog-po-vrazde-hocha-u-decina/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/2b4/2b4bd3b6-f629-4d3a-9639-5c9080fc491d.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Policie dopadla matku mrtvého novorozence z Rovenska. Čelí obvinění z vraždy",
+    "odkaz": "https://www.denik.cz/krimi/rovensko-pod-troskami-vrazda-nemluvne-dna-pachatel-matka-rijen-2026/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/57c/57c32fe6-66e5-4741-a48b-c4766e887c35.jpeg",
+    "region": "celostátní"
+  },
+  "vystavba": {
+    "titulek": "Jihlava chystá u nemocnice novou čtvrť. Má mít 520 bytů a vlastní náměstí",
+    "odkaz": "https://jihlavsky.denik.cz/zpravy-region/u-jihlavske-nemocnice-ma-vyrust-nova-ctvrt-spitalske-predmesti-nabidne-520-bytu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=jihlavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x768/ae4/ae4995cd-2207-40d7-8980-fb21c5c3621c.jpeg",
+    "region": "Jihlavský deník"
+  },
+  "skolstvi": {
+    "titulek": "Záněty trpí tisíce lidí. Specialisté ve fakultce vyšetřují střeva šetrně",
+    "odkaz": "https://olomoucky.denik.cz/zpravy-region/zanety-trpi-tisice-lidi-specialiste-ve-fakultce-vysetruji-streva-setrne/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/994/99454b74-61c1-4036-bf6b-2c3069f91f90.jpeg",
+    "region": "Olomoucký deník"
   }
 };
