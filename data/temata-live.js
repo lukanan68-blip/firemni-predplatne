@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-09T11:50:25.887Z
+// Vygenerováno: 2026-10-10T11:08:23.417Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Katastrofální dojíždění do Brna: hodinové zpoždění autobusů kvůli nové uzavírce",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-doprava-autobus-zpozdeni-zavrena-rampa-objizdka-neexistuje/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a1f/a1f9350a-05ad-45a6-a605-d1e6b9659a1a.jpeg",
+    "titulek": "Delší oprava přístupu k nádraží v Brně: řidičům uzavřou polovinu jízdních pruhů",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-lavka-zvonarka-vankovka-oprava/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/0ce/0ce5830a-5e6c-40a4-ba4b-2d64b23975f5.jpeg",
     "region": "Brněnský deník"
   },
-  "skolstvi": {
-    "titulek": "Od studentské Boudy po Tatry. Budějovice hostily příběhy, které změnily byznys",
-    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/od-studentske-boudy-po-tatry-budejovice-hostily-pribehy-ktere-zmenily-byznys/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/6fc/6fc2f9ea-9adc-4cd6-b285-43ebe3f94a58.jpeg",
-    "region": "Českobudějovický deník"
+  "investice": {
+    "titulek": "Zámek Dukovany má nové majitele. Vrátí hotel a restauraci, plánují 60 pokojů",
+    "odkaz": "https://trebicsky.denik.cz/zpravy-region/zamek-dukovany-ma-nove-majitele-vrati-hotel-a-restauraci-planuji-60-pokoju/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/682/6823869e-d588-4c39-94f7-078fe7bc0f04.jpeg",
+    "region": "Třebíčský deník"
   },
-  "verejne": {
-    "titulek": "Komunální a senátní volby 2026 v Brně a na Brněnsku online: koho nebo kde volit",
-    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-brnensko-volby-2026-online-komunalni-senatni-vysledky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/2f3/2f3fefa1-0a33-4fa0-8c70-236fcd6c2f65.jpeg",
+  "skolstvi": {
+    "titulek": "Neoprávněný vstup do školy řešili strážníci v Brně během voleb. Viníka měli hned",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/neopravneny-vstup-skoly-resili-straznici-v-brne-behem-voleb-vinika-meli-hned/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a8c/a8c78898-c250-4e30-8acd-6c439c87bac9.jpeg",
     "region": "Brněnský deník"
   },
   "bezpecnost": {
-    "titulek": "Vážná nehoda během dovolené Petra Pavla v Maroku. Zranil se jeho blízký přítel",
-    "odkaz": "https://www.denik.cz/svet/prezident-petr-pavel-dovolena-maroko-nehoda/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/46a/46a38703-53fc-468a-89fb-ce8f2dfabc96.jpeg",
-    "region": "celostátní"
-  },
-  "investice": {
-    "titulek": "Ocenění Zaměstnavatel roku už zná vítěze v Kraji Vysočina",
-    "odkaz": "https://jihlavsky.denik.cz/podnikani/oceneni-zamestnavatel-roku-uz-zna-viteze-v-kraji-vysocina/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=podnikani",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/855/855a1fa8-f804-4693-8d1f-6d2ba3ff3abf.jpeg",
-    "region": "Třebíčský deník"
+    "titulek": "Podzim zvyšuje riziko střetů se zvěří. Policie varuje řidiče na jižní Moravě",
+    "odkaz": "https://vyskovsky.denik.cz/nehody/strety-se-zveri-na-silnicich-varovani-riziko-nehody-jihomoravsky-kraj-policie-jak-postupovat/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=nehody",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/914/91453029-a082-43ca-a08a-215e40ad0dc8.jpeg",
+    "region": "Vyškovský deník"
   },
   "vystavba": {
-    "titulek": "Pepco, Action nebo dm? Nové Město chystá retail park, developer vybírá místo",
-    "odkaz": "https://liberecky.denik.cz/zpravy-region/pepco-action-nebo-dm-nove-mesto-chysta-retail-park-developer-vybira-misto/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/e4e/e4ef3987-9653-47c1-8acf-28a9471a1bb9.jpeg",
-    "region": "Liberecký deník"
+    "titulek": "Mladí v ČR nemají na byty, rodiče pro ně často obětují úspory i vlastní bydlení",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-bydleni-mladi-kriticka-situace-pomahaji-rodice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/a41/a41b1099-bf5b-4d4c-8efc-64ec1c2e9223.jpeg",
+    "region": "Olomoucký deník"
+  },
+  "verejne": {
+    "titulek": "Zlínský kraj a texaský Bexar County podepsaly memorandum o přátelství",
+    "odkaz": "https://zlinsky.denik.cz/kraj-a-okoli/zlinsky-kraj-bexar-county-texas-usa-memorandum-pratelstvi-spoluprace-delegace-navsteva/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=kraj-a-okoli",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/0a2/0a208513-a920-4ecb-8a6c-c873db7d6a79.jpeg",
+    "region": "Zlínský deník"
   }
 };
