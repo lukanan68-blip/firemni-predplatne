@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-10T11:08:23.417Z
+// Vygenerováno: 2026-10-11T11:22:07.155Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Delší oprava přístupu k nádraží v Brně: řidičům uzavřou polovinu jízdních pruhů",
@@ -14,28 +14,28 @@ window.TEMATA_LIVE = {
     "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/682/6823869e-d588-4c39-94f7-078fe7bc0f04.jpeg",
     "region": "Třebíčský deník"
   },
-  "skolstvi": {
-    "titulek": "Neoprávněný vstup do školy řešili strážníci v Brně během voleb. Viníka měli hned",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/neopravneny-vstup-skoly-resili-straznici-v-brne-behem-voleb-vinika-meli-hned/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a8c/a8c78898-c250-4e30-8acd-6c439c87bac9.jpeg",
+  "verejne": {
+    "titulek": "Toto jsou noví brněnští zastupitelé. 55 profilů těch, které si vybrali voliči",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-komunalni-volby-2026-novi-zastupitele-profily/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/56b/56baae8a-53d7-48f5-a723-a314cbff3068.jpeg",
     "region": "Brněnský deník"
   },
   "bezpecnost": {
-    "titulek": "Podzim zvyšuje riziko střetů se zvěří. Policie varuje řidiče na jižní Moravě",
-    "odkaz": "https://vyskovsky.denik.cz/nehody/strety-se-zveri-na-silnicich-varovani-riziko-nehody-jihomoravsky-kraj-policie-jak-postupovat/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=nehody",
-    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/914/91453029-a082-43ca-a08a-215e40ad0dc8.jpeg",
-    "region": "Vyškovský deník"
+    "titulek": "Poznáte ho? Policie zveřejnila fotky cyklisty, který v Plzni bodl do zad běžkyni",
+    "odkaz": "https://www.denik.cz/krimi/poznate-ho-policie-zverejnila-fotky-cyklisty-ktery-v-plzni-bodl-do-zad-bezkyni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/dab/dab99c6c-7708-44c2-a9fa-589300d465ff.jpeg",
+    "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "Mladí v ČR nemají na byty, rodiče pro ně často obětují úspory i vlastní bydlení",
-    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-bydleni-mladi-kriticka-situace-pomahaji-rodice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/a41/a41b1099-bf5b-4d4c-8efc-64ec1c2e9223.jpeg",
-    "region": "Olomoucký deník"
+    "titulek": "Opavská nemocnice se dočká centrálního urgentního příjmu. Výstavba začala",
+    "odkaz": "https://opavsky.denik.cz/zpravy-region/opavska-nemocnice-se-docka-centralniho-urgentniho-prijmu-vystavba-zacala/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x768/36b/36b6d9fd-79ef-4015-a5e1-02b1d79d06b7.jpeg",
+    "region": "Opavský deník"
   },
-  "verejne": {
-    "titulek": "Zlínský kraj a texaský Bexar County podepsaly memorandum o přátelství",
-    "odkaz": "https://zlinsky.denik.cz/kraj-a-okoli/zlinsky-kraj-bexar-county-texas-usa-memorandum-pratelstvi-spoluprace-delegace-navsteva/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=kraj-a-okoli",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/0a2/0a208513-a920-4ecb-8a6c-c873db7d6a79.jpeg",
-    "region": "Zlínský deník"
+  "skolstvi": {
+    "titulek": "Proč Ivo Kahánek chválí české umělecké školství",
+    "odkaz": "https://www.denik.cz/jiny-pohled/proc-ivo-kahanek-chvali-ceske-umelecke-skolstvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=jiny-pohled",
+    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/53c/53cdec7a-b6a2-458d-b865-07624877d4f6.jpeg",
+    "region": "Kladenský deník"
   }
 };
