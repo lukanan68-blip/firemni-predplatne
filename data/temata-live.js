@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-11T11:22:07.155Z
+// Vygenerováno: 2026-10-12T13:03:29.444Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Delší oprava přístupu k nádraží v Brně: řidičům uzavřou polovinu jízdních pruhů",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-lavka-zvonarka-vankovka-oprava/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/0ce/0ce5830a-5e6c-40a4-ba4b-2d64b23975f5.jpeg",
+    "titulek": "Porcování funkcí v Brně: kdo se může starat o dopravu, bydlení nebo investice",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-vedeni-funkce-radni-doprava-sport-investice-skolstvi-bydleni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/331/3315f8b3-4118-4c62-8171-642481503d62.jpeg",
     "region": "Brněnský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Útoků medvědů přibývá. Slováci sepsali rady, které lidem mohou zachránit život",
+    "odkaz": "https://www.denik.cz/evropa/slovensko-utok-medvedi-ridicak-prirucka-co-delat-co-nedelat-pri-stretu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=evropa",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/101/1016cb15-1909-49ac-8ba1-24a1b4b12690.jpeg",
+    "region": "Brněnský deník"
+  },
+  "skolstvi": {
+    "titulek": "Čtrnáctiletý žák ve francouzské škole střelil brokovnicí ředitele a učitelku",
+    "odkaz": "https://www.denik.cz/evropa/strelbe-ve-francouzske-skole-zraneni-utrpel-reditel-a-ucitelka/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=evropa",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/8e0/8e0b5331-54d7-4422-a206-e11e2ad5a2f1.jpeg",
+    "region": "celostátní"
+  },
+  "vystavba": {
+    "titulek": "Mladí v ČR nemají na byty, rodiče pro ně často obětují úspory i vlastní bydlení",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-bydleni-mladi-kriticka-situace-pomahaji-rodice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/a41/a41b1099-bf5b-4d4c-8efc-64ec1c2e9223.jpeg",
+    "region": "Třebíčský deník"
+  },
+  "verejne": {
+    "titulek": "Noví zastupitelé Prostějova. Podívejte se, koho jste zvolili",
+    "odkaz": "https://prostejovsky.denik.cz/komunalni-volby/novi-zastupitele-prostejova-podivejte-se-koho-jste-zvolili/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/c95/c9518436-5c8e-421d-bb25-ad3c0b2d5fc8.jpeg",
+    "region": "Prostějovský deník"
   },
   "investice": {
     "titulek": "Zámek Dukovany má nové majitele. Vrátí hotel a restauraci, plánují 60 pokojů",
     "odkaz": "https://trebicsky.denik.cz/zpravy-region/zamek-dukovany-ma-nove-majitele-vrati-hotel-a-restauraci-planuji-60-pokoju/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=zpravy-region",
     "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/682/6823869e-d588-4c39-94f7-078fe7bc0f04.jpeg",
     "region": "Třebíčský deník"
-  },
-  "verejne": {
-    "titulek": "Toto jsou noví brněnští zastupitelé. 55 profilů těch, které si vybrali voliči",
-    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-komunalni-volby-2026-novi-zastupitele-profily/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/56b/56baae8a-53d7-48f5-a723-a314cbff3068.jpeg",
-    "region": "Brněnský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Poznáte ho? Policie zveřejnila fotky cyklisty, který v Plzni bodl do zad běžkyni",
-    "odkaz": "https://www.denik.cz/krimi/poznate-ho-policie-zverejnila-fotky-cyklisty-ktery-v-plzni-bodl-do-zad-bezkyni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/dab/dab99c6c-7708-44c2-a9fa-589300d465ff.jpeg",
-    "region": "celostátní"
-  },
-  "vystavba": {
-    "titulek": "Opavská nemocnice se dočká centrálního urgentního příjmu. Výstavba začala",
-    "odkaz": "https://opavsky.denik.cz/zpravy-region/opavska-nemocnice-se-docka-centralniho-urgentniho-prijmu-vystavba-zacala/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x768/36b/36b6d9fd-79ef-4015-a5e1-02b1d79d06b7.jpeg",
-    "region": "Opavský deník"
-  },
-  "skolstvi": {
-    "titulek": "Proč Ivo Kahánek chválí české umělecké školství",
-    "odkaz": "https://www.denik.cz/jiny-pohled/proc-ivo-kahanek-chvali-ceske-umelecke-skolstvi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=jiny-pohled",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/53c/53cdec7a-b6a2-458d-b865-07624877d4f6.jpeg",
-    "region": "Kladenský deník"
   }
 };
