@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-14T10:06:00.792Z
+// Vygenerováno: 2026-10-15T09:48:44.726Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Obava z náporu aut. Na silnici u dálnice u Brna přibyly kruháče i semafory",
@@ -8,34 +8,34 @@ window.TEMATA_LIVE = {
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a5a/a5a903e7-91d7-4b49-9604-24d664fcff1e.jpeg",
     "region": "Brněnský deník"
   },
-  "bezpecnost": {
-    "titulek": "Plošné šmírování mobilů nařízené Bruselem policii moc nepomáhá, říká Gregorová",
-    "odkaz": "https://www.denik.cz/evropa-pro-cechy/plosne-smirovani-mobilu-narizene-bruselem-policii-moc-nepomaha-rika-gregorova/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=evropa-pro-cechy",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/7fc/7fc3a841-1e25-4be3-a2fe-14d9b99586d5.jpeg",
+  "verejne": {
+    "titulek": "Starosta Líšně obhájil počet mandátů. Přesto hrozí, že skončí v opozici",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/starosta-lisne-obhajil-pocet-mandatu-presto-hrozi-ze-skonci-v-opozici/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/ae8/ae84c185-81e4-40af-9d70-04bd8013b29d.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
     "titulek": "Zlato není jen investice. Drahým kovem dnes zaplatíte i v restauraci",
-    "odkaz": "https://www.denik.cz/byznys-kafe/zlato-investice-drahe-kovy-aurum-summit/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=byznys-kafe",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/4e0/4e0fab7b-3f7a-4682-a1df-d201fb8584fb.jpeg",
-    "region": "celostátní"
+    "odkaz": "https://www.denik.cz/byznys-kafe/zlato-investice-drahe-kovy-aurum-summit/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=byznys-kafe",
+    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/4e0/4e0fab7b-3f7a-4682-a1df-d201fb8584fb.jpeg",
+    "region": "Liberecký deník"
   },
-  "verejne": {
-    "titulek": "Ve Slavičíně se rýsuje nová koalice. Starosta Chmela je zatím mimo hru",
-    "odkaz": "https://zlinsky.denik.cz/komunalni-volby/volby-2026-slavicin-nova-koalice-starosta-chmela/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/302/3027619c-9d88-456d-87f8-cfec35b5d481.jpeg",
-    "region": "Zlínský deník"
-  },
-  "vystavba": {
-    "titulek": "Nehoda v Kasárnách. Po srážce s kamionem zůstal řidič zaklíněný v autě",
-    "odkaz": "https://znojemsky.denik.cz/nehody/nehoda-v-kasarnach-po-srazce-s-kamionem-zustal-ridic-zaklineny-v-aute/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=nehody",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/991/9919773d-90e6-4cab-8cf9-7d194d384ada.jpeg",
-    "region": "Znojemský deník"
+  "bezpecnost": {
+    "titulek": "Pasohlávky zůstávají baštou Moravanů. Na Brněnsku jsou oblíbení také hasiči",
+    "odkaz": "https://brnensky.denik.cz/komunalni-volby/pasohlavky-brnensko-moravane-komunalni-volby-vysledky-hasici/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/4ad/4add34b5-c409-43e5-90cc-831fe4430acd.jpeg",
+    "region": "Brněnský deník"
   },
   "skolstvi": {
-    "titulek": "V tuchlovické škole hořel rozvaděč. Hasiči evakuovali kuchařky",
-    "odkaz": "https://kladensky.denik.cz/zpravy-region/v-tuchlovicke-skole-horel-rozvadec-hasici-evakuovali-kucharky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/a98/a9852f46-6d7e-4e5c-b5c9-afd3a7a6244f.jpeg",
-    "region": "Kladenský deník"
+    "titulek": "Když se škola na chvíli zastaví, přijde na řadu pohoda, tvoření a odpočinek",
+    "odkaz": "https://znojemsky.denik.cz/zpravy-region/kdyz-se-skola-na-chvili-zastavi-prijde-na-radu-pohoda-tvoreni-a-odpocinek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/a64/a64fc680-644f-4899-91f4-7634b81a8578.jpeg",
+    "region": "Znojemský deník"
+  },
+  "vystavba": {
+    "titulek": "Platit si jídlo a pobyt v domově důchodců ze svého? Návrh vyvolal smršť reakcí",
+    "odkaz": "https://www.denik.cz/cesko/ekonomika-domovy-duchodcu-navrh-platit-si-jidlo-ubytovani-/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=cesko",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/576/576109ce-65a0-4900-ba1b-5c6d7a44ad70.jpeg",
+    "region": "Pardubický deník"
   }
 };
