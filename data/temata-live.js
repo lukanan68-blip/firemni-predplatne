@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-17T09:14:04.870Z
+// Vygenerováno: 2026-10-18T09:30:50.159Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Kudy vyjet z Židlochovic? Jedna silnice je uzavřená, druhá průjezdná na semafor",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/zidlochovice-zabcice-hrusovany-uzavirka-doprava-semafor-omezeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/4f3/4f316d48-b2d8-442d-accd-1f4eb1cff68e.jpeg",
+    "titulek": "Uzavírka tunelů a kolony změní dopravu v Brně: úpravy křižovatek i nový BUS pruh",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-doprava-zmena-krizovatky-semafory-kolony-uzavirka-piarecky-hlinky-tunel/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/7af/7af894b2-ed45-4162-bb5a-e37548758f14.jpeg",
     "region": "Brněnský deník"
   },
-  "skolstvi": {
-    "titulek": "Skončí ředitelka Základní školy Pastviny v Komíně. Od Nového roku opustí funkci",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/skonci-reditelka-zakladni-skoly-pastviny-v-komine-od-noveho-roku-opusti-funkci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/81e/81e47ad3-5335-41b3-90a9-0f01c69414ff.jpeg",
+  "vystavba": {
+    "titulek": "Vláda chce danění investičních bytů. Platili by ti nejchudší, deficit by zůstal",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-vlada-chce-zdaneni-investicnich-bytu-experti-kritizuji-doplatili-by-na-to-nejchudsi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/76d/76dc765b-a7c2-4c52-89d9-e196a23484e8.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Vystřílím vás, vyhrožoval muž firmě. Vadil mu hluk a prach při opravě mostu",
-    "odkaz": "https://www.denik.cz/krimi/vystrilim-vas-vyhrozoval-muz-firme-vadil-mu-hluk-a-prach-pri-oprave-mostu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=krimi",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/888/888d0b24-8335-4c67-9eec-20bd8b5b920d.jpeg",
-    "region": "celostátní"
+    "titulek": "Po více než 30 letech končí ve Slaném další prodejna. Zahájila výprodej zboží",
+    "odkaz": "https://kladensky.denik.cz/zpravy-region/slany-podnikatel-konci-obchod-sportovni-potreby/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/6b6/6b6d7732-8f19-480a-a1c5-4b119095f8ae.jpeg",
+    "region": "Kladenský deník"
   },
   "verejne": {
-    "titulek": "Požár v Kalifornii zničil nejméně šest domů. Úřady evakuovaly 16 tisíc lidí",
-    "odkaz": "https://www.denik.cz/svet/pozar-v-kalifornii-znicil-nejmene-sest-domu-urady-evakuovaly-16-tisic-lidi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/a81/a81ac458-31eb-4389-b1e7-da99e6dd158e.jpeg",
-    "region": "celostátní"
+    "titulek": "Gynekolog, psychiatr i oční lékař. Zjistěte, zda váš doktor zasedne na radnici",
+    "odkaz": "https://zlinsky.denik.cz/komunalni-volby/zlinsko-komunalni-volby-2026-vysledky-profese-lekari-v-zastupitelstvech-prehled/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/5fc/5fcd225e-4b67-4342-862a-9f34db3ca8de.jpeg",
+    "region": "Zlínský deník"
+  },
+  "skolstvi": {
+    "titulek": "Když učitel řve a ponižuje, respekt si nezíská, říká psycholožka Šauerová",
+    "odkaz": "https://www.denik.cz/o-zivote-zblizka/kdyz-ucitel-rve-a-ponizuje-respekt-si-neziska-rika-psycholozka-sauerova/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=o-zivote-zblizka",
+    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/102/102a04ca-f72b-47b3-9303-496c5a4e10bb.jpeg",
+    "region": "Třebíčský deník"
   },
   "bezpecnost": {
     "titulek": "Může v Česku projít vražda? Spor o jejich promlčení graduje, rozhodne sněmovna",
-    "odkaz": "https://www.denik.cz/krimi/cesko-kriminalita-vrazda-spor-o-promlceni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/9a3/9a30a583-9f8b-48ad-aeda-3d49480f1815.jpeg",
-    "region": "Třebíčský deník"
-  },
-  "vystavba": {
-    "titulek": "Platit si jídlo a pobyt v domově důchodců ze svého? Návrh vyvolal smršť reakcí",
-    "odkaz": "https://www.denik.cz/cesko/ekonomika-domovy-duchodcu-navrh-platit-si-jidlo-ubytovani-/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=cesko",
-    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/576/576109ce-65a0-4900-ba1b-5c6d7a44ad70.jpeg",
-    "region": "Prostějovský deník"
+    "odkaz": "https://www.denik.cz/krimi/cesko-kriminalita-vrazda-spor-o-promlceni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=krimi",
+    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/9a3/9a30a583-9f8b-48ad-aeda-3d49480f1815.jpeg",
+    "region": "Zlínský deník"
   }
 };
