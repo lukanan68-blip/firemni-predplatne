@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-10-21T10:03:14.957Z
+// Vygenerováno: 2026-10-22T10:03:59.545Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Z hořícího kamionu zůstalo ohořelé torzo: řidič na D1 před Brnem nejspíš usnul",
-    "odkaz": "https://brnensky.denik.cz/nehody/d1-kyvalka-brno-nehoda-kamion-ohen-pozar/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=nehody",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a40/a40f25f6-211d-4c4e-906a-411ab73d29f4.jpeg",
+    "titulek": "Centrum Brna jako otevřená dálnice pro auta. Výsuvné sloupky zůstávají stažené",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-centrum-vysuvne-sloupky-problem-ochrana-vjezd-auta/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a0e/a0efc53c-f9f8-4f7f-bc08-7ef773897a97.jpeg",
     "region": "Brněnský deník"
   },
-  "verejne": {
-    "titulek": "Starostky na ústupu. Brněnským městským částem povládne méně žen než dosud",
-    "odkaz": "https://brnensky.denik.cz/komunalni-volby/brno-mestske-casti-starostky-pocet-mene-volby/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/148/1486f4c2-6fc6-4fa3-bf1b-9c0407301482.jpeg",
+  "skolstvi": {
+    "titulek": "Měla tě máma potratit. Psycholožka Šauerová popsala děsivé chování učitele",
+    "odkaz": "https://www.denik.cz/cesko/mela-te-mama-potratit-psycholozka-sauerova-popsala-desive-chovani-ucitele/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=cesko",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/d2c/d2c1dd61-0fb5-4719-85d2-50ed8f95a38d.jpeg",
     "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "Rychlé vlaky ze Znojma na Brno? Kraj kvůli trati mění územní plán",
-    "odkaz": "https://znojemsky.denik.cz/zpravy-region/rychle-vlaky-ze-znojma-na-brno-kraj-kvuli-trati-meni-uzemni-plan/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/d81/d81f4b3f-0faf-4fd7-bdef-80c1d2048f60.jpeg",
-    "region": "Znojemský deník"
+    "titulek": "Pozor na obchvatu Pardubic. Kvůli stavbě megaarény spustili semafory",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/arena-pardubice-dedek-semafory-obchvat-fablovka-stavba-2026/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/062/062ed031-cbea-40a7-b1b7-18acea6bbed6.jpeg",
+    "region": "Pardubický deník"
   },
-  "bezpecnost": {
-    "titulek": "Boty musí z Lidlu pryč. Levné kopie značek narážejí u soudů",
-    "odkaz": "https://www.denik.cz/ekonomika/lidl-musi-stahnout-z-prodeje-boty/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/ddf/ddfc4d9a-4100-4e0b-974f-ab961ff97aa2.jpeg",
+  "verejne": {
+    "titulek": "ANO, Starostové a Ostravak podepsali koaliční smlouvu. Primátorem bude Vereš",
+    "odkaz": "https://moravskoslezsky.denik.cz/komunalni-volby/ostrava-smeruje-k-novemu-vedeni-koalicni-smlouvu-podepisi-dnes-dopoledne/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/c64/c64e6c74-95ad-4aba-ba34-864384f29382.jpeg",
     "region": "celostátní"
   },
-  "skolstvi": {
-    "titulek": "Virtuální realita vrátí do života osudy židovských studentů v Kendeho vile",
-    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/virtualni-realita-vrati-do-zivota-osudy-zidovskych-studentu-v-kendeho-vile/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/234/234db4f7-b1fc-4038-b261-fbde1ca475d7.jpeg",
-    "region": "Českobudějovický deník"
-  },
   "investice": {
-    "titulek": "Zákazníci čekali přes dva roky: Retail park ve Slaném se dočká bistra i toalet.",
-    "odkaz": "https://kladensky.denik.cz/zpravy-region/slany-brzy-bistro-kyoto-sushi-toalety-retail-park/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/68c/68c2239f-4c6a-4fbe-848a-4bada2b2c407.jpeg",
-    "region": "Kladenský deník"
+    "titulek": "Ve Štěnovicích na Plzeňsku vyrostly dvě nové haly. Bude tam výroba i sklad",
+    "odkaz": "https://plzensky.denik.cz/zpravy-region/ve-stenovicich-na-plzensku-vyrostly-dve-nove-haly-bude-tam-vyroba-i-sklad/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/8a7/8a72a7f3-d37f-4b03-9d8e-4e2057e3614e.jpeg",
+    "region": "Plzeňský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Vichřice i ohrožená nemocnice. Hasiči cvičili krizový scénář v Krnově",
+    "odkaz": "https://fm.denik.cz/zpravy-region/vichrice-i-ohrozena-nemocnice-hasici-cvicili-krizovy-scenar-v-krnove/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x768/7ad/7ad73556-d62f-47dc-8678-ac25473b5262.jpeg",
+    "region": "Opavský deník"
   }
 };
