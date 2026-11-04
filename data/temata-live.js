@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-03T12:44:31.373Z
+// Vygenerováno: 2026-11-04T12:56:04.948Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Zastřelená žena v tramvaji číslo 17: Oběť vraždy jela po smrti oběma směry",
-    "odkaz": "https://prazsky.denik.cz/krimi/zastrelena-zena-v-tramvaji-cislo-17-obet-vrazdy-jela-po-smrti-obema-smery/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/e46/e46edbeb-e005-46df-91bb-f0c6c255a2fd.jpeg",
+    "titulek": "Modré zóny v Třebíči? Radnice už má člověka, který připravuje změny parkování",
+    "odkaz": "https://trebicsky.denik.cz/zpravy-region/parkovani-v-trebici-modre-zony-nova-urednice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/4cd/4cd5db60-b03b-4fab-a33e-3267baf946de.jpeg",
+    "region": "Třebíčský deník"
+  },
+  "skolstvi": {
+    "titulek": "Straka už šest let každé ráno útočí na školáka. Zřejmě si pamatuje jeho vlasy",
+    "odkaz": "https://www.denik.cz/evropa/australie-skolak-straka-utoky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=evropa",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/004/0043205b-65b0-48fe-bacd-38083c7ca06d.jpeg",
     "region": "Brněnský deník"
   },
   "vystavba": {
-    "titulek": "5 výzev pro nové vedení Brna: stavba podzemní dráhy i pryč s auty z přednádraží",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-koalice-vyzvy-stadion-prednadrazi-bezdomovci-nove-byty/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/da3/da3d4376-a9d3-407b-aef8-fc2c2cee8c69.jpeg",
+    "titulek": "Nová čtvrť rozšíří centrum Brna na jih. První domy mají povolení, začne výstavba",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-nova-ctvrt-trnita-vystavba-bloq-povoleni-stavba/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/f78/f78dcffd-e56f-4672-9f14-9e3a13f9275b.jpeg",
     "region": "Brněnský deník"
   },
-  "investice": {
-    "titulek": "Penta postaví v Londýně hotel za miliardy. Do projektu zapojí i kostel",
-    "odkaz": "https://www.denik.cz/ekonomika/penta-postavi-v-londyne-hotel-za-miliardy-do-projektu-zapoji-i-kostel/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/001/0012ab48-cfd2-42ef-bf45-dd97827b26f5.jpeg",
+  "verejne": {
+    "titulek": "Co rozhodly volby v USA: Demokraté mohou prověřovat a blokovat kroky Trumpa",
+    "odkaz": "https://www.denik.cz/svet/volby-usa-2026-vyhra-demokratu-ovladli-kongres-co-to-znamena-pro-prezodenta-trumpa/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=svet",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/e4c/e4c73794-45ef-461d-96ee-2f37435c01e2.jpeg",
     "region": "celostátní"
   },
-  "skolstvi": {
-    "titulek": "Město Plzeň podpoří mediální výchovu i jazykovou výuku na základních školách",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/mesto-plzen-podpora-zakladni-skoly-medialni-vychova-jazykova-vyuka/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/3d6/3d62d097-de91-4421-8c91-0a4fe955f620.jpeg",
+  "bezpecnost": {
+    "titulek": "Soudní drama bude pokračovat, o osudu dealera drog rozhodne klíčový svědek",
+    "odkaz": "https://plzensky.denik.cz/krimi/krajsky-soud-plzen-drogy-dealer-miroslav-h-domazlicko-odvolani-klicovy-svedek-okresni-soud/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/749/749a64f5-38c8-403a-bd4e-e72b21c03093.jpeg",
     "region": "Plzeňský deník"
   },
-  "bezpecnost": {
-    "titulek": "Nehoda kamionu a osobního auta uzavřela silnici u Sedlece. Zasahoval i vrtulník",
-    "odkaz": "https://ceskobudejovicky.denik.cz/nehody/nehoda-kamionu-a-auta-u-sedlce-letel-sem-vrtulnik/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=nehody",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/eb5/eb50cada-ea35-4a05-b78c-50ee6152309f.jpeg",
-    "region": "Českobudějovický deník"
-  },
-  "verejne": {
-    "titulek": "Volby do Kongresu 2026: průvodce pro Čechy aneb o co jde v USA",
-    "odkaz": "https://www.denik.cz/svet/volby-do-kongresu-usa-2026-pruvodce-pro-cechy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=svet",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/f75/f75a2e4c-5dc7-4e28-865b-ea4a49ca2ffa.jpeg",
-    "region": "Olomoucký deník"
+  "investice": {
+    "titulek": "Velká změna: Albert kupuje Tesco, může se to dotknout i prodejny na Vyškovsku",
+    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/tesco-albert-spolecnost-ahold-delhaize-supermarkety-vyskov-cr-prodejna-obchodni-retezec-budoucnost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/b7b/b7b76b14-9153-47c3-b1c4-5eeea690ab94.jpeg",
+    "region": "Vyškovský deník"
   }
 };
