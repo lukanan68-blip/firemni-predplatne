@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-05T13:08:18.478Z
+// Vygenerováno: 2026-11-06T12:53:28.366Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "D1 mezi Brnem a Prahou v šesti pruzích: mají termín rozšiřování zbytku dálnice",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-praha-dalnice-d1-sest-pruhu-rozsirovani-termin/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/c72/c72e8ff8-0d45-4837-adf7-41eabbd71070.jpeg",
+    "titulek": "Tragická nehoda uzavřela I/50 u Bučovic. Po čelní srážce aut zemřela řidička",
+    "odkaz": "https://vyskovsky.denik.cz/nehody/vazna-dopravni-nehoda-silnice-50-vicemilice-bucovice-dnes-aktualne-patek-hasici-vyprosteni-zraneni-provoz/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=nehody",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/917/91779f10-8677-4b91-891d-f593eb793990.jpeg",
     "region": "Brněnský deník"
-  },
-  "investice": {
-    "titulek": "Obnova Ukrajiny nemůže čekat. Velvyslanec zmínil tři firmy z Liberecka",
-    "odkaz": "https://liberecky.denik.cz/zpravy-region/velvyslanec-ukrajina-liberecko-firmy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/638/63867c62-1446-4a9e-8842-343af2f30add.jpeg",
-    "region": "Liberecký deník"
   },
   "bezpecnost": {
-    "titulek": "Soud v Brně schválil dvě dohody v bytové kauze v obvodu Brno-střed",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/soud-v-brne-schvalil-dve-dohody-v-bytove-kauze-v-obvodu-brno-stred/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/c4a/c4ad20e0-557e-4f2a-b695-0b4d89a8efa2.jpeg",
+    "titulek": "Když vraždí drogy. K brutálnímu násilí se závislí uchýlili kvůli penězům i rauši",
+    "odkaz": "https://litomericky.denik.cz/krimi/drogy-nasili/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/f05/f055049a-0ee4-45f4-ba83-b02c66da8a1b.jpeg",
     "region": "Brněnský deník"
   },
-  "skolstvi": {
-    "titulek": "Gymnázium Ostrov opět propojí středoškoláky s vysokoškolským světem",
-    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/gymnazium-ostrov-opet-propoji-stredoskolaky-s-vysokoskolskym-svetem/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x768/d09/d09c2379-8fea-41a3-abc1-9bf2785383fe.jpeg",
+  "verejne": {
+    "titulek": "Volba primátorky až v polovině listopadu: Město balancuje na hraně zákona",
+    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/volba-primatorka-karlovy-vary/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x768/300/3006e3d9-a23e-4d6e-bd35-157364803659.jpeg",
     "region": "Karlovarský deník"
   },
-  "verejne": {
-    "titulek": "Modré zóny v Třebíči? Radnice už má člověka, který připravuje změny parkování",
-    "odkaz": "https://trebicsky.denik.cz/zpravy-region/parkovani-v-trebici-modre-zony-nova-urednice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/4cd/4cd5db60-b03b-4fab-a33e-3267baf946de.jpeg",
-    "region": "Třebíčský deník"
+  "investice": {
+    "titulek": "Opustila práci v softwarové firmě. Teď organizuje domácnosti po celé republice",
+    "odkaz": "https://www.denik.cz/podnikani/opustila-praci-v-softwarove-firme-ted-organizuje-domacnosti-po-cele-republice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=podnikani",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x910/f31/f31f36b4-41b6-496f-838f-621ba54e84aa.jpeg",
+    "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "U Hradiska v Olomouci už se staví. Rezidenční projekt nabídne přes stovku bytů",
-    "odkaz": "https://olomoucky.denik.cz/zpravy-region/olomouc-hradisko-byty-farmak-czech-gen-group-stavba/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/81d/81da2954-9229-4202-8b17-c08a834c2cbb.jpeg",
-    "region": "Olomoucký deník"
+    "titulek": "Tunel vedoucí k soudu i pobyt v cele. Liberecká věznice ukáže své zákoutí",
+    "odkaz": "https://liberecky.denik.cz/zpravy-region/vazebni-veznice-liberec-tunel-cela/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/64d/64d78eba-f72e-4380-8b9b-2c5a2a2d187e.jpeg",
+    "region": "Liberecký deník"
+  },
+  "skolstvi": {
+    "titulek": "Stávková pohotovost v Pardubicích. Studenti UPCE protestují za média",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/univerzita-pardubice-stavkova-pohotovost-protest-studenti-media/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/744/7440e3c5-f491-41a3-9165-0786f66b31a5.jpeg",
+    "region": "Pardubický deník"
   }
 };
