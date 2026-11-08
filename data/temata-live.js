@@ -1,23 +1,29 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-07T11:39:57.697Z
+// Vygenerováno: 2026-11-08T11:53:56.631Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Opilá babička u nádraží v Brně nevnímala plačícího vnuka. Nafoukala 2,9 promile",
-    "odkaz": "https://brnensky.denik.cz/krimi/opila-babicka-brno-nadrazi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/794/79464e41-6bea-47a7-9d18-d512cbc242f8.jpeg",
+    "titulek": "Písek, mazačka i uhlíkové lišty. Brněnské tramvaje se chystají na zimu",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/pisek-mazacka-i-uhlikove-listy-brnenske-tramvaje-se-chystaji-na-zimu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/357/3572d30e-48f4-4680-bf7d-6b95f52bb2f6.jpeg",
     "region": "Brněnský deník"
   },
-  "investice": {
-    "titulek": "Od vraždy podnikatele na Hané uplyne 20 let. Viník spravedlnosti dál uniká",
-    "odkaz": "https://olomoucky.denik.cz/krimi/nevyresena-vrazda-podnikatele-horni-mostenice/?utm_source=rss&utm_medium=feed-vse&utm_campaign=olomoucky.denik.cz&utm_content=krimi",
-    "obrazek": "https://olomoucky.denik.cz/images/api/image/1366x768/269/26956133-01c0-4e9b-a17f-b57c32d0931a.jpeg",
-    "region": "Olomoucký deník"
+  "verejne": {
+    "titulek": "Oběd v restauraci? Ani 200 Kč nestačí. Jen ve třech krajích se dá jíst levněji",
+    "odkaz": "https://www.denik.cz/ekonomika/cesko-ekonomika-obedy-v-restauraci-vysoka-cena-srovnani-kraju/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/26a/26acbd19-935e-41a8-ac77-9fe557a71d0f.jpeg",
+    "region": "Brněnský deník"
+  },
+  "vystavba": {
+    "titulek": "Rybitví rozšíří následnou péči. Pavilon přidá 37 lůžek, stavba začne v roce 2027",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/rybitvi-rozsiri-naslednou-peci-pavilon-prida-37-luzek-stavba-zacne-v-roce-2027/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/61b/61bb5047-5e60-40dc-b173-d736769effe0.jpeg",
+    "region": "Pardubický deník"
   },
   "bezpecnost": {
-    "titulek": "Většina čtenářů soudí, že Česká televize není objektivní a nestranná",
-    "odkaz": "https://www.denik.cz/cerna-a-bila/vetsina-ctenaru-soudi-ze-ceska-televize-neni-objektivni-a-nestranna/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cerna-a-bila",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/d36/d36c3307-d613-4db7-a968-23a5abc8bfa2.jpeg",
+    "titulek": "Dozvuky střelby z Krakova: I v Ostravě staví zátarasy, v ulicích více policistů",
+    "odkaz": "https://moravskoslezsky.denik.cz/zpravy-region/ostrava-zatarasy-policie-strelba-krakov-zabrany-bezpecnost/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/ddc/ddc00417-ec13-4d19-ac10-40316511bb8d.jpeg",
     "region": "celostátní"
   },
   "skolstvi": {
@@ -26,16 +32,10 @@ window.TEMATA_LIVE = {
     "obrazek": "https://opavsky.denik.cz/images/api/image/1366x768/c6a/c6a4e76b-0ae7-41c7-ae3a-3cbf4ee82f21.jpeg",
     "region": "Opavský deník"
   },
-  "verejne": {
-    "titulek": "Přelomové volby v USA: Do Senátu míří muslim i indiánka, Texas zvolil demokraty",
-    "odkaz": "https://www.denik.cz/svet/volby-usa-vysledky-kongres-top-zpravy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=kladensky.denik.cz&utm_content=svet",
-    "obrazek": "https://kladensky.denik.cz/images/api/image/1366x768/1c6/1c659164-50b1-44fd-9402-da2d766de18b.jpeg",
-    "region": "Kladenský deník"
-  },
-  "vystavba": {
-    "titulek": "Trable brněnské legendy, stavba stojí. Novou Šelepku brzdí nečekané problémy",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/legendarni-selepka-mela-na-podzim-znovu-ozit-kvuli-problemum-ale-otevre-za-rok/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/e28/e284737d-aaa3-4838-b3e7-47f83716aae6.jpeg",
-    "region": "Brněnský deník"
+  "investice": {
+    "titulek": "Letuška Barbara radí: Na hotelu ihned dejte jednu botu do trezoru a kufr do vany",
+    "odkaz": "https://www.denik.cz/svet/letuska-barbara-radi-co-udelat-jako-prvni-vec-v-hotelu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=svet",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/da3/da3d5fcc-4141-4cf7-85c3-e515e75e0756.jpeg",
+    "region": "Pardubický deník"
   }
 };
