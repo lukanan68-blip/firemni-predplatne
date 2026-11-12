@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-11T12:40:03.254Z
+// Vygenerováno: 2026-11-12T13:41:29.940Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Na D52 u Popovic bourala 4 auta. Řidiči postupně nedobrzdili v odbočovacím pruhu",
-    "odkaz": "https://brnensky.denik.cz/nehody/na-d52-u-popovic-bourala-4-auta-v-odbocovacim-pruhu-na-rajhrad/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=nehody",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/06e/06e59b34-80df-4fe2-a094-2f3e39529578.jpeg",
-    "region": "Brněnský deník"
-  },
-  "verejne": {
-    "titulek": "Rakušan k antimonopolnímu úřadu: Doufám, že vláda nedá na to, kdo je čí kamarád",
-    "odkaz": "https://www.denik.cz/cesko/vit-rakusan-u-antimonoponiho-uradu-konci-petr-mlsna-vlada-vyberove-rizeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=cesko",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/2f6/2f6088b3-5aea-49fb-9eb3-0525c7db8f40.jpeg",
+    "titulek": "Stavba obchvatu Bučovic odstartuje na jaře. Pozemky jsou vypořádané z 87 procent",
+    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/obchvat-bucovic-rsd-vizualizace-stavba-pozemky-priprava-archeologicky-pruzkum-silnice-50-vyskovsko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/524/524dbb03-cd65-44d4-957b-6ac65e565f23.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Úplatky kolem uzavírek na Vysočině: Deník zjistil tři obviněné firmy",
-    "odkaz": "https://trebicsky.denik.cz/krimi/korupce-kolem-uzavirek-na-vysocine-tri-obvinene-firmy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=trebicsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://trebicsky.denik.cz/images/api/image/1366x768/0ba/0ba89d3d-f763-44bb-813f-c4c021eb8101.jpeg",
-    "region": "Třebíčský deník"
-  },
-  "vystavba": {
-    "titulek": "Takto má vypadat nový Chebský most. Rekonstrukce začne ale až v roce 2029",
-    "odkaz": "https://karlovarsky.denik.cz/zpravy-region/takto-ma-vypadat-novy-chebsky-most-rekonstrukce-zacne-ale-az-v-roce-2029/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x768/ef2/ef286c20-a1a6-4220-bbe8-a6cfafb9b5af.jpeg",
-    "region": "Karlovarský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Dva poníci měli skončit na jatkách. Policistka z Tachovska jim zachránila život",
-    "odkaz": "https://tachovsky.denik.cz/zpravy-region/dva-ponici-jatka-policistka-tachovsko-zivot-zachrana/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/f9f/f9f9647a-cf61-45c4-b4b1-51c3be086caa.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Lebduška: Nefunkční Ústavní soud v Polsku je problém i pro firmy na tamním trhu",
+    "odkaz": "https://www.denik.cz/evropa-pro-cechy/michal-lebduska-polsko-ustavni-soud-podcast/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=evropa-pro-cechy",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/0be/0bea5016-5bad-4b80-a819-a8517d614d15.jpeg",
+    "region": "Brněnský deník"
   },
   "skolstvi": {
-    "titulek": "Plzeň má II. Vicemiss ČR. Studentka práv chce korunku využít i pro dobrou věc",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/plzen-ma-ii-vicemiss-cr-studentka-prav-chce-korunku-vyuzit-i-pro-dobrou-vec/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/f1c/f1cb7e12-92fc-4f64-8cf1-fd2ea3c98f6d.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Co uměli rodiče, se už nenosí. Hradečtí studenti se učí opravovat spotřebiče",
+    "odkaz": "https://hradecky.denik.cz/zpravy-region/projekt-naucime-vas-to-opravit-hradec-stredni-skola/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x768/d2f/d2f06a02-da2f-4f1a-ae10-c2a096c1e65f.jpeg",
+    "region": "Hradecký deník"
+  },
+  "verejne": {
+    "titulek": "Zlín má nového primátora. Čestmíra Vančuru podpořilo 27 zastupitelů",
+    "odkaz": "https://zlinsky.denik.cz/komunalni-volby/krajske-mesto-zlin-novy-primator-cestmir-vancura-podpora-zastupitele-slavnostni-jmenovani-komunalni-volby/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komunalni-volby",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/d0b/d0b34ccc-f5a4-4c76-940a-b8d1ec6e5856.jpeg",
+    "region": "celostátní"
+  },
+  "vystavba": {
+    "titulek": "Nejen mrtvá rodina, byt střelce z Polska ukrýval další hrůzy. Muž studoval vrahy",
+    "odkaz": "https://www.denik.cz/evropa/polsko-strelec-z-krakova-co-nasla-policie-v-byte-utocnik-se-zajimal-o-vraha-breivika/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=evropa",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/723/723a7ab7-2679-49c9-aa44-ddb4fdc2adfb.jpeg",
+    "region": "Pardubický deník"
+  },
+  "bezpecnost": {
+    "titulek": "Před Družbou žádal o peníze. Místo příspěvků ho čekala policie",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/muz-zebral-pred-priorem-ukazalo-se-ze-je-celostatne-hledany/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/baa/baae9160-a1ad-4933-8971-221fe1b8e47c.jpeg",
+    "region": "Českobudějovický deník"
   }
 };
