@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-12T13:41:29.940Z
+// Vygenerováno: 2026-11-13T13:00:15.759Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Stavba obchvatu Bučovic odstartuje na jaře. Pozemky jsou vypořádané z 87 procent",
-    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/obchvat-bucovic-rsd-vizualizace-stavba-pozemky-priprava-archeologicky-pruzkum-silnice-50-vyskovsko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/524/524dbb03-cd65-44d4-957b-6ac65e565f23.jpeg",
+    "titulek": "Vlak do Brna přeplněný cestujícími: zavřené Pisárecké tunely vyhnaly lidi z aut",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-zastavka-vlak-spoj-linka-s4-cestujici-plno-kapacita-zmena/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/00a/00a20589-f1cc-464b-8553-f4e05fd662e4.jpeg",
+    "region": "Brněnský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Pozor na nebezpečného muže, varují lidé. Brněnskou čtvrť už víc hlídá policie",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-zidenice-julianov-pozor-nebezpeci-muz-policie/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/d0c/d0c29156-7389-4c07-9367-2c3aad0852e3.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Lebduška: Nefunkční Ústavní soud v Polsku je problém i pro firmy na tamním trhu",
-    "odkaz": "https://www.denik.cz/evropa-pro-cechy/michal-lebduska-polsko-ustavni-soud-podcast/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=evropa-pro-cechy",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/0be/0bea5016-5bad-4b80-a819-a8517d614d15.jpeg",
-    "region": "Brněnský deník"
-  },
-  "skolstvi": {
-    "titulek": "Co uměli rodiče, se už nenosí. Hradečtí studenti se učí opravovat spotřebiče",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/projekt-naucime-vas-to-opravit-hradec-stredni-skola/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x768/d2f/d2f06a02-da2f-4f1a-ae10-c2a096c1e65f.jpeg",
-    "region": "Hradecký deník"
-  },
-  "verejne": {
-    "titulek": "Zlín má nového primátora. Čestmíra Vančuru podpořilo 27 zastupitelů",
-    "odkaz": "https://zlinsky.denik.cz/komunalni-volby/krajske-mesto-zlin-novy-primator-cestmir-vancura-podpora-zastupitele-slavnostni-jmenovani-komunalni-volby/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/d0b/d0b34ccc-f5a4-4c76-940a-b8d1ec6e5856.jpeg",
+    "titulek": "Nezaměstnaných přibývá, firmy přesto nemají lidi. Chybějí hlavně technici",
+    "odkaz": "https://www.denik.cz/podnikani/nezamestnanych-pribyva-firmy-presto-nemaji-lidi-chybeji-hlavne-technici/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=podnikani",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/5a7/5a77a5ea-c7cd-4fd1-a81a-e996bdd708f6.jpeg",
     "region": "celostátní"
   },
-  "vystavba": {
-    "titulek": "Nejen mrtvá rodina, byt střelce z Polska ukrýval další hrůzy. Muž studoval vrahy",
-    "odkaz": "https://www.denik.cz/evropa/polsko-strelec-z-krakova-co-nasla-policie-v-byte-utocnik-se-zajimal-o-vraha-breivika/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=evropa",
-    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/723/723a7ab7-2679-49c9-aa44-ddb4fdc2adfb.jpeg",
-    "region": "Pardubický deník"
+  "verejne": {
+    "titulek": "Po 20 letech není jednoduché odejít, vzkazuje starosta Vranova Lubomír Vedra",
+    "odkaz": "https://znojemsky.denik.cz/zpravy-region/lubomir-vedra-starosta-vranov-nad-dyji-konec-po-20-letech/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/2c2/2c22bbf9-e775-40e8-a05a-19727d0210e3.jpeg",
+    "region": "Znojemský deník"
   },
-  "bezpecnost": {
-    "titulek": "Před Družbou žádal o peníze. Místo příspěvků ho čekala policie",
-    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/muz-zebral-pred-priorem-ukazalo-se-ze-je-celostatne-hledany/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/baa/baae9160-a1ad-4933-8971-221fe1b8e47c.jpeg",
-    "region": "Českobudějovický deník"
+  "vystavba": {
+    "titulek": "Stavba obchvatu Bučovic odstartuje na jaře. Pozemky jsou vypořádané z 87 procent",
+    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/obchvat-bucovic-rsd-vizualizace-stavba-pozemky-priprava-archeologicky-pruzkum-silnice-50-vyskovsko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/524/524dbb03-cd65-44d4-957b-6ac65e565f23.jpeg",
+    "region": "Vyškovský deník"
+  },
+  "skolstvi": {
+    "titulek": "Sto let dubanské školy: místo, kde vyrůstaly generace",
+    "odkaz": "https://prostejovsky.denik.cz/zpravy-region/sto-let-dubanske-skoly-misto-kde-vyrustaly-generace/?utm_source=rss&utm_medium=feed-vse&utm_campaign=prostejovsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://prostejovsky.denik.cz/images/api/image/1366x768/e16/e16920d9-1b09-4f23-8d6f-e7b04be50abb.jpeg",
+    "region": "Prostějovský deník"
   }
 };
