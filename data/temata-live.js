@@ -1,6 +1,6 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-14T12:05:05.511Z
+// Vygenerováno: 2026-11-15T12:40:06.472Z
 window.TEMATA_LIVE = {
   "doprava": {
     "titulek": "Nová letecká linka do Frankfurtu? Vedení Brna chce pojmenovat důvod nezájmu",
@@ -8,34 +8,34 @@ window.TEMATA_LIVE = {
     "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/a69/a692e26b-9f79-4dc5-b3a6-7231802cdd96.jpeg",
     "region": "Brněnský deník"
   },
-  "bezpecnost": {
-    "titulek": "Požár bytového domu v Brně: plameny šlehaly z oken, 14 evakuovaných, 1 popálený",
-    "odkaz": "https://brnensky.denik.cz/nehody/brno-zidenice-pozar-bytovy-dum-plameny-evakuace-zraneni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=nehody",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/7a5/7a550d33-15d8-45fa-9729-3c7872781db2.jpeg",
+  "verejne": {
+    "titulek": "Dotaci za šalinkartu dostali Brňané dvakrát. Chybně z úřadu odešlo 67 milionů",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-magistrat-dotace-salinkarta-miliony-chyba-penize/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/257/257f4945-9f73-4c69-acb9-2396d20a2f2e.jpeg",
     "region": "Brněnský deník"
   },
   "investice": {
-    "titulek": "Šumavský Špičák investoval před zimou přes 15 milionů Kč, má nové jméno",
-    "odkaz": "https://klatovsky.denik.cz/zpravy-region/sumavsky-spicak-investoval-pred-zimou-pres-15-milionu-kc-ma-nove-jmeno/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/52e/52e982e4-349b-45c0-b132-5acc1b025574.jpeg",
-    "region": "Plzeňský deník"
-  },
-  "vystavba": {
-    "titulek": "V Liberci rostou stovky nových bytů. Kde vznikají nové čtvrti a kdy budou hotové",
-    "odkaz": "https://liberecky.denik.cz/zpravy-region/nove-byty-liberec-gallas-frantiskov/?utm_source=rss&utm_medium=feed-vse&utm_campaign=liberecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://liberecky.denik.cz/images/api/image/1366x768/ff8/ff843c5f-b162-4964-9fbf-5e654f7c0279.jpeg",
-    "region": "Liberecký deník"
+    "titulek": "Konec ruského diskontu v Jihlavě. Mere stahuje i další prodejny v Česku",
+    "odkaz": "https://jihlavsky.denik.cz/zpravy-region/prodejna-mere-v-jihlave-konci-svuj-provoz/?utm_source=rss&utm_medium=feed-vse&utm_campaign=jihlavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x768/ddf/ddfb5112-a049-416d-a699-2afc66fbac8a.jpeg",
+    "region": "Jihlavský deník"
   },
   "skolstvi": {
-    "titulek": "Projednávání případu požáru střechy školy ve Zlíně odročil soud na neurčito",
-    "odkaz": "https://zlinsky.denik.cz/krimi/krimi-zlin-projednavani-pripadu-pozar-strechy-stredni-skola-odrocil-soud-neurcito-znalecky-posudek/?utm_source=rss&utm_medium=feed-vse&utm_campaign=zlinsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://zlinsky.denik.cz/images/api/image/1366x768/7ea/7ea3149e-bb03-492e-ae7e-fc607759652c.jpeg",
-    "region": "Zlínský deník"
+    "titulek": "Špatné školní jídelny se teď už nezmění, kritizují odborníci rozhodnutí ministrů",
+    "odkaz": "https://www.denik.cz/cesko/vlada-vyhlaska-skolni-stravovani-skolni-jidelna-kritika/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesko",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/a45/a456a436-77d5-49e0-b23e-47525bba31c8.jpeg",
+    "region": "celostátní"
   },
-  "verejne": {
-    "titulek": "Soud zamítl stížnost na volby v Mašovicích. Obec ale porušila informační zákon",
-    "odkaz": "https://znojemsky.denik.cz/komunalni-volby/soud-stiznost-volby-masovice-znojemsko-zamitnuti/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=komunalni-volby",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/af5/af519990-ec4a-43ca-b0e6-a81053a8060f.jpeg",
-    "region": "Znojemský deník"
+  "vystavba": {
+    "titulek": "Střelec z Krakova popravil rodinu šesti kulkami, v bytě zastřelil i kočky",
+    "odkaz": "https://www.denik.cz/evropa/strelec-z-krakova-popravil-rodinu-sesti-kulkami-v-byte-zastrelil-i-kocky/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=evropa",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/310/3108f171-21c7-4d35-8a6b-9cac7fe9cf2a.jpeg",
+    "region": "Pardubický deník"
+  },
+  "bezpecnost": {
+    "titulek": "Útoků kyberšmejdů přibývá, pomáhá jim umělá inteligence. Terčem jsou mladí lidé",
+    "odkaz": "https://www.denik.cz/krimi/kyberkriminalita-podvody-utoky-kybersmejd-umela-inteligence/?utm_source=rss&utm_medium=feed-vse&utm_campaign=karlovarsky.denik.cz&utm_content=krimi",
+    "obrazek": "https://karlovarsky.denik.cz/images/api/image/1366x768/887/8876837a-3d09-4f0a-8dde-048ab80d595e.jpeg",
+    "region": "Karlovarský deník"
   }
 };
