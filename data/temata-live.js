@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-19T14:20:07.758Z
+// Vygenerováno: 2026-11-20T13:57:09.949Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Silničáři uzavřou dálnici D2 u Brna, řidiče čekají objížďky",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/dalnice-d2-uzavirka-brno-objizdne-trasy-objizdky-sobota-nedele/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/e7d/e7d703a7-d74c-4c57-9321-7891b459f364.jpeg",
+    "titulek": "Koťátky mlátila o silnici, uškrtila psy. Pak zavraždila vlastní miminko",
+    "odkaz": "https://chebsky.denik.cz/krimi/krasna-as-vrazda-miminko-miroslava-michekova-soud/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=krimi",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/929/9293e976-655f-4ad6-b081-4f15dd80f540.jpeg",
     "region": "Brněnský deník"
   },
-  "bezpecnost": {
-    "titulek": "Stará hasička v Komíně se brzy otevře lidem. S více než ročním zpožděním",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/stara-hasicka-se-otevre-rocni-zpozdeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/33f/33fc513c-736a-4d6e-ae21-24cbd296c138.jpeg",
-    "region": "Brněnský deník"
-  },
-  "vystavba": {
-    "titulek": "Otevřeno! Podchod na třídě Karla IV. už plně slouží chodcům",
-    "odkaz": "https://hradecky.denik.cz/zpravy-region/otevreno-podchod-na-tride-karla-iv-uz-plne-slouzi-chodcum/?utm_source=rss&utm_medium=feed-vse&utm_campaign=hradecky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://hradecky.denik.cz/images/api/image/1366x768/23c/23c67c81-790b-4308-8583-436bace2df6b.jpeg",
-    "region": "Hradecký deník"
+  "investice": {
+    "titulek": "První balzám na rty vyrobila jako školačka. Dnes má vlastní kosmetickou firmu",
+    "odkaz": "https://www.denik.cz/podnikani/prvni-balzam-na-rty-vyrobila-jako-skolacka-dnes-ma-vlastni-kosmetickou-firmu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=podnikani",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/b63/b63b0956-0b3c-4c65-bd00-1743f7e18633.jpeg",
+    "region": "celostátní"
   },
   "verejne": {
     "titulek": "Škodliviny z vytápění překračují limit. Který kraj je nejhorší, jaká jsou rizika",
-    "odkaz": "https://www.denik.cz/cesi-v-cislech/skodliviny-ve-vzduchu-srovnani-kraju-rizika-pro-zdravi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=cesi-v-cislech",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/4dd/4ddbb962-26fa-4452-9e52-589a213c6343.jpeg",
+    "odkaz": "https://www.denik.cz/cesi-v-cislech/skodliviny-ve-vzduchu-srovnani-kraju-rizika-pro-zdravi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=cesi-v-cislech",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/4dd/4ddbb962-26fa-4452-9e52-589a213c6343.jpeg",
+    "region": "Brněnský deník"
+  },
+  "bezpecnost": {
+    "titulek": "Za parkování až 36 tisíc ročně. Trestá Praha tak majitele více aut?",
+    "odkaz": "https://www.denik.cz/zivot-ridice/za-parkovani-az-36-tisic-rocne-tresta-praha-tak-majitele-vice-aut/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zivot-ridice",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/507/5073c1d2-3219-4db0-ae44-aca2611291ec.jpeg",
     "region": "celostátní"
   },
-  "investice": {
-    "titulek": "Firmy nově přispějí na péči o blízké. Kdo může benefit využít, jak bude fungovat",
-    "odkaz": "https://www.denik.cz/ekonomika/novy-benefit-firmy-prispevek-na-peci/?utm_source=rss&utm_medium=feed-vse&utm_campaign=znojemsky.denik.cz&utm_content=ekonomika",
-    "obrazek": "https://znojemsky.denik.cz/images/api/image/1366x768/282/2828763f-e32c-40c8-87de-3a87971b47a9.jpeg",
-    "region": "Znojemský deník"
-  },
   "skolstvi": {
-    "titulek": "Když narazil, šel výš. Student z Olomouce ukazuje, jak se bránit bezpráví",
-    "odkaz": "https://www.denik.cz/cesko/kdyz-narazil-sel-vys-student-z-olomouce-ukazuje-jak-se-branit-bezpravi/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=cesko",
-    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/46d/46d80e1a-986a-4e2f-9dcc-ef8fb51b9ff1.jpeg",
-    "region": "Pardubický deník"
+    "titulek": "Veletrh středních škol TAK KAM ve Vyškově: Žáci zaplnili Besední dům",
+    "odkaz": "https://vyskovsky.denik.cz/zpravy-region/veletrh-strednich-skol-tak-kam-vyskov-2026-besedni-dum-zaci-stredni-skola-slavkov-austerlitz/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/9d8/9d82dff5-2cf3-488d-b0ee-f80b58416456.jpeg",
+    "region": "Vyškovský deník"
+  },
+  "vystavba": {
+    "titulek": "Jedna cena za druhou.  Horácká aréna je Stavbou roku, uspělo i nádraží",
+    "odkaz": "https://jihlavsky.denik.cz/zpravy-region/horacka-arena-stavba-oceneni-architektura-jihlava/?utm_source=rss&utm_medium=feed-vse&utm_campaign=jihlavsky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://jihlavsky.denik.cz/images/api/image/1366x768/e77/e773cfb6-d4af-4610-bf79-db5b54481e70.jpeg",
+    "region": "Jihlavský deník"
   }
 };
