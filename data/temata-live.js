@@ -1,41 +1,41 @@
 // Denní titulky k tématům -- generuje .github/scripts/refresh-temata.js.
 // Přepisuje se každý den celý, neupravovat ručně (změny by se ztratily).
-// Vygenerováno: 2026-11-24T15:45:17.391Z
+// Vygenerováno: 2026-11-25T15:29:53.618Z
 window.TEMATA_LIVE = {
   "doprava": {
-    "titulek": "Uzavřená D2 u Brna: kamion nedobrzdil před kolonou, napálil do jiného před sebou",
-    "odkaz": "https://brnensky.denik.cz/nehody/nehoda-kamionu-zablokovala-d2-pred-brnem-dalnice-je-uzavrena/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=nehody",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/626/6261336f-7d5d-4780-bab0-2f2c4d03ce83.jpeg",
+    "titulek": "Konec velké uzavírky v Brně. Pisárecké tunely v neděli otevřou, říká ředitel ŘSD",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-pisarecke-tunely-hlinky-konec-uzavirka-otevreni-termin-nedele/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/b77/b7788463-79e6-4d4a-86b6-4459efb3ef6f.jpeg",
     "region": "Brněnský deník"
-  },
-  "skolstvi": {
-    "titulek": "Školka snů. V jihočeské Plané vyrostla dřevěná stavba s tobogánem ze střechy",
-    "odkaz": "https://www.denik.cz/architektura/moderni-skolka-plana/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=architektura",
-    "obrazek": "https://www.denik.cz/images/api/image/1366x768/0d2/0d2934f5-ed67-4ea0-bdc6-dc497cd6cb3a.jpeg",
-    "region": "celostátní"
-  },
-  "verejne": {
-    "titulek": "Městský architekt nad propastí. Brněnští radní budou jednat o odvolání Tesárka",
-    "odkaz": "https://brnensky.denik.cz/zpravy-region/brno-kancelar-architekta-mesta-kam-reditel-jan-tesarek-konec-navrh-odvolani-rada/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/22f/22f528c7-88a4-4c67-8b79-259664355671.jpeg",
-    "region": "Brněnský deník"
-  },
-  "bezpecnost": {
-    "titulek": "Vlastní matka pro ni chtěla trest smrti, soudce chtěl kvůli ní skončit",
-    "odkaz": "https://chebsky.denik.cz/krimi/michekova-miroslava-vrazda-soudce-pravoslav-polak-krasna-chebsko-krajsky-soud-plzen-propusteni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=opavsky.denik.cz&utm_content=krimi",
-    "obrazek": "https://opavsky.denik.cz/images/api/image/1366x768/012/0125c544-853c-485b-b1a8-3b66c0b88be0.jpeg",
-    "region": "Opavský deník"
   },
   "investice": {
-    "titulek": "Jiráskovo náměstí v Plzni se má proměnit. Úpravy brzdí námitky firmy",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/jiraskovo-namesti-v-plzni-se-ma-promenit-upravy-brzdi-namitky-firmy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/e0f/e0f659ed-8215-445a-b774-d8b88681b748.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Penta postaví mrakodrap ve Varšavě. Investuje do něj téměř pět miliard",
+    "odkaz": "https://www.denik.cz/ekonomika/penta-postavi-mrakodrap-ve-varsave-investuje-do-nej-temer-pet-miliard/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=ekonomika",
+    "obrazek": "https://www.denik.cz/images/api/image/1366x768/4c9/4c9e3cfe-6715-4e28-ad27-06083ce7b6f2.jpeg",
+    "region": "celostátní"
   },
   "vystavba": {
-    "titulek": "Architektonický úspěch. Obláček nad Plzní je Stavbou roku v kategorii dostaveb",
-    "odkaz": "https://plzensky.denik.cz/zpravy-region/architektonicky-uspech-oblacek-nad-plzni-je-stavbou-roku-v-kategorii-dostaveb/?utm_source=rss&utm_medium=feed-vse&utm_campaign=plzensky.denik.cz&utm_content=zpravy-region",
-    "obrazek": "https://plzensky.denik.cz/images/api/image/1366x768/dc2/dc20dcf1-d8b3-4aba-a964-09fb45015a2d.jpeg",
-    "region": "Plzeňský deník"
+    "titulek": "Hošnova vila v Pisárkách? K nepoznání. Na jejím místě je Stavba roku 2026",
+    "odkaz": "https://brnensky.denik.cz/zpravy-region/rudolf-hosna-vila-brno-prestavba-stavba-roku-2026-jet-investment-igor-fait/?utm_source=rss&utm_medium=feed-vse&utm_campaign=brnensky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://brnensky.denik.cz/images/api/image/1366x768/ca7/ca734c80-6f85-4db9-b80d-1f9968eb6348.jpeg",
+    "region": "Brněnský deník"
+  },
+  "verejne": {
+    "titulek": "Parkování, hala i přesun radaru. Chybí mi tu pivnice, říká nový starosta Holic",
+    "odkaz": "https://pardubicky.denik.cz/zpravy-region/starosta-holice-kopecky-parkovani-doprava-sportovni-hala-radar/?utm_source=rss&utm_medium=feed-vse&utm_campaign=pardubicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://pardubicky.denik.cz/images/api/image/1366x768/85d/85dafe81-bea8-4a74-a0cf-9944dd9e5448.jpeg",
+    "region": "Pardubický deník"
+  },
+  "skolstvi": {
+    "titulek": "Vědci z Jihočeské univerzity se chystají na další polární výzkum",
+    "odkaz": "https://ceskobudejovicky.denik.cz/zpravy-region/vedci-z-jihoceske-univerzity-se-chystaji-na-dalsi-polarni-vyzkum/?utm_source=rss&utm_medium=feed-vse&utm_campaign=ceskobudejovicky.denik.cz&utm_content=zpravy-region",
+    "obrazek": "https://ceskobudejovicky.denik.cz/images/api/image/1366x768/ba0/ba0f16cd-259a-4068-90f2-57825b0d0456.jpeg",
+    "region": "Českobudějovický deník"
+  },
+  "bezpecnost": {
+    "titulek": "Čtyři lidé v péči záchranářů po nehodě ve Vyškově: Na Brněnské havarovala auta",
+    "odkaz": "https://vyskovsky.denik.cz/nehody/dopravni-nehoda-vyskov-brnenska-ulice-uzavirka-silnice-430-utery-zraneni-deti-auta-hasici-doprava/?utm_source=rss&utm_medium=feed-vse&utm_campaign=vyskovsky.denik.cz&utm_content=nehody",
+    "obrazek": "https://vyskovsky.denik.cz/images/api/image/1366x768/d44/d44682f6-c7de-4ecb-a900-4cdea3df0c42.jpeg",
+    "region": "Vyškovský deník"
   }
 };
